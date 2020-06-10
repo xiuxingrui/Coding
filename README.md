@@ -12,6 +12,7 @@
     - [递归](#递归)
     - [双指针](#双指针)
     - [DFS](#dfs)
+    - [回溯](#回溯)
     - [BFS](#bfs)
     - [动态规划](#动态规划)
   - [GitHub](#github)
@@ -36,6 +37,7 @@
 ### [递归](Recursion)
 ### [双指针](TwoPointers)
 ### [DFS](DFS)
+### [回溯](Backtracking)
 ### [BFS](BFS)
 ### [动态规划](DP)
 ## GitHub

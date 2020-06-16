@@ -15,8 +15,10 @@
 - [LeetCode559.N叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)
 - [LeetCode111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [剑指offer27.二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
+- [LeetCode101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 ### 中等
 - [LeetCode98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 ## BFS
 ### 简单
 - [LeetCode111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+- [LeetCode101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)

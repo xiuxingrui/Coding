@@ -30,7 +30,7 @@
 - [剑指offer32-I.从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 ### 中等
 - [LeetCode102.二叉树的层序遍历/剑指offer32-II.从上到下打印二叉树II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
-- [剑指offer32-III.从上到下打印二叉树III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
+- [LeetCode103.二叉树的锯齿形层次遍历/剑指offer32-III.从上到下打印二叉树III](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
 ## 回溯
 ### 中等
 - [LeetCode113.路径总和II](https://leetcode-cn.com/problems/path-sum-ii/)

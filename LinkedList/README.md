@@ -13,6 +13,7 @@
 # 链表
 ## 单一
 - [LeetCode206/剑指offer24.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+- [LeetCode21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 ## 双指针
 ### 简单
 - [LeetCode234.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)

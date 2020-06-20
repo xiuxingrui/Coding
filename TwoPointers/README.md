@@ -6,6 +6,8 @@
     - [中等](#中等)
   - [链表](#链表)
     - [简单](#简单-1)
+  - [字符串](#字符串)
+    - [简单](#简单-2)
 
 <!-- /TOC -->
 # 双指针
@@ -19,3 +21,6 @@
 ## 链表
 ### 简单
 - [LeetCode234.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+## 字符串
+### 简单
+- [LeetCode125.验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)

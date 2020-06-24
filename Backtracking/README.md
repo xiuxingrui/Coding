@@ -21,6 +21,7 @@
 - [LeetCode22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
   - 括号匹配问题
 - [LeetCode46.全排列](https://leetcode-cn.com/problems/permutations/)
+- [LeetCode47.全排列II](https://leetcode-cn.com/problems/permutations-ii/)
 - [LeetCode113.路径总和II](https://leetcode-cn.com/problems/path-sum-ii/)
 ## 树
 ### 中等

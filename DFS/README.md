@@ -4,6 +4,7 @@
   - [树](#树)
     - [简单](#简单)
     - [中等](#中等)
+    - [困难](#困难)
 
 <!-- /TOC -->
 # 深度优先搜索
@@ -16,5 +17,8 @@
 - [LeetCode101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 - [LeetCode112.路径总和](https://leetcode-cn.com/problems/path-sum/)
 - [LeetCode437.路径总和III](https://leetcode-cn.com/problems/path-sum-iii/)
+- [LeetCode543.二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 ### 中等
 - [LeetCode98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+### 困难
+- [LeetCode124.二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)

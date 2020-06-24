@@ -25,6 +25,7 @@
 - [LeetCode543.二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 ### 中等
 - [LeetCode98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+- [LeetCode426.将二叉搜索树转化为排序的双向链表/剑指offer36.二叉搜索树与双向链表](https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)
 ### 困难
 - [LeetCode124.二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 ## BFS

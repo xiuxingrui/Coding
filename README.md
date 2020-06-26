@@ -42,6 +42,7 @@
 ### [动态规划](DP)
 ## GitHub
 - [labuladong:手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm)
+- [CyC2018:CS-Notes](https://github.com/CyC2018/CS-Notes)
 - [leetcode题解，记录自己的leetcode解题之路。](https://github.com/azl397985856/leetcode)
 - [数据结构和算法必知必会的50个代码实现](https://github.com/wangzheng0822/algo)
 - [十大经典排序算法](https://github.com/hustcc/JS-Sorting-Algorithm)
@@ -67,6 +68,8 @@
 - [leetcode1~400知识点&题型总结&leetcode对应题表](https://github.com/huxiaoman7/leetcodebook)
 - [LeetCode101-ALeetCodeGrindingGuide(C++Version)](docs/LeetCode101-ALeetCodeGrindingGuide(C++Version).pdf)
 - [LeetCode-cpp](docs/leetcode-cpp.pdf)
+- [剑指offer题目题解Java篇](docs/剑指offer题目题解Java篇.pdf)
+- [剑指offer题目题解Python篇](docs/剑指offer题目题解Python篇.pdf)
 ## 模板
 - [PAT-Model](https://github.com/bailingnan/CodingHistory/tree/master/PAT-Model)
 - [DS-Model](https://github.com/bailingnan/CodingHistory/tree/master/DS-Model)

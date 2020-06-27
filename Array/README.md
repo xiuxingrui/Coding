@@ -16,6 +16,8 @@
 - [LeetCode88.合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
 ### 中等
 - [LeetCode11.盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
+- [LeetCode15.三数之和](https://leetcode-cn.com/problems/3sum/)
+- [LeetCode16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/)
 ## 哈希表
 ### 简单
 - [LeetCode1.两数之和](https://leetcode-cn.com/problems/two-sum/)

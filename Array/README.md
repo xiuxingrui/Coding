@@ -1,14 +1,22 @@
 <!-- TOC -->
 
 - [数组](#数组)
-  - [双指针](#双指针)
+  - [单一](#单一)
     - [简单](#简单)
+    - [困难](#困难)
+  - [双指针](#双指针)
+    - [简单](#简单-1)
     - [中等](#中等)
   - [哈希表](#哈希表)
-    - [简单](#简单-1)
+    - [简单](#简单-2)
 
 <!-- /TOC -->
 # 数组
+## 单一
+### 简单
+- [剑指offer03.数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
+### 困难
+- [LeetCode41.缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
 ## 双指针
 ### 简单
 - [LeetCode283.移动零](https://leetcode-cn.com/problems/move-zeroes/)

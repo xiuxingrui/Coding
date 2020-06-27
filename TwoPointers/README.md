@@ -6,7 +6,10 @@
     - [中等](#中等)
   - [链表](#链表)
     - [简单](#简单-1)
+<<<<<<< HEAD
+=======
     - [中等](#中等-1)
+>>>>>>> master
   - [字符串](#字符串)
     - [简单](#简单-2)
 
@@ -24,9 +27,12 @@
 ## 链表
 ### 简单
 - [LeetCode234.回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
+<<<<<<< HEAD
+=======
 - [剑指Offer22.链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 ### 中等
 - [LeetCode19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+>>>>>>> master
 ## 字符串
 ### 简单
 - [LeetCode125.验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)

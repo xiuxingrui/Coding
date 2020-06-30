@@ -18,7 +18,7 @@
 - [剑指offer03.数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
 ### 中等
 - [剑指offer56-II.数组中数字出现的次数II](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
-]
+- [LeetCode238.除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/)
 ### 困难
 - [LeetCode41.缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
 ## 双指针

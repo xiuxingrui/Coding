@@ -20,6 +20,7 @@
 ### 简单
 - [LeetCode206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [面试题02.01.移除重复节点](https://leetcode-cn.com/problems/remove-duplicate-node-lcci/)
+- [LeetCode83.删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 ### 中等
 - [LeetCode92.反转链表II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 ## 双指针

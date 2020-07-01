@@ -1,13 +1,3 @@
-<!-- TOC -->
-
-- [剑指Offer25.[合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)](#剑指offer25合并两个排序的链表httpsleetcode-cncomproblemshe-bing-liang-ge-pai-xu-de-lian-biao-lcof)
-    - [题目描述](#题目描述)
-        - [示例](#示例)
-    - [题解](#题解)
-        - [解法一：迭代](#解法一迭代)
-        - [解法二：递归](#解法二递归)
-
-<!-- /TOC -->
 # 剑指Offer25.[合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 ## 题目描述
 将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 

@@ -1,13 +1,3 @@
-<!-- TOC -->
-
-- [[LeetCode206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)](#leetcode206反转链表httpsleetcode-cncomproblemsreverse-linked-list)
-    - [题目描述](#题目描述)
-        - [示例](#示例)
-    - [题解](#题解)
-        - [解法一:迭代](#解法一迭代)
-        - [解法二:递归](#解法二递归)
-
-<!-- /TOC -->
 # [LeetCode206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 ## 题目描述
 反转一个单链表。

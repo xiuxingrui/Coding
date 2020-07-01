@@ -26,6 +26,12 @@ public ListNode deleteDuplicates(ListNode head) {
     return head;
 }
 ```
+#### 复杂度分析
+
+时间复杂度：$O(n)$，因为列表中的每个结点都检查一次以确定它是否重复，所以总运行时间为 $O(n)$，其中 $n$ 是列表中的结点数。
+
+空间复杂度：$O(1)$，没有使用额外的空间。
+
 ### 题解二:递归
 ```java
 class Solution {
@@ -41,3 +47,8 @@ class Solution {
     }
 }
 ```
+#### 复杂度分析
+
+时间复杂度：$O(n)$
+
+空间复杂度：$O(n)$

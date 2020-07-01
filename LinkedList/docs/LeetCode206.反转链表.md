@@ -21,6 +21,11 @@ public ListNode reverseList(ListNode head) {
     return prev;
 }
 ```
+#### 复杂度分析
+
+时间复杂度：$O(n)$，假设 $n$ 是列表的长度，时间复杂度是 $O(n)$。
+
+空间复杂度：$O(1)$。
 ### 解法二:递归
 ```java
 public ListNode reverseList(ListNode head) {
@@ -31,3 +36,8 @@ public ListNode reverseList(ListNode head) {
     return p;
 }
 ```
+#### 复杂度分析
+
+时间复杂度：$O(n)$，假设 $n$ 是列表的长度，时间复杂度是 $O(n)$。
+
+空间复杂度：$O(n)$，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 $n$ 层。

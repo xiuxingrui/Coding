@@ -50,6 +50,7 @@
 - [bobo:Java语言玩转数据结构](https://github.com/liuyubobobo/Play-with-Data-Structures)
 - [bobo:玩儿转图论算法](https://github.com/liuyubobobo/Play-with-Graph-Algorithms)
 - [bobo:看得见的算法](https://github.com/liuyubobobo/Play-with-Algorithm-Visualization)
+- [拿到FLAGoffer的大佬的刷题日记](https://mnmunknown.gitbooks.io/algorithm-notes/content/)
 ## 参考文章
 - [九章算法:算法小白如何高效、快速刷leetcode？](https://www.zhihu.com/question/321738058/answer/1252502958)
 - [码农找工作之：秒杀算法面试必须掌握的14种模式](https://zhuanlan.zhihu.com/p/90664857)

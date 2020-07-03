@@ -26,3 +26,4 @@
 - [LeetCode82.删除排序链表中的重复元素II](docs/LeetCode82.删除排序链表中的重复元素II.md)
 - [LeetCode92.反转链表II](docs/LeetCode92.反转链表II.md)
 ## 困难
+- [LeetCode25.K个一组翻转链表](docs/LeetCode25.K个一组翻转链表.md)

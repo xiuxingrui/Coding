@@ -7,3 +7,11 @@
   - [fucking-algorithm:回溯算法最佳实践：括号生成](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/he-fa-kuo-hao-sheng-cheng)
   - [simple-algorithm:DFS&递归&回溯&剪枝](https://github.com/muyids/simple-algorithm/blob/master/chapter/DFS%E5%92%8C%E5%9B%9E%E6%BA%AF.md)
   - [毕哥：回溯](https://github.com/BarryBean/AlgorithmNotes/blob/master/%E5%9B%9E%E6%BA%AF/%E5%9B%9E%E6%BA%AF.md)
+## 简单
+## 中等
+- [LeetCode46.全排列](docs/LeetCode46.全排列.md)
+- [LeetCode47.全排列II](docs/LeetCode47.全排列II.md)
+## 困难
+- [LeetCode51.N皇后](docs/LeetCode51.N皇后.md)
+  - [程序员面试金典面试题08.12.八皇后](docs/程序员面试金典面试题08.12.八皇后.md)
+- [LeetCode52.N皇后II](docs/LeetCode52.N皇后II.md)

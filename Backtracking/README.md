@@ -11,6 +11,12 @@
 ## 中等
 - [LeetCode46.全排列](docs/LeetCode46.全排列.md)
 - [LeetCode47.全排列II](docs/LeetCode47.全排列II.md)
+- [LeetCode78.子集](docs/LeetCode78.子集.md)
+- [LeetCode90.子集II](docs/LeetCode90.子集II.md)
+- [LeetCode77.组合](docs/LeetCode77.组合.md)
+- [LeetCode39.组合总和](docs/LeetCode39.组合总和.md)
+- [LeetCode40.组合总和II](docs/LeetCode40.组合总和II.md)
+- [LeetCode22.括号生成](docs/LeetCode22.括号生成.md)
 ## 困难
 - [LeetCode51.N皇后](docs/LeetCode51.N皇后.md)
   - [程序员面试金典面试题08.12.八皇后](docs/程序员面试金典面试题08.12.八皇后.md)

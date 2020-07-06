@@ -58,6 +58,7 @@
 ## 导图
 - [夕小瑶的卖萌屋算法工程师思维导图](docs/夕小瑶的卖萌屋算法工程师思维导图.pdf)
 - [七月在线LeetCode思维导图](docs/七月在线LeetCode思维导图.md)
+- [极客时间算法训练营数据结构思维导图](docs/极客时间算法训练营数据结构思维导图.png)
 ## 题集及题解
 - [力扣:互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987/answer/586425979)
 - [LeetCode按照怎样的顺序来刷题比较好？](https://www.zhihu.com/question/36738189/answer/908664455)

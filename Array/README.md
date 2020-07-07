@@ -4,3 +4,5 @@
 - [剑指Offer39.数组中出现次数超过一半的数字](docs/剑指Offer39.数组中出现次数超过一半的数字.md)
 - [LeetCode189.旋转数组](docs/LeetCode189.旋转数组.md)
 - [LeetCode66.加一](docs/LeetCode66.加一.md)
+## 中等
+- [LeetCode48.旋转图像](docs/LeetCode48.旋转图像.md)

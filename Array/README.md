@@ -3,3 +3,4 @@
 - [LeetCode169.多数元素](docs/LeetCode169.多数元素.md)
 - [剑指Offer39.数组中出现次数超过一半的数字](docs/剑指Offer39.数组中出现次数超过一半的数字.md)
 - [LeetCode189.旋转数组](docs/LeetCode189.旋转数组.md)
+- [LeetCode66.加一](docs/LeetCode66.加一.md)

@@ -25,8 +25,12 @@
 - [LeetCode160.相交链表](docs/LeetCode160.相交链表.md)
   - [剑指Offer52.两个链表的第一个公共节点](docs/剑指Offer52.两个链表的第一个公共节点.md)
   - [程序员面试金典面试题02.07.链表相交](docs/程序员面试金典面试题02.07.链表相交.md)
+- [LeetCode141.环形链表](docs/LeetCode141.环形链表.md)
 ## 中等
 - [LeetCode82.删除排序链表中的重复元素II](docs/LeetCode82.删除排序链表中的重复元素II.md)
 - [LeetCode92.反转链表II](docs/LeetCode92.反转链表II.md)
+- [LeetCode2.两数相加](docs/LeetCode2.两数相加.md)
+- [LeetCode445.两数相加II](docs/LeetCode445.两数相加II.md)
+- [LeetCode142.环形链表II](docs/LeetCode142.环形链表II.md)
 ## 困难
 - [LeetCode25.K个一组翻转链表](docs/LeetCode25.K个一组翻转链表.md)

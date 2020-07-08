@@ -42,6 +42,8 @@
 ### [动态规划](DP)
 ## GitHub
 - [labuladong:手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm)
+- [GitHub:面试高频题实时收集](https://github.com/afatcoder/LeetcodeTop)
+- [代码非常规范的题解](https://leetcode.wang/)
 - [CyC2018:CS-Notes](https://github.com/CyC2018/CS-Notes)
 - [leetcode题解，记录自己的leetcode解题之路。](https://github.com/azl397985856/leetcode)
 - [数据结构和算法必知必会的50个代码实现](https://github.com/wangzheng0822/algo)

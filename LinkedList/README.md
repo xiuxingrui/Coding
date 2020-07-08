@@ -11,7 +11,7 @@
 ## 解题指南
 - [labuladong:如何k个一组反转链表](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/k-ge-yi-zu-fan-zhuan-lian-biao)
 - [labuladong:递归反转链表的一部分](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/di-gui-fan-zhuan-lian-biao-de-yi-bu-fen)
-- [labuladong:如何k个一组反转链表](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/k-ge-yi-zu-fan-zhuan-lian-biao)
+- [labuladong:如何实现LRU算法](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/lru-suan-fa)
 - [码海:一文学会链表解题](https://mp.weixin.qq.com/s/pPbinH5LUa8Cgb_0V-ZKWw?v_p=82&WBAPIAnalysisOriUICodes=10000010_10000327_10000003&launchid=10000365--x&wm=3333_2001&aid=01A-NGxB8tkRLqGutpiwGkB0avPWU-FpzzZPaeyNz1JTL2-us.&from=10A6093010)
 - [码海:一文学会链表快慢指针解题技巧](https://mp.weixin.qq.com/s/lMB9i92MPSQvj6jpt1NYFQ)
 - [码海:我画了20张图，终于让女朋友学会了翻转链表](https://mp.weixin.qq.com/s?__biz=MzI5MTU1MzM3MQ==&mid=2247483885&idx=1&sn=512617e34872e7e9ca90556d54af0f1d&scene=21#wechat_redirect)
@@ -26,6 +26,8 @@
   - [剑指Offer52.两个链表的第一个公共节点](docs/剑指Offer52.两个链表的第一个公共节点.md)
   - [程序员面试金典面试题02.07.链表相交](docs/程序员面试金典面试题02.07.链表相交.md)
 - [LeetCode141.环形链表](docs/LeetCode141.环形链表.md)
+- [剑指Offer18.删除链表的节点](docs/剑指Offer18.删除链表的节点.md)
+- [LeetCode876.链表的中间结点](docs/LeetCode876.链表的中间结点.md)
 ## 中等
 - [LeetCode82.删除排序链表中的重复元素II](docs/LeetCode82.删除排序链表中的重复元素II.md)
 - [LeetCode92.反转链表II](docs/LeetCode92.反转链表II.md)

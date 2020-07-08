@@ -1,2 +1,9 @@
 # 数学
+## 资料
+- [labuladong:如何高效寻找素数](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/da-yin-su-shu)
 ## 简单
+- [LeetCode268.缺失数字](docs/LeetCode268.缺失数字.md)
+- [LeetCode204.计数质数](docs/LeetCode204.计数质数.md)
+- [LintCode235.分解质因数](docs/LintCode235.分解质因数.md)
+- [LintCode845.最大公约数](docs/LintCode845.最大公约数.md)
+- [LeetCode263.丑数](docs/LeetCode263.丑数.md)

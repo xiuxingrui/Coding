@@ -3,4 +3,8 @@
 - [解题模板](docs/模板.md)
 ## 简单
 - [LeetCode69.x的平方根](docs/LeetCode69.x的平方根.md)
-- [LeeetCode35.搜索插入位置](docs/LeeetCode35.搜索插入位置.md)
+- [LeetCode35.搜索插入位置](docs/LeeetCode35.搜索插入位置.md)
+- [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
+## 中等
+- [LeetCode875.爱吃香蕉的珂珂](docs/LeetCode875.爱吃香蕉的珂珂.md)
+- [LeetCode34.在排序数组中查找元素的第一个和最后一个位置](docs/LeetCode34.在排序数组中查找元素的第一个和最后一个位置.md)

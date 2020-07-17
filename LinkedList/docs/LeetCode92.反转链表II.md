@@ -96,7 +96,7 @@ class Solution {
 }
 ```
 版本2：
-```
+```java
 public ListNode reverseBetween(ListNode head, int m, int n) {
         ListNode res = new ListNode(0);
         res.next = head;

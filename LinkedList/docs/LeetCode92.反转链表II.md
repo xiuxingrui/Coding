@@ -33,7 +33,7 @@ class Solution {
     head.next = reverseBetween(head.next, m - 1, n - 1);
     return head;
     }
-    ListNode reverseN(ListNode head, int n) {
+    public ListNode reverseN(ListNode head, int n) {
     if (n == 1) { 
         // 记录第 n + 1 个节点
         successor = head.next;

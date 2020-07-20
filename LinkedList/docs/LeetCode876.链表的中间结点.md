@@ -23,6 +23,7 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 题目要求：「两个中间结点的时候，返回**第二个**中间结点」，**快指针可以前进的条件是：当前快指针和当前快指针的下一个结点都非空**。
 ![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200708115500.png)
 如果题目要求「在两个中间结点的时候，返回**第一个**中间结点」，**此时快指针可以前进的条件是：当前快指针的下一个结点和当前快指针的下下一个结点都非空**。
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200720220612.png)
 ```java
 /**
  * Definition for singly-linked list.

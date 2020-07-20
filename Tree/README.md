@@ -7,3 +7,5 @@
 - [LeetCode426.将二叉搜索树转化为排序的双向链表](docs/LeetCode426.将二叉搜索树转化为排序的双向链表.md)
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)
 - [剑指Offer26.树的子结构](docs/剑指Offer26.树的子结构.md)
+- [LeetCode199.二叉树的右视图](docs/LeetCode199.二叉树的右视图.md)
+- [LeetCode285.二叉搜索树中的顺序后继](docs/LeetCode285.二叉搜索树中的顺序后继.md)

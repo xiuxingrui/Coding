@@ -39,5 +39,6 @@
 - [LeetCode142.环形链表II](docs/LeetCode142.环形链表II.md)
 - [LeetCode147.对链表进行插入排序](docs/LeetCode147.对链表进行插入排序.md)
 - [LeetCode143.重排链表](docs/LeetCode143.重排链表.md)
+- [LeetCode369.给单链表加一](docs/LeetCode369.给单链表加一.md)
 ## 困难
 - [LeetCode25.K个一组翻转链表](docs/LeetCode25.K个一组翻转链表.md)

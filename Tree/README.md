@@ -1,11 +1,16 @@
 # 树
 ## 简单
+- [LeetCode257.二叉树的所有路径](docs/LeetCode257.二叉树的所有路径.md)
 - [LeetCode101.对称二叉树](docs/LeetCode101.对称二叉树.md)
   - [剑指Offer28.对称的二叉树](docs/剑指Offer28.对称的二叉树.md)
 - [LeetCode226.翻转二叉树](docs/LeetCode226.翻转二叉树.md)
+- [LeetCode235.二叉搜索树的最近公共祖先](docs/LeetCode235.二叉搜索树的最近公共祖先.md)
+- [LeetCode701.二叉搜索树中的插入操作](docs/LeetCode701.二叉搜索树中的插入操作.md)
 ## 中等
 - [LeetCode426.将二叉搜索树转化为排序的双向链表](docs/LeetCode426.将二叉搜索树转化为排序的双向链表.md)
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)
 - [剑指Offer26.树的子结构](docs/剑指Offer26.树的子结构.md)
 - [LeetCode199.二叉树的右视图](docs/LeetCode199.二叉树的右视图.md)
 - [LeetCode285.二叉搜索树中的顺序后继](docs/LeetCode285.二叉搜索树中的顺序后继.md)
+- [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
+- [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)

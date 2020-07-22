@@ -1,32 +1,32 @@
-# [LeetCode94.二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+# [LeetCode144.二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 ## 题目描述
-给定一个二叉树，返回它的中序 遍历。
+给定一个二叉树，返回它的 前序 遍历。
 ### 示例
 ```
-输入: [1,null,2,3]
+输入: [1,null,2,3]  
    1
     \
      2
     /
-   3
+   3 
 
-输出: [1,3,2]
+输出: [1,2,3]
 ```
 ## 题解
 ### 解法一:递归
 ```java
 class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        inOrder(root, res);
+        preOrder(root, res);
         return res;
     }
 
-    private void inOrder(TreeNode root, List<Integer> res) {
+    private void preOrder(TreeNode root, List<Integer> res) {
         if (root == null) return;
-        inOrder(root.left, res);
         res.add(root.val);
-        inOrder(root.right, res);
+        preOrder(root.left, res);
+        preOrder(root.right, res);
     }
 }
 ```
@@ -51,11 +51,11 @@ class Solution {
         TreeNode cur=root;
         while(!stack.isEmpty()||cur!=null){
             while(cur!=null){
+                ans.add(cur.val);
                 stack.push(cur);
                 cur=cur.left;
             }
             cur=stack.pop();
-            ans.add(cur.val);
             cur=cur.right;
         }
         return ans;
@@ -65,6 +65,4 @@ class Solution {
 #### 复杂度分析
 - 时间复杂度：$O(n)$。
 - 空间复杂度：$O(n)$。
-### 解法三:巧妙迭代
 
-### 解法四:莫里斯遍历

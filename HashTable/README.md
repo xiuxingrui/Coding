@@ -1,8 +1,10 @@
 # 哈希表
 ## 简单
+- [LeetCode1.两数之和](docs/LeetCode1.两数之和.md)
 - [剑指Offer03.数组中重复的数字](docs/剑指Offer03.数组中重复的数字.md)
 - [LeetCode448.找到所有数组中消失的数字](docs/LeetCode448.找到所有数组中消失的数字.md)
 ## 中等
 - [LeetCode442.数组中重复的数据](docs/LeetCode442.数组中重复的数据.md)
+- [LeetCode560.和为K的子数组](docs/LeetCode560.和为K的子数组.md)
 ## 困难
 - [LeetCode41.缺失的第一个正数](docs/LeetCode41.缺失的第一个正数.md)

@@ -1,5 +1,8 @@
 # 树
 ## 简单
+- [LeetCode104.二叉树的最大深度](docs/LeetCode104.二叉树的最大深度.md)
+- [LeetCode111.二叉树的最小深度](docs/LeetCode111.二叉树的最小深度.md)
+- [LeetCode112.路径总和](docs/LeetCode112.路径总和.md)
 - [LeetCode257.二叉树的所有路径](docs/LeetCode257.二叉树的所有路径.md)
 - [LeetCode101.对称二叉树](docs/LeetCode101.对称二叉树.md)
   - [剑指Offer28.对称的二叉树](docs/剑指Offer28.对称的二叉树.md)
@@ -14,3 +17,4 @@
 - [LeetCode285.二叉搜索树中的顺序后继](docs/LeetCode285.二叉搜索树中的顺序后继.md)
 - [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
 - [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)
+- [LeetCode113.路径总和II](docs/LeetCode113.路径总和II.md)

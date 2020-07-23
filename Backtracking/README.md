@@ -16,6 +16,7 @@
 - [LeetCode77.组合](docs/LeetCode77.组合.md)
 - [LeetCode39.组合总和](docs/LeetCode39.组合总和.md)
 - [LeetCode40.组合总和II](docs/LeetCode40.组合总和II.md)
+- [LeetCode216.组合总和III](docs/LeetCode216.组合总和III.md)
 - [LeetCode22.括号生成](docs/LeetCode22.括号生成.md)
 ## 困难
 - [LeetCode51.N皇后](docs/LeetCode51.N皇后.md)

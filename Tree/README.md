@@ -18,3 +18,7 @@
 - [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
 - [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)
 - [LeetCode113.路径总和II](docs/LeetCode113.路径总和II.md)
+- [LeetCode437.路径总和III](docs/LeetCode437.路径总和III.md)
+- [LeetCode129.求根到叶子节点数字之和](docs/LeetCode129.求根到叶子节点数字之和.md)
+- [LeetCode513.找树左下角的值](docs/LeetCode513.找树左下角的值.md)
+- [LeetCode98.验证二叉搜索树](docs/LeetCode98.验证二叉搜索树.md)

@@ -2,8 +2,11 @@
 ## 资料
 - [labuladong:双指针技巧总结](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/shuang-zhi-zhen-ji-qiao)
 ## 简单
+- [剑指Offer57-II.和为s的连续正数序列](docs/剑指Offer57-II.和为s的连续正数序列.md)
+- [LeetCode27.移除元素](docs/LeetCode27.移除元素.md)
 - [剑指Offer21.调整数组顺序使奇数位于偶数前面](docs/剑指Offer21.调整数组顺序使奇数位于偶数前面.md)
 - [面试题10.01.合并排序的数组](docs/面试题10.01.合并排序的数组.md)
 ## 中等
 - [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
+- [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 ## 困难

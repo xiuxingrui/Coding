@@ -22,3 +22,4 @@
 - [LeetCode129.求根到叶子节点数字之和](docs/LeetCode129.求根到叶子节点数字之和.md)
 - [LeetCode513.找树左下角的值](docs/LeetCode513.找树左下角的值.md)
 - [LeetCode98.验证二叉搜索树](docs/LeetCode98.验证二叉搜索树.md)
+- [LeetCode951.翻转等价二叉树](docs/LeetCode951.翻转等价二叉树.md)

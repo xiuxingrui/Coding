@@ -10,3 +10,4 @@
 - [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 ## 困难
+- [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

@@ -4,5 +4,6 @@
 
 ## 简单
 - [LeetCode191.位1的个数](docs/LeetCode191.位1的个数.md)
+  - [剑指Offer15.二进制中1的个数](docs/剑指Offer15.二进制中1的个数.md) 
 - [LeetCode231.2的幂](docs/LeetCode231.2的幂.md)
 - [LeetCode461.汉明距离](docs/LeetCode461.汉明距离.md)

@@ -41,7 +41,7 @@ private void getAns(int[] nums, int start, ArrayList<Integer> temp, List<List<In
 }
 ```
 如何避免重复：
-这个避免重复当思想是在是太重要了。
+这个避免重复思想是在是太重要了。
 这个方法最重要的作用是，可以让同一层级，不出现相同的元素。即
 ```
                   1

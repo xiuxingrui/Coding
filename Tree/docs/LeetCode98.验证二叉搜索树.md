@@ -84,6 +84,25 @@ class Solution {
 class Solution {
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
+        if(!isValidBST(root.left) || !isValidBST(root.right)){
+            return false;
+        }
+        TreeNode maxLeft = root.left, minRight = root.right;
+        // 找寻左子树中的最右（数值最大）节点
+        while (maxLeft != null && maxLeft.right != null)
+            maxLeft = maxLeft.right;
+        // 找寻右子树中的最左（数值最小）节点
+        while (minRight != null && minRight.left != null)
+            minRight = minRight.left;
+        return (maxLeft == null || maxLeft.val < root.val) && (minRight == null || root.val < minRight.val);
+    }
+}
+```
+这样写也行:
+```java
+class Solution {
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) return true;
         TreeNode maxLeft = root.left, minRight = root.right;
         // 找寻左子树中的最右（数值最大）节点
         while (maxLeft != null && maxLeft.right != null)

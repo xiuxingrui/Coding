@@ -7,3 +7,4 @@
   - [剑指Offer15.二进制中1的个数](docs/剑指Offer15.二进制中1的个数.md) 
 - [LeetCode231.2的幂](docs/LeetCode231.2的幂.md)
 - [LeetCode461.汉明距离](docs/LeetCode461.汉明距离.md)
+- [LeetCode136.只出现一次的数字](docs/LeetCode136.只出现一次的数字.md)

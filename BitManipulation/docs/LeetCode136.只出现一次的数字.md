@@ -48,23 +48,38 @@ class Solution {
 ### 解法二
 ```java
 class Solution {
-    public int singleNumber(int[] nums) {
-        Map<Integer,Integer> map=new HashMap<>();
-        for(int num:nums){
-            map.put(num,map.getOrDefault(num,0)+1);
-        }
-        for(int key:map.keySet()){
-            int value=map.get(key);
-            if(value==1){
-                return key;
-            }
-        }
-        return -1;
-    }
+  public int singleNumber(int[] nums) {
+    HashMap<Integer, Integer> hashmap = new HashMap<>();
+    for (int num : nums)
+      hashmap.put(num, hashmap.getOrDefault(num, 0) + 1);
+
+    for (int k : hashmap.keySet())
+      if (hashmap.get(k) == 1) return k;
+    return -1;
+  }
 }
 ```
 #### 复杂度分析
 - 时间复杂度：$O(n)$，其中 `n` 是数组长度。只需要对数组遍历一次。
 - 空间复杂度：$O(n)$。
+### 解法三
+```java
+class Solution {
+  public int singleNumber(int[] nums) {
+    Set<Long> set = new HashSet<>();
+    long sumSet = 0, sumArray = 0;
+    for(int n : nums) {
+      sumArray += n;
+      set.add((long)n);
+    }
+    for(Long s : set) sumSet += s;
+    return (int)(2* sumSet - sumArray);
+  }
+}
+```
+#### 复杂度分析
+
+- 时间复杂度：$O(N)$，遍历输入数组。
+- 空间复杂度：$O(N)$，存储 $N/2$ 个元素的集合。
 
 

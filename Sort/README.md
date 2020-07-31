@@ -7,6 +7,6 @@
 <!-- /TOC -->
 # 排序
 ## 简单
+- [面试题10.01.合并排序的数组](docs/面试题10.01.合并排序的数组.md)
 ## 中等
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
-- [LeetCode215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)

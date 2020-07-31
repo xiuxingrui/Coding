@@ -15,6 +15,7 @@
     - [回溯](#回溯)
     - [BFS](#bfs)
     - [动态规划](#动态规划)
+    - [位运算](#位运算)
   - [GitHub](#github)
   - [参考文章](#参考文章)
   - [导图](#导图)
@@ -40,6 +41,7 @@
 ### [回溯](Backtracking)
 ### [BFS](BFS)
 ### [动态规划](DP)
+### [位运算](BitManipulation)
 ## GitHub
 - [labuladong:手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm)
 - [GitHub:面试高频题实时收集](https://github.com/afatcoder/LeetcodeTop)

@@ -37,6 +37,7 @@
 - [LeetCode2.两数相加](docs/LeetCode2.两数相加.md)
 - [LeetCode445.两数相加II](docs/LeetCode445.两数相加II.md)
 - [LeetCode142.环形链表II](docs/LeetCode142.环形链表II.md)
+- [求环形链表环的长度](docs/求环形链表环的长度.md)
 - [LeetCode147.对链表进行插入排序](docs/LeetCode147.对链表进行插入排序.md)
 - [LeetCode143.重排链表](docs/LeetCode143.重排链表.md)
 - [LeetCode369.给单链表加一](docs/LeetCode369.给单链表加一.md)

@@ -1,4 +1,6 @@
 # 栈
+## 资料
+- [labuladong:特殊数据结构：单调栈](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/dan-tiao-zhan)
 ## 简单
 - [剑指Offer09.用两个栈实现队列](docs/剑指Offer09.用两个栈实现队列.md)
 - [LeetCode225.用队列实现栈](docs/LeetCode225.用队列实现栈.md)

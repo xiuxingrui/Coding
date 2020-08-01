@@ -9,6 +9,7 @@
 - [LeetCode226.翻转二叉树](docs/LeetCode226.翻转二叉树.md)
 - [LeetCode235.二叉搜索树的最近公共祖先](docs/LeetCode235.二叉搜索树的最近公共祖先.md)
 - [LeetCode701.二叉搜索树中的插入操作](docs/LeetCode701.二叉搜索树中的插入操作.md)
+- [LeetCode669.修剪二叉搜索树](docs/LeetCode669.修剪二叉搜索树.md)
 ## 中等
 - [LeetCode426.将二叉搜索树转化为排序的双向链表](docs/LeetCode426.将二叉搜索树转化为排序的双向链表.md)
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)

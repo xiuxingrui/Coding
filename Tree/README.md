@@ -25,3 +25,5 @@
 - [LeetCode513.找树左下角的值](docs/LeetCode513.找树左下角的值.md)
 - [LeetCode98.验证二叉搜索树](docs/LeetCode98.验证二叉搜索树.md)
 - [LeetCode951.翻转等价二叉树](docs/LeetCode951.翻转等价二叉树.md)
+- [LeetCode108.将有序数组转换为二叉搜索树](docs/LeetCode108.将有序数组转换为二叉搜索树.md)
+- [LeetCode109.有序链表转换二叉搜索树](docs/LeetCode109.有序链表转换二叉搜索树.md)

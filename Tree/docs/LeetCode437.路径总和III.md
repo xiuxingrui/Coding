@@ -58,6 +58,21 @@ class Solution {
 }
 ```
 ### 解法二
+如果两个数的前缀总和是相同的，那么这些节点之间的元素总和为零。进一步扩展相同的想法，如果前缀总和`currSum`，在节点`A`和节点`B`处相差`target`，则位于节点`A`和节点`B`之间的元素之和是`target`。
+
+抵达当前节点(即`B`节点)后，将前缀和累加，然后查找在前缀和上，有没有前缀和`currSum-target`的节点(即`A`节点)，存在即表示从`A`到`B`有一条路径之和满足条件的情况。结果加上满足前缀和`currSum-target`的节点的数量。然后递归进入左右子树。
+
+左右子树遍历完成之后，回到当前层，需要把当前节点添加的前缀和去除。避免回溯之后影响上一层。因为思想是前缀和，不属于前缀的，我们就要去掉它。
+
+核心代码
+``java
+// 当前路径上的和
+currSum += node.val;
+// currSum-target相当于找路径的起点，起点的sum+target=currSum，当前点到起点的距离就是target
+res += prefixSumCount.getOrDefault(currSum - target, 0);
+// 更新路径上当前节点前缀和的个数
+prefixSumCount.put(currSum, prefixSumCount.getOrDefault(currSum, 0) + 1);
+```
 ```java
 /**
  * Definition for a binary tree node.
@@ -118,3 +133,6 @@ class Solution {
     }
 }
 ```
+#### 复杂度分析
+- 时间复杂度：每个节点只遍历一次,$O(N)$.
+- 空间复杂度：开辟了一个`hashMap`,$O(N)$.

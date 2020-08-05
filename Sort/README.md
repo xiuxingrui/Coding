@@ -1,5 +1,6 @@
 # 排序
 ## 资料
+- [排序算法模板](docs/模板.md)
 - [GitHub:十大经典排序算法](https://github.com/hustcc/JS-Sorting-Algorithm)
 - [CyC2018:排序](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%AE%97%E6%B3%95%20-%20%E6%8E%92%E5%BA%8F.md)
 ## 简单

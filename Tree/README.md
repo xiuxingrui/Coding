@@ -27,5 +27,7 @@
 - [LeetCode951.翻转等价二叉树](docs/LeetCode951.翻转等价二叉树.md)
 - [LeetCode108.将有序数组转换为二叉搜索树](docs/LeetCode108.将有序数组转换为二叉搜索树.md)
 - [LeetCode109.有序链表转换二叉搜索树](docs/LeetCode109.有序链表转换二叉搜索树.md)
+- [LeetCode1214.查找两棵二叉搜索树之和](docs/LeetCode1214.查找两棵二叉搜索树之和.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
+- [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)

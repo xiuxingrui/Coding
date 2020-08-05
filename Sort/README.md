@@ -1,12 +1,12 @@
-<!-- TOC -->
-
-- [排序](#排序)
-  - [简单](#简单)
-  - [中等](#中等)
-
-<!-- /TOC -->
 # 排序
+## 资料
+- [GitHub:十大经典排序算法](https://github.com/hustcc/JS-Sorting-Algorithm)
+- [CyC2018:排序](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%AE%97%E6%B3%95%20-%20%E6%8E%92%E5%BA%8F.md)
 ## 简单
 - [面试题10.01.合并排序的数组](docs/面试题10.01.合并排序的数组.md)
+- [LeetCode976.三角形的最大周长](docs/LeetCode976.三角形的最大周长.md)
 ## 中等
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
+## 困难
+- [剑指Offer51.数组中的逆序对](docs/剑指Offer51.数组中的逆序对.md)
+- [LeetCode315.计算右侧小于当前元素的个数](docs/LeetCode315.计算右侧小于当前元素的个数.md)

@@ -65,7 +65,7 @@ class Solution {
 左右子树遍历完成之后，回到当前层，需要把当前节点添加的前缀和去除。避免回溯之后影响上一层。因为思想是前缀和，不属于前缀的，我们就要去掉它。
 
 核心代码
-``java
+```java
 // 当前路径上的和
 currSum += node.val;
 // currSum-target相当于找路径的起点，起点的sum+target=currSum，当前点到起点的距离就是target

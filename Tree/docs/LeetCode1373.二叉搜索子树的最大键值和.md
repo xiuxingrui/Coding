@@ -56,10 +56,10 @@
  * }
  */
 class Solution {
-    public int max=Integer.MIN_VALUE;
+    public int max=0;
     public int maxSumBST(TreeNode root) {
         preorder(root);
-        return Math.max(max,0);
+        return max;
     }
     public boolean isBST(TreeNode root){
         if (root == null) return true;

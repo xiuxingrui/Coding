@@ -15,6 +15,51 @@
 ```
 ## 题解
 ### 解法二:
+建堆:
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int len=nums.length;
+        heapify(nums);
+        int ans=0;
+        for(int i=0;i<k;i++){
+            ans=nums[0];
+            swap(nums,0,len-1-i);
+            siftDown(nums,0,len-2-i);
+        }
+        return ans;
+    }
+    public void heapify(int[] nums){
+        for(int i=(nums.length-1)/2;i>=0;i--){
+            siftDown(nums,i,nums.length-1);
+        }
+    }
+    public void siftDown(int[] nums,int start,int end){
+        int i=start,j=2*i+1;
+        while(j<=end){
+            if(j+1<=end&&nums[j]<nums[j+1]){
+                j++;
+            }
+            if(nums[j]>nums[i]){
+                swap(nums,i,j);
+            }else{
+                break;
+            }
+            i=j;
+            j=2*i+1;
+        }
+    }
+    public void swap(int[] nums,int index1,int index2){
+        int temp=nums[index1];
+        nums[index1]=nums[index2];
+        nums[index2]=temp;
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度：$O(nlogn)$，建堆的时间代价是 $O(n)$，删除的总代价是 $O(klogn)$，因为 `k<n`，故渐进时间复杂为 $O(n+klogn)=O(nlogn)$。
+- 空间复杂度：$O(logn)$，即递归使用栈空间的空间代价。
+### 解法三:
 ```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
@@ -48,3 +93,6 @@ class Solution {
     }
 }
 ```
+#### 复杂度分析
+- 时间复杂度：$O(n)$，如上文所述，证明过程可以参考「《算法导论》9.2：期望为线性的选择算法」。
+- 空间复杂度：$O(logn)$，递归使用栈空间的空间代价的期望为 $O(logn)$。

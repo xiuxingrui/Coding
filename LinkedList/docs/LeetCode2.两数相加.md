@@ -27,7 +27,7 @@ class Solution {
         ListNode dummyHead = new ListNode(0);
         ListNode p = l1, q = l2, curr = dummyHead;
         int carry = 0;
-        while (p != null || q != null) {
+        while (p != null || q != null||carry>0) {
             int x = (p != null) ? p.val : 0;
             int y = (q != null) ? q.val : 0;
             int sum = carry + x + y;
@@ -37,10 +37,73 @@ class Solution {
             if (p != null) p = p.next;
             if (q != null) q = q.next;
         }
-        if (carry > 0) {
-            curr.next = new ListNode(carry);
-        }
         return dummyHead.next;
+    }
+}
+```
+原地解法:
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int flag=0;
+        ListNode ans=l1;
+        while(l1.next!=null&&l2.next!=null){
+            l1.val+=l2.val+flag;
+            flag=l1.val/10;
+            l1.val%=10;
+            l1=l1.next;
+            l2=l2.next;
+        }
+        l1.val+=l2.val+flag;
+        flag=l1.val/10;
+        l1.val%=10;
+        if(l1.next==null){
+            if(l2.next!=null){
+                l1.next=l2.next;
+                l1=l1.next;
+                while(l1!=null&&l1.next!=null){
+                    l1.val+=flag;
+                    flag=l1.val/10;
+                    l1.val=l1.val%10;
+                    l1=l1.next;
+                }
+                l1.val+=flag;
+                flag=l1.val/10;
+                l1.val=l1.val%10;
+                if(flag==1){
+                    l1.next=new ListNode(1);
+                }
+                return ans;
+            }else{
+                if(flag==1){
+                    l1.next=new ListNode(1);
+                }
+                return ans;
+            }
+        }else{
+            l1=l1.next;
+            while(l1.next!=null){
+                l1.val+=flag;
+                flag=l1.val/10;
+                l1.val=l1.val%10;
+                l1=l1.next;
+            }
+            l1.val+=flag;
+            flag=l1.val/10;
+            l1.val=l1.val%10;
+            if(flag==1){
+                l1.next=new ListNode(1);
+            }
+            return ans;
+        }
     }
 }
 ```

@@ -18,37 +18,81 @@
  * }
  */
 class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) { 
-        Deque<Integer> stack1 = new LinkedList<>();
-        Deque<Integer> stack2 = new LinkedList<>();
-        while (l1 != null) {
-            stack1.offerLast(l1.val);
-            l1 = l1.next;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        Deque<ListNode> s1=new LinkedList<>();
+        Deque<ListNode> s2=new LinkedList<>();
+        while(l1!=null){
+            s1.push(l1);
+            l1=l1.next;
         }
-        while (l2 != null) {
-            stack2.offerLast(l2.val);
-            l2 = l2.next;
+        while(l2!=null){
+            s2.push(l2);
+            l2=l2.next;
         }
-        
-        int flag = 0;
-        ListNode head = null;
-        while (!stack1.isEmpty() || !stack2.isEmpty()) {
-            int val1= stack1.isEmpty()? 0: stack1.pollLast();
-            int val2= stack2.isEmpty()? 0: stack2.pollLast();
-            int sum = val1+val2+flag;
-            ListNode node = new ListNode(sum % 10);
-            node.next = head;
-            head = node;
-            flag = sum / 10;
+        int flag=0;
+        ListNode dummyHead=new ListNode(0);
+        ListNode cur=dummyHead;
+        while(!s1.isEmpty()||!s2.isEmpty()){
+            int val1=s1.isEmpty()?0:s1.pop().val;
+            int val2=s2.isEmpty()?0:s2.pop().val;
+            int sum=flag+val1+val2;
+            flag=sum/10;
+            ListNode temp=new ListNode(sum%10);
+            temp.next=dummyHead.next;
+            dummyHead.next=temp;
         }
         if(flag==1){
-            ListNode node=new ListNode(1);
-            node.next=head;
-            head=node;
+            ListNode temp=new ListNode(1);
+            temp.next=dummyHead.next;
+            dummyHead.next=temp;
         }
-        return head;
+        return dummyHead.next;
     }
 }
 ```
 ### 解法二
-反转链表后按[LeetCode2.两数相加](LeetCode2.两数相加.md)去做。
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        l1=reverseListNode(l1);
+        l2=reverseListNode(l2);
+        ListNode dummyHead=new ListNode(0);
+        ListNode tail=dummyHead;
+        int flag=0;
+        while(l1!=null||l2!=null||flag==1){
+            int val1=l1==null?0:l1.val;
+            int val2=l2==null?0:l2.val;
+            int sum=flag+val1+val2;
+            flag=sum/10;
+            tail.next=new ListNode(sum%10);
+            tail=tail.next;
+            if(l1!=null){
+                l1=l1.next;
+            }
+            if(l2!=null){
+                l2=l2.next;
+            }
+        }
+        return reverseListNode(dummyHead.next);
+    }
+
+    public ListNode reverseListNode(ListNode node){
+        ListNode pre=null,cur=node;
+        while(cur!=null){
+            ListNode temp=cur.next;
+            cur.next=pre;
+            pre=cur;
+            cur=temp;
+        }
+        return pre;
+    }
+}
+```

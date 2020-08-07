@@ -16,6 +16,7 @@
     - [广度优先搜索](#广度优先搜索)
     - [动态规划](#动态规划)
     - [位运算](#位运算)
+    - [排序](#排序)
     - [树状数组](#树状数组)
   - [GitHub](#github)
   - [参考文章](#参考文章)
@@ -43,6 +44,7 @@
 ### [广度优先搜索](Breadth-firstSearch)
 ### [动态规划](DynamicProgramming)
 ### [位运算](BitManipulation)
+### [排序](Sort)
 ### [树状数组](BinaryIndexedTree)
 ## GitHub
 - [labuladong:手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm)

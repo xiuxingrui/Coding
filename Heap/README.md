@@ -1,5 +1,6 @@
 # 堆
 ## 简单
+- [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.mds)
 ## 中等
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)
 ## 困难

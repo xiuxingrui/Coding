@@ -99,6 +99,8 @@ class Solution {
 ### 解法三
 优先队列:
 
+大顶堆时间复杂度$O(NlogN)$，小顶堆是 $O(NlogK)$
+
 优先队列的思路是很朴素的。因为第 `K` 大元素，其实就是整个数组排序以后后半部分最小的那个元素。因此，我们可以维护一个有 `K` 个元素的最小堆：
 
 1. 如果当前堆不满，直接添加；
@@ -114,13 +116,34 @@ class Solution {
 class Solution {
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> queue=new PriorityQueue<>();
-        for(int num:nums){
-            queue.offer(num);
-            if(queue.size()>k){
+        for(int i=0;i<k;i++){
+            queue.offer(nums[i]);
+        }
+        for(int i=k;i<nums.length;i++){
+            int top=queue.peek();
+            if(nums[i]>top){
                 queue.poll();
+                queue.offer(nums[i]);
             }
         }
         return queue.peek();
+    }
+}
+```
+大顶堆写法:
+```java
+public class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int len = nums.length;
+        // 使用一个含有 len 个元素的最大堆，lambda 表达式应写成：(a, b) -> b - a
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(len, (a, b) -> b - a);
+        for (int i = 0; i < len; i++) {
+            maxHeap.add(nums[i]);
+        }
+        for (int i = 0; i < k - 1; i++) {
+            maxHeap.poll();
+        }
+        return maxHeap.peek();
     }
 }
 ```

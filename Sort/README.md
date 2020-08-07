@@ -6,6 +6,7 @@
 ## 简单
 - [面试题10.01.合并排序的数组](docs/面试题10.01.合并排序的数组.md)
 - [LeetCode976.三角形的最大周长](docs/LeetCode976.三角形的最大周长.md)
+- [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.md)
 ## 中等
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)

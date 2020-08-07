@@ -35,7 +35,7 @@ class Solution {
         }
         return head;
     }
-    int helper(ListNode node) {
+    public int helper(ListNode node) {
         if (node == null) {
           return 1;
         }

@@ -5,6 +5,7 @@
 - [LeetCode69.x的平方根](docs/LeetCode69.x的平方根.md)
 - [LeetCode35.搜索插入位置](docs/LeetCode35.搜索插入位置.md)
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
+- [面试题08.03.魔术索引](docs/面试题08.03.魔术索引.md)
 ## 中等
 - [LeetCode875.爱吃香蕉的珂珂](docs/LeetCode875.爱吃香蕉的珂珂.md)
 - [LeetCode1011.在D天内送达包裹的能力](docs/LeetCode1011.在D天内送达包裹的能力.md)

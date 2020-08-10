@@ -16,6 +16,9 @@
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 - [LCP12.小张刷题计划](docs.LCP12.小张刷题计划.md)
 - [LeetCode33.搜索旋转排序数组](docs/LeetCode33.搜索旋转排序数组.md)
+- [LeetCode81.搜索旋转排序数组II](docs/LeetCode81.搜索旋转排序数组II.md)
 - [LeetCode50.Pow(x,n)](docs/LeetCode50.Pow(x,n).md)
+- [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
 ## 困难
 - [LeetCode410.分割数组的最大值](docs/LeetCode410.分割数组的最大值.md)
+- [LeetCode4.寻找两个正序数组的中位数](docs/LeetCode4.寻找两个正序数组的中位数.md)

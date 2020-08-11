@@ -20,42 +20,8 @@
 输出: -1
 ```
 ## 题解
+`nums[mid]==nums[left]`在长度为1和2时候可能发生，`nums[mid]=nums[right]`在长度1时发生。尽量用`mid`和`right`比较。
 ### 解法一:
-```java
-public int search(int[] nums, int target) {
-        if (nums == null || nums.length == 0) {
-            return -1;
-        }
-        int start = 0;
-        int end = nums.length - 1;
-        int mid;
-        while (start <= end) {
-            mid = start + (end - start) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            }
-            //前半部分有序,注意此处用小于等于,如果没有=号，用例为[3,1],1时会出错。
-            if (nums[start] <= nums[mid]) {
-                //target在前半部分
-                if (target >= nums[start] && target < nums[mid]) {
-                    end = mid - 1;
-                } else {
-                    start = mid + 1;
-                }
-            } else {
-                if (target <= nums[end] && target > nums[mid]) {
-                    start = mid + 1;
-                } else {
-                    end = mid - 1;
-                }
-            }
-
-        }
-        return -1;
-
-    }
-```
-写法二:
 ```java
 public int search(int[] nums, int target) {
         if(nums == null || nums.length == 0){
@@ -77,24 +43,89 @@ public int search(int[] nums, int target) {
                 } else {
                     end = mid - 1;
                 }
-
             } else {
                  if(nums[mid] > target && target >= nums[start]){
                     end = mid - 1;
-                    
                 } else {
                     start = mid + 1;
                     
                 }
-
-
             }
         }
         return -1;
         
     }
 ```
+写法二:
+```java
+public int search(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = nums.length - 1;
+        int mid;
+        while (start <= end) {
+            mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+            //前半部分有序,注意此处用小于等于,如果没有=号，用例为[3,1],1时会出错。在两个元素时，在nums[mid]==target已判断一次。
+            if (nums[start] <= nums[mid]) {
+                //target在前半部分
+                if (target >= nums[start] && target < nums[mid]) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            } else {
+                if (target <= nums[end] && target > nums[mid]) {
+                    start = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
+            }
+
+        }
+        return -1;
+
+    }
+```
 ### 自己解法
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        if(nums==null||nums.length==0){
+            return -1;
+        }
+        return binarySearch(nums,0,nums.length-1,target);
+    }
+    public int binarySearch(int[] nums,int left,int right,int target){
+        if(left==right){
+            if(nums[left]==target){
+                return left;
+            }else{
+                return -1;
+            }
+        }
+        int mid=left+(right-left)/2;
+        if(nums[left]<=nums[mid]){
+            if(nums[left]<=target&&nums[mid]>=target){
+                return binarySearch(nums,left,mid,target);
+            }else{
+                return binarySearch(nums,mid+1,right,target);
+            }
+        }else{
+            if(nums[mid]<=target&&nums[right]>=target){
+                return binarySearch(nums,mid,right,target);
+            }else{
+                return binarySearch(nums,left,mid-1,target);
+            }
+        }
+    }
+}
+```
+或者:
 ```java
 class Solution {
     public int search(int[] nums, int target) {
@@ -124,40 +155,6 @@ class Solution {
                 }else{
                     return binarySearch(nums,left,mid-1,target);
                 }
-            }
-        }
-    }
-}
-```
-或者:
-```java
-class Solution {
-    public int search(int[] nums, int target) {
-        if(nums==null||nums.length==0){
-            return -1;
-        }
-        return binarySearch(nums,0,nums.length-1,target);
-    }
-    public int binarySearch(int[] nums,int left,int right,int target){
-        if(left==right){
-            if(nums[left]==target){
-                return left;
-            }else{
-                return -1;
-            }
-        }
-        int mid=left+(right-left)/2;
-        if(nums[left]<=nums[mid]){
-            if(nums[left]<=target&&nums[mid]>=target){
-                return binarySearch(nums,left,mid,target);
-            }else{
-                return binarySearch(nums,mid+1,right,target);
-            }
-        }else{
-            if(nums[mid]<=target&&nums[right]>=target){
-                return binarySearch(nums,mid,right,target);
-            }else{
-                return binarySearch(nums,left,mid-1,target);
             }
         }
     }

@@ -20,6 +20,40 @@
 输出: false
 ```
 ## 题解
+`nums[mid]==nums[left]`在长度为1和2时候可能发生，`nums[mid]=nums[right]`在长度1时发生。尽量用`mid`和`right`比较。
+```java
+class Solution {
+    public boolean search(int[] nums, int target) {
+        int len=nums.length;
+        int left=0,right=len-1;
+        while(left<=right){
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target){
+                return true;
+            }
+            if(nums[mid]==nums[right]){
+                right--;
+                continue;
+            }
+            if(nums[right]<nums[mid]){
+                if(target>=nums[left]&&target<nums[mid]){
+                    right=mid-1;
+                }else{
+                    left=mid+1;
+                }
+            }else{
+                if(target>nums[mid]&&target<=nums[right]){
+                    left=mid+1;
+                }else{
+                    right=mid-1;
+                }
+            }
+        }
+        return false;
+    }
+}
+```
+写法二:
 1. 直接`nums[mid] == target`
 2. 当数组为 `[1,2,1,1,1]`,`nums[mid] == nums[left] == nums[right]`，需要 `left++`, `right --`;
 3. 当 `nums[left]<= nums[mid]`，说明是在左半边的递增区域

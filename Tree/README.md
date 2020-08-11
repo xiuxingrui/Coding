@@ -11,6 +11,8 @@
 - [LeetCode701.二叉搜索树中的插入操作](docs/LeetCode701.二叉搜索树中的插入操作.md)
 - [LeetCode669.修剪二叉搜索树](docs/LeetCode669.修剪二叉搜索树.md)
 ## 中等
+- [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
+- [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)
 - [LeetCode426.将二叉搜索树转化为排序的双向链表](docs/LeetCode426.将二叉搜索树转化为排序的双向链表.md)
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)
 - [LeetCode114.二叉树展开为链表](docs/LeetCode114.二叉树展开为链表.md)

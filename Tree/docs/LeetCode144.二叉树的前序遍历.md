@@ -65,4 +65,34 @@ class Solution {
 #### 复杂度分析
 - 时间复杂度：$O(n)$。
 - 空间复杂度：$O(n)$。
-
+### 解法三:巧妙迭代
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if(root==null) return res;
+        Deque<TreeNode> stack  = new LinkedList<>();
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode temp=stack.pop();
+            res.add(temp.val);
+            if(temp.right!=null){
+                stack.push(temp.right);
+            }
+            if(temp.left!=null){
+                stack.push(temp.left);
+            }
+        }
+        return res;
+    }
+}
+```

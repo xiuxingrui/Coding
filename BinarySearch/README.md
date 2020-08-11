@@ -17,6 +17,8 @@
 - [LCP12.小张刷题计划](docs.LCP12.小张刷题计划.md)
 - [LeetCode33.搜索旋转排序数组](docs/LeetCode33.搜索旋转排序数组.md)
 - [LeetCode81.搜索旋转排序数组II](docs/LeetCode81.搜索旋转排序数组II.md)
+- [LeetCode153.寻找旋转排序数组中的最小值](docs/LeetCode153.寻找旋转排序数组中的最小值.md)
+- [LeetCode154.寻找旋转排序数组中的最小值II](docs/LeetCode154.寻找旋转排序数组中的最小值II.md)
 - [LeetCode50.Pow(x,n)](docs/LeetCode50.Pow(x,n).md)
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
 ## 困难

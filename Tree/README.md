@@ -13,6 +13,9 @@
 ## 中等
 - [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
 - [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)
+- [LeetCode145.二叉树的后序遍历](docs/LeetCode145.二叉树的后序遍历.md)
+- [LeetCode105.从前序与中序遍历序列构造二叉树](docs/LeetCode105.从前序与中序遍历序列构造二叉树.md)
+- [LeetCode106.从中序与后序遍历序列构造二叉树](docs/LeetCode106.从中序与后序遍历序列构造二叉树.md)
 - [LeetCode426.将二叉搜索树转化为排序的双向链表](docs/LeetCode426.将二叉搜索树转化为排序的双向链表.md)
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)
 - [LeetCode114.二叉树展开为链表](docs/LeetCode114.二叉树展开为链表.md)

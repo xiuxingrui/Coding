@@ -8,6 +8,7 @@
 - [LeetCode54.螺旋矩阵](docs/LeetCode54.螺旋矩阵.md)
   - [剑指Offer29.顺时针打印矩阵](docs/剑指Offer29.顺时针打印矩阵.md)
 - [LeetCode59.螺旋矩阵II](docs/LeetCode59.螺旋矩阵II.md)
+- [LeetCode剑指Offer66.构建乘积数组](docs/LeetCode剑指Offer66.构建乘积数组.md)
 ## 中等
 - [LeetCode48.旋转图像](docs/LeetCode48.旋转图像.md)
 - [LeetCode31.下一个排列](docs/LeetCode31.下一个排列.md)

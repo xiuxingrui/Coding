@@ -1,35 +1,18 @@
-# [LeetCode105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+# [LeetCode1008.先序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal/)
 ## 题目描述
-根据一棵树的前序遍历与中序遍历构造二叉树。
+返回与给定先序遍历 `preorder` 相匹配的二叉搜索树（`binary search tree`）的根结点。
+(回想一下，二叉搜索树是二叉树的一种，其每个节点都满足以下规则，对于 `node.left` 的任何后代，值总 `< node.val`，而 `node.right` 的任何后代，值总 `> node.val`。此外，先序遍历首先显示节点的值，然后遍历 `node.left`，接着遍历 `node.right`。）
 
-注意:你可以假设树中没有重复的元素。
+1. `1 <= preorder.length <= 100`
+2. 先序 `preorder` 中的值是不同的。
 
-例如，给出
-
+### 示例
 ```
-前序遍历 preorder = [3,9,20,15,7]
-中序遍历 inorder = [9,3,15,20,7]
+输入：[8,5,1,7,10,12]
+输出：[8,5,10,1,7,null,12]
 ```
-
-返回如下的二叉树：
-
-```
-    3
-   / \
-  9  20
-    /  \
-   15   7
-```
-
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200812160528.png)
 ## 题解
-前序遍历数组的第 1 个数（索引为 0）的数一定是二叉树的根结点，于是可以在中序遍历中找这个根结点的索引，然后把“前序遍历数组”和“中序遍历数组”分为两个部分，就分别对应二叉树的左子树和右子树，分别递归完成就可以了。
-
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200812142639.png)
-
-下面是一个具体的例子，演示了如何计算数组子区间的边界：
-
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200812142712.png)
-
 ```java
 /**
  * Definition for a binary tree node.
@@ -37,15 +20,23 @@
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
  * }
  */
 public class Solution {
 
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if(preorder==null||preorder.length==0||inorder==null||inorder.length==0){
+    public TreeNode bstFromPreorder(int[] preorder) {
+        if(preorder==null||preorder.length==0){
             return null;
         }
+        int[] inorder=Arrays.copyOf(preorder,preorder.length);
+        Arrays.sort(inorder);
         int preLen=preorder.length;
         int inLen=inorder.length;
         return buildTreeHelper(preorder, 0, preLen - 1, inorder, 0, inLen - 1);
@@ -94,18 +85,26 @@ public class Solution {
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
  * }
  */
 public class Solution {
 
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if(preorder==null||preorder.length==0||inorder==null||inorder.length==0){
+    public TreeNode bstFromPreorder(int[] preorder) {
+        if(preorder==null||preorder.length==0){
             return null;
         }
-        HashMap<Integer,Integer> map=new HashMap<>();
+        int[] inorder=Arrays.copyOf(preorder,preorder.length);
+        Arrays.sort(inorder);
         int preLen=preorder.length;
         int inLen=inorder.length;
+        HashMap<Integer,Integer> map=new HashMap<>();
         for(int i=0;i<inLen;i++){
             map.put(inorder[i],i);
         }
@@ -120,13 +119,13 @@ public class Solution {
      * @param preorder 二叉树前序遍历结果
      * @param preLeft  二叉树前序遍历结果的左边界
      * @param preRight 二叉树前序遍历结果的右边界
-     * @param inorder  二叉树后序遍历结果
-     * @param inLeft   二叉树后序遍历结果的左边界
-     * @param inRight  二叉树后序遍历结果的右边界
+     * @param inorder  二叉树中序遍历结果
+     * @param inLeft   二叉树中序遍历结果的左边界
+     * @param inRight  二叉树中序遍历结果的右边界
      * @return 二叉树的根结点
      */
     public TreeNode buildTreeHelper(int[] preorder, int preLeft, int preRight,
-                               int[] inorder, int inLeft, int inRight,HashMap<Integer,Integer> map) {
+                               int[] inorder, int inLeft, int inRight,HashMap<Integer,Integer> map){
         // 因为是递归调用的方法，按照国际惯例，先写递归终止条件
         if (preLeft > preRight || inLeft > inRight) {
             return null;

@@ -11,3 +11,6 @@
 - [LeetCode1118.一月有多少天](docs/LeetCode1118.一月有多少天.md)
 ## 中等
 - [LeetCode1344.时钟指针的夹角](docs/LeetCode1344.时钟指针的夹角.md)
+- [LeetCode470.用Rand7()实现Rand10()](docs/LeetCode470.用Rand7()实现Rand10().md)
+## 困难
+- [LeetCode458.可怜的小猪](docs/LeetCode458.可怜的小猪.md)

@@ -1,6 +1,7 @@
 # 树
 ## 简单
 - [LeetCode104.二叉树的最大深度](docs/LeetCode104.二叉树的最大深度.md)
+- [LeetCode110.平衡二叉树](docs/LeetCode110.平衡二叉树.md)
 - [LeetCode111.二叉树的最小深度](docs/LeetCode111.二叉树的最小深度.md)
 - [LeetCode112.路径总和](docs/LeetCode112.路径总和.md)
 - [LeetCode257.二叉树的所有路径](docs/LeetCode257.二叉树的所有路径.md)

@@ -109,11 +109,11 @@ class Solution {
     public int numSquares(int n) {
         return numSquaresHelper(n);
     }
-    private int numSquaresHelper(int n) {
+    public int numSquaresHelper(int n) {
         if (n == 0) {
             return 0;
         }
-        int count = Integer.MAX_VALUE;
+        int count = n;
         //依次减去一个平方数
         for (int i = 1; i * i <= n; i++) {
             //选最小的
@@ -130,14 +130,14 @@ class Solution {
         return numSquaresHelper(n, new HashMap<Integer, Integer>());
     }
 
-    private int numSquaresHelper(int n, HashMap<Integer, Integer> map) {
+    public int numSquaresHelper(int n, HashMap<Integer, Integer> map) {
         if (map.containsKey(n)) {
             return map.get(n);
         }
         if (n == 0) {
             return 0;
         }
-        int count = Integer.MAX_VALUE;
+        int count = n;
         for (int i = 1; i * i <= n; i++) {
             count = Math.min(count, numSquaresHelper(n - i * i, map) + 1);
         }

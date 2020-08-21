@@ -14,6 +14,12 @@
 ```
 返回它的最小深度  2.
 ## 题解
+```
+    1
+   / 
+  2 
+```
+应返回2而不是1.
 ### 解法一
 ```java
 /**
@@ -37,6 +43,30 @@ class Solution {
             return minDepth(root.left)+1;
         }
         return Math.min(minDepth(root.left),minDepth(root.right))+1;
+    }
+}
+```
+写法二:
+```java
+class Solution {
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
+
+        int min_depth = Integer.MAX_VALUE;
+        if (root.left != null) {
+            min_depth = Math.min(minDepth(root.left), min_depth);
+        }
+        if (root.right != null) {
+            min_depth = Math.min(minDepth(root.right), min_depth);
+        }
+
+        return min_depth + 1;
     }
 }
 ```

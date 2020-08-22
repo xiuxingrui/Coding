@@ -26,52 +26,25 @@
 ]
 ```
 ## 题解
-### 解法一
 ```java
 class Solution {
     public List<List<Integer>> combinationSum(int[] nums, int target) {
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);
-    backtrack(list, new ArrayList<>(), nums, target, 0);
+    backtrack(target,list, new ArrayList<>(), nums,0, 0);
     return list;
     }
 
-    public void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, int remain, int start){
-        if(remain == 0) list.add(new ArrayList<>(tempList));
+    public void backtrack(int target,List<List<Integer>> list, List<Integer> tempList, int [] nums, int cur, int start){
+        if(cur==target) list.add(new ArrayList<>(tempList));
         
         for(int i = start; i < nums.length; i++){
-            if(remain-nums[i]<0) break;
+            if(cur+nums[i]>target) break;
             tempList.add(nums[i]);
-            backtrack(list, tempList, nums, remain - nums[i], i); 
-            //找到了一个解或者 remain < 0 了，将当前数字移除，然后继续尝试
+            backtrack(target,list, tempList, nums, cur+nums[i], i); 
+            //找到了一个解或者 cur>target 了，将当前数字移除，然后继续尝试
             tempList.remove(tempList.size() - 1);
         }
     }   
-}
-```
-### 解法二
-```java
-class Solution {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> res=new ArrayList<>();
-        LinkedList<Integer> path=new LinkedList<>();
-        int len=candidates.length;
-        Arrays.sort(candidates);
-        helper(res,path,target,candidates,len);
-        return res;
-    }
-    public void helper(List<List<Integer>> res,LinkedList<Integer> path,int target,int[] nums,int len){
-        if(target<0) return;
-        if(target==0){
-            res.add(new LinkedList<>(path));
-        }
-        for(int i=0;i<len;++i){
-            if(path.size()==0||(path.size()!=0)&&nums[i]>=path.getLast()){
-                path.addLast(nums[i]);
-                helper(res,path,target-nums[i],nums,len);
-                path.removeLast();
-            }
-        }
-    }
 }
 ```

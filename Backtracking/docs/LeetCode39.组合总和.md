@@ -31,17 +31,17 @@ class Solution {
     public List<List<Integer>> combinationSum(int[] nums, int target) {
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);
-    backtrack(target,list, new ArrayList<>(), nums,0, 0);
+    backtrack(nums,target,list, new ArrayList<>(),0, 0);
     return list;
     }
 
-    public void backtrack(int target,List<List<Integer>> list, List<Integer> tempList, int [] nums, int cur, int start){
+    public void backtrack( int [] nums,int target,List<List<Integer>> list, List<Integer> tempList,int cur, int start){
         if(cur==target) list.add(new ArrayList<>(tempList));
         
         for(int i = start; i < nums.length; i++){
             if(cur+nums[i]>target) break;
             tempList.add(nums[i]);
-            backtrack(target,list, tempList, nums, cur+nums[i], i); 
+            backtrack(nums, target,list, tempList, cur+nums[i], i); 
             //找到了一个解或者 cur>target 了，将当前数字移除，然后继续尝试
             tempList.remove(tempList.size() - 1);
         }

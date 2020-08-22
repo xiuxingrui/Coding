@@ -38,10 +38,10 @@ public class Solution {
         // 先将数组排序，这一步很关键
         Arrays.sort(candidates);
         List<Integer> path = new ArrayList<>();
-        dfs(candidates,target,len,0,0, path, res);
+        backtrack(candidates,target,len,0,0, path, res);
         return res;
     }
-    public void dfs(int[] candidates,int target, int len, int begin, int cur, List<Integer> path, List<List<Integer>> res) {
+    public void backtrack(int[] candidates,int target, int len, int begin, int cur, List<Integer> path, List<List<Integer>> res) {
         if (cur == target) {
             res.add(new ArrayList<>(path));
             return;
@@ -57,7 +57,7 @@ public class Solution {
             }
             path.add(candidates[i]);
             // 因为元素不可以重复使用，这里递归传递下去的是 i + 1 而不是 i
-            dfs(candidates,target,len, i + 1, cur+candidates[i], path, res);
+            backtrack(candidates,target,len, i + 1, cur+candidates[i], path, res);
             path.remove(path.size()-1);
         }
     }

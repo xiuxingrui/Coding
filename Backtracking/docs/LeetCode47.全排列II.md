@@ -1,4 +1,4 @@
-# LeetCode47.全排列II(https://leetcode-cn.com/problems/permutations-ii/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liwe-2/)
+# [LeetCode47.全排列II](https://leetcode-cn.com/problems/permutations-ii/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liwe-2/)
 ## 题目描述
 给定一个可包含重复数字的序列，返回所有不重复的全排列。
 

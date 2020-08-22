@@ -21,34 +21,24 @@
 public class Solution {
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> res = new ArrayList<>();
-        Deque<Integer> path = new ArrayDeque<>();
-        dfs(k, n, 1, path, res);
+        List<Integer> path = new ArrayList<>();
+        backtrack(k, n,0,0,1, path, res);
         return res;
     }
-
-    /**
-     * @param k       剩下要找 k 个数
-     * @param residue 剩余多少
-     * @param start   下一轮搜索的起始元素是多少
-     * @param path    深度优先遍历的路径参数（状态变量）
-     * @param res     保存结果集的列表
-     */
-    private void dfs(int k, int residue, int start, Deque<Integer> path, List<List<Integer>> res) {
-        if (k == 0) {
-            if (residue == 0) {
+    public void backtrack(int k,int n,int sum,int cnt,int start, List<Integer> path, List<List<Integer>> res) {
+        if (cnt==k) {
+            if (sum == n) {
                 res.add(new ArrayList<>(path));
-                return;
             }
             return;
         }
-
         for (int i = start; i <= 9; i++) {
-            if(residue-i<0){
+            if(sum+i>n){
                 break;
             }
-            path.addLast(i);
-            dfs(k - 1, residue - i, i + 1, path, res);
-            path.removeLast();
+            path.add(i);
+            backtrack(k,n,sum+i,cnt+1,i + 1, path, res);
+            path.remove(path.size()-1);
         }
     }
 }

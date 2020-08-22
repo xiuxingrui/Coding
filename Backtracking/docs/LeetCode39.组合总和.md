@@ -26,6 +26,10 @@
 ]
 ```
 ## 题解
+去重复:
+- 在搜索的时候，需要设置搜索起点的下标 `start` ，由于一个数可以使用多次，下一层的结点从这个搜索起点开始搜索；
+- 在搜索起点 `start` 之前的数因为以前的分支搜索过了，所以一定会产生重复。
+
 ```java
 class Solution {
     public List<List<Integer>> combinationSum(int[] nums, int target) {
@@ -35,15 +39,41 @@ class Solution {
     return list;
     }
 
-    public void backtrack(int[] nums,int target,List<List<Integer>> list, List<Integer> tempList,int cur, int start){
-        if(cur==target) list.add(new ArrayList<>(tempList));
+    public void backtrack(int[] nums,int target,List<List<Integer>> list, List<Integer> tempList,int sum, int start){
+        if(sum==target) list.add(new ArrayList<>(tempList));
         
         for(int i = start; i < nums.length; i++){
-            if(cur+nums[i]>target) break;
+            if(sum+nums[i]>target) break;
             tempList.add(nums[i]);
-            backtrack(nums, target,list, tempList, cur+nums[i], i); 
+            backtrack(nums, target,list, tempList, sum+nums[i], i); 
             tempList.remove(tempList.size() - 1);
         }
     }   
+}
+```
+如果没有上述的去重步骤，则
+```java
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        Arrays.sort(candidates);
+        helper(candidates,target,0,res,path);
+        return res;
+    }
+    public void helper(int[] nums,int target,int sum,List<List<Integer>> res,List<Integer> path){
+        if(sum==target){
+            res.add(new LinkedList<>(path));
+        }
+        for(int i=0;i<nums.length;i++){
+            if(path.size()==0||(path.size()!=0)&&nums[i]>=path.get(path.size()-1)){
+                if(sum+nums[i]<=target){
+                    path.add(nums[i]);
+                    helper(nums,target,sum+nums[i],res,path);
+                    path.remove(path.size()-1);
+                }
+            }
+        }
+    }
 }
 ```

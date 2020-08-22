@@ -35,14 +35,13 @@ class Solution {
     return list;
     }
 
-    public void backtrack( int [] nums,int target,List<List<Integer>> list, List<Integer> tempList,int cur, int start){
+    public void backtrack(int[] nums,int target,List<List<Integer>> list, List<Integer> tempList,int cur, int start){
         if(cur==target) list.add(new ArrayList<>(tempList));
         
         for(int i = start; i < nums.length; i++){
             if(cur+nums[i]>target) break;
             tempList.add(nums[i]);
             backtrack(nums, target,list, tempList, cur+nums[i], i); 
-            //找到了一个解或者 cur>target 了，将当前数字移除，然后继续尝试
             tempList.remove(tempList.size() - 1);
         }
     }   

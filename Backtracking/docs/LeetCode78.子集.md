@@ -23,19 +23,7 @@
 ### 解法一:
 ```java
 public class Solution {
-
-    private List<List<Integer>> res;
-
-    private void find(int[] nums, int begin, List<Integer> pre) {
-        // 没有显式的递归终止
-        res.add(new ArrayList<>(pre));// 注意：Java 的引用传递机制，这里要 new 一下
-        for (int i = begin; i < nums.length; i++) {
-            pre.add(nums[i]);
-            find(nums, i + 1, pre);
-            pre.remove(pre.size() - 1);// 组合问题，状态在递归完成后要重置
-        }
-    }
-
+    public List<List<Integer>> res;
     public List<List<Integer>> subsets(int[] nums) {
         int len = nums.length;
         res = new ArrayList<>();
@@ -46,25 +34,37 @@ public class Solution {
         find(nums, 0, pre);
         return res;
     }
+
+    public void find(int[] nums, int begin, List<Integer> pre) {
+        // 没有显式的递归终止
+        res.add(new ArrayList<>(pre));// 注意：Java 的引用传递机制，这里要 new 一下
+        for (int i = begin; i < nums.length; i++) {
+            pre.add(nums[i]);
+            find(nums, i + 1, pre);
+            pre.remove(pre.size() - 1);// 组合问题，状态在递归完成后要重置
+        }
+    }
 }
 ```
 ### 解法二
 先只考虑给定数组的 1 个元素的所有子数组，然后再考虑数组的 2 个元素的所有子数组 ... 最后再考虑数组的 `n` 个元素的所有子数组。求 `k` 个元素的所有子数组，只需要在 `k - 1` 个元素的所有子数组里边加上 `nums [ k ]` 即可。
 ```java
-public List<List<Integer>> subsets(int[] nums) {
-    List<List<Integer>> ans = new ArrayList<>();
-    ans.add(new ArrayList<>());//初始化空数组
-    for(int i = 0;i<nums.length;i++){
-        List<List<Integer>> ans_tmp = new ArrayList<>();
-        //遍历之前的所有结果
-        for(List<Integer> list : ans){
-            List<Integer> tmp = new ArrayList<>(list);
-            tmp.add(nums[i]); //加入新增数字
-            ans_tmp.add(tmp);
+public class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.add(new ArrayList<>());//初始化空数组
+        for(int i = 0;i<nums.length;i++){
+            List<List<Integer>> ans_tmp = new ArrayList<>();
+            //遍历之前的所有结果
+            for(List<Integer> list : ans){
+                List<Integer> tmp = new ArrayList<>(list);
+                tmp.add(nums[i]); //加入新增数字
+                ans_tmp.add(tmp);
+            }
+            ans.addAll(ans_tmp);
         }
-        ans.addAll(ans_tmp);
+        return ans;
     }
-    return ans;
 }
 ```
 ### 解法三

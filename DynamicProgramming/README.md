@@ -3,11 +3,13 @@
 - [背包九讲](docs/背包九讲.pdf)
 - [动态规划常见的面试问题总结](docs/动态规划常见的面试问题总结.pdf)
 ## 简单
+- [LeetCode674.最长连续递增序列](docs/LeetCode674.最长连续递增序列.md)
 - [LeetCode53.最大子序和](docs/LeetCode53.最大子序和.md)
   - [剑指Offer42.连续子数组的最大和](docs/剑指Offer42.连续子数组的最大和.md)
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
 - [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md)
 - [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
+- [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)

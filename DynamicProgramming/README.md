@@ -17,3 +17,4 @@
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
+- [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

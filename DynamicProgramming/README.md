@@ -8,12 +8,14 @@
   - [剑指Offer42.连续子数组的最大和](docs/剑指Offer42.连续子数组的最大和.md)
 - [LeetCode300.最长上升子序列](docs/LeetCode300.最长上升子序列.md)
 - [LeetCode673.最长递增子序列的个数](docs/LeetCode673.最长递增子序列的个数.md)
+- [LeetCode376.摆动序列](docs/LeetCode376.摆动序列.md)
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
 - [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md)
 - [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
+- [LeetCode322.零钱兑换](docs/LeetCode322.零钱兑换.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

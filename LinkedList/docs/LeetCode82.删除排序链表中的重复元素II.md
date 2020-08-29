@@ -47,59 +47,7 @@ class Solution {
     }
 }
 ```
-### 解法二:迭代
-```java
-public class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
-        if(head == null || head.next == null)
-            return head;
-        
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        head = dummy;
-
-        while (head.next != null && head.next.next != null) {
-            if (head.next.val == head.next.next.val) {
-                int val = head.next.val;
-                while (head.next != null && head.next.val == val) {
-                    head.next = head.next.next;
-                }            
-            } else {
-                head = head.next;
-            }
-        }
-        
-        return dummy.next;
-    }
-}
-```
-### 解法三:递归
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
-        if (head == null)  return head;
-        if (head.next != null && head.val == head.next.val) {
-            while (head.next != null && head.val == head.next.val) {
-                head = head.next;
-            }
-            return deleteDuplicates(head.next);
-        }
-        else{
-            head.next = deleteDuplicates(head.next);
-        }s
-        return head;    
-    }
-}
-```
-### 解法四:双指针
+### 解法二:双指针
 ```java
 /**
  * Definition for singly-linked list.
@@ -133,6 +81,58 @@ class Solution {
                 fast = fast.next;
             }
         }
+        return dummy.next;
+    }
+}
+```
+### 解法三:递归
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null)  return head;
+        if (head.next != null && head.val == head.next.val) {
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            return deleteDuplicates(head.next);
+        }
+        else{
+            head.next = deleteDuplicates(head.next);
+        }s
+        return head;    
+    }
+}
+```
+### 解法四:迭代
+```java
+public class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head == null || head.next == null)
+            return head;
+        
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        head = dummy;
+
+        while (head.next != null && head.next.next != null) {
+            if (head.next.val == head.next.next.val) {
+                int val = head.next.val;
+                while (head.next != null && head.next.val == val) {
+                    head.next = head.next.next;
+                }            
+            } else {
+                head = head.next;
+            }
+        }
+        
         return dummy.next;
     }
 }

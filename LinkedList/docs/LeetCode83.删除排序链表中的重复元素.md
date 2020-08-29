@@ -12,7 +12,69 @@
 输出: 1->2->3
 ```
 ## 题解
-### 题解一:迭代
+### 解法一:迭代1
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode dummyHead=new ListNode(0);
+        dummyHead.next=head;
+        ListNode tail=head;
+        ListNode cur=head.next;
+        tail.next=null;
+        while(cur!=null){
+            if(cur.val==tail.val){
+                cur=cur.next;
+            }else{
+                tail.next=cur;
+                tail=cur;
+                cur=cur.next;
+                tail.next=null;
+            }
+        }
+        return dummyHead.next;
+    }
+}
+```
+### 解法二:迭代2
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode cur=head;
+        while(cur!=null){
+            ListNode temp=cur;
+            while(cur.next!=null&&cur.next.val==temp.val){
+                cur=cur.next;
+            }
+            temp.next=cur.next;
+            cur=cur.next;
+        }
+        return head;
+    }
+}
+```
+### 解法三:迭代3
 ```java
 public ListNode deleteDuplicates(ListNode head) {
     ListNode current = head;
@@ -32,7 +94,7 @@ public ListNode deleteDuplicates(ListNode head) {
 
 空间复杂度：$O(1)$，没有使用额外的空间。
 
-### 题解二:递归
+### 解法四:递归
 ```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {

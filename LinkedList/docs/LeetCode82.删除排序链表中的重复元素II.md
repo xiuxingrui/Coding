@@ -12,7 +12,7 @@
 输出: 2->3
 ```
 ## 题解
-### 解法一:递归
+### 解法一:自己解法
 ```java
 /**
  * Definition for singly-linked list.
@@ -24,15 +24,26 @@
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null)  return head;
-        if (head.next != null && head.val == head.next.val) {
-            while (head.next != null && head.val == head.next.val) {
-                head = head.next;
-            }
-            return deleteDuplicates(head.next);
+        if(head==null||head.next==null){
+            return head;
         }
-        else head.next = deleteDuplicates(head.next);
-        return head;    
+        ListNode dummyHead=new ListNode(0);
+        ListNode tail=dummyHead;
+        ListNode cur=head;
+        while(cur!=null){
+            if(cur.next==null||cur.next!=null&&cur.val!=cur.next.val){
+                tail.next=cur;
+                tail=cur;
+                cur=cur.next;
+                tail.next=null;
+            }else{
+                while(cur.next!=null&&cur.next.val==cur.val){
+                    cur=cur.next;
+                }
+                cur=cur.next;
+            }
+        }
+        return dummyHead.next;
     }
 }
 ```
@@ -62,7 +73,33 @@ public class Solution {
     }
 }
 ```
-### 解法三:双指针
+### 解法三:递归
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null)  return head;
+        if (head.next != null && head.val == head.next.val) {
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            return deleteDuplicates(head.next);
+        }
+        else{
+            head.next = deleteDuplicates(head.next);
+        }s
+        return head;    
+    }
+}
+```
+### 解法四:双指针
 ```java
 /**
  * Definition for singly-linked list.
@@ -100,7 +137,7 @@ class Solution {
     }
 }
 ```
-### 解法四:`HashMap`
+### 解法五:`HashMap`
 ```java
 /**
  * Definition for singly-linked list.
@@ -142,38 +179,4 @@ class Solution {
     }
 }
 ```
-### 解法五:自己解法
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
-        if(head==null||head.next==null){
-            return head;
-        }
-        ListNode dummyHead=new ListNode(0);
-        ListNode tail=dummyHead;
-        ListNode cur=head;
-        while(cur!=null){
-            if(cur.next==null||cur.next!=null&&cur.val!=cur.next.val){
-                tail.next=cur;
-                tail=cur;
-                cur=cur.next;
-                tail.next=null;
-            }else{
-                while(cur.next!=null&&cur.next.val==cur.val){
-                    cur=cur.next;
-                }
-                cur=cur.next;
-            }
-        }
-        return dummyHead.next;
-    }
-}
-```
+

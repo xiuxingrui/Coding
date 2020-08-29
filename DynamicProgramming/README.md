@@ -2,6 +2,8 @@
 ## 资料
 - [背包九讲](docs/背包九讲.pdf)
 - [动态规划常见的面试问题总结](docs/动态规划常见的面试问题总结.pdf)
+- [LeetCode官方:算法萌新如何学好动态规划(1)](https://zhuanlan.zhihu.com/p/150516970)
+- [LeetCode官方:算法萌新如何学好动态规划(2)](https://zhuanlan.zhihu.com/p/180443034)
 ## 简单
 - [LeetCode674.最长连续递增序列](docs/LeetCode674.最长连续递增序列.md)
 - [LeetCode53.最大子序和](docs/LeetCode53.最大子序和.md)
@@ -16,6 +18,8 @@
 ## 中等
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [LeetCode322.零钱兑换](docs/LeetCode322.零钱兑换.md)
+- [LeetCode518.零钱兑换II](docs/LeetCode518.零钱兑换II.md)
+- [LeetCode377.组合总和Ⅳ](docs/LeetCode377.组合总和Ⅳ.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

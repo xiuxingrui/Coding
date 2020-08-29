@@ -100,3 +100,80 @@ class Solution {
     }
 }
 ```
+### 解法四:`HashMap`
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        HashMap<Integer,Integer> map=new HashMap<>();
+        ListNode cur=head;
+        while(cur!=null){
+            if(map.containsKey(cur.val)){
+                map.put(cur.val,map.get(cur.val)+1);
+            }else{
+                map.put(cur.val,1);
+            }
+            cur=cur.next;
+        }
+        ListNode dummyhead=new ListNode(0);
+        ListNode tail=dummyhead;
+        cur=head;
+        while(cur!=null){
+            if(map.get(cur.val)==1){
+                tail.next=cur;
+                tail=cur;
+                cur=cur.next;
+                tail.next=null;
+            }else{
+                cur=cur.next;
+            }
+        }
+        return dummyhead.next;
+    }
+}
+```
+### 解法五:自己解法
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode dummyHead=new ListNode(0);
+        ListNode tail=dummyHead;
+        ListNode cur=head;
+        while(cur!=null){
+            if(cur.next==null||cur.next!=null&&cur.val!=cur.next.val){
+                tail.next=cur;
+                tail=cur;
+                cur=cur.next;
+                tail.next=null;
+            }else{
+                while(cur.next!=null&&cur.next.val==cur.val){
+                    cur=cur.next;
+                }
+                cur=cur.next;
+            }
+        }
+        return dummyHead.next;
+    }
+}
+```

@@ -57,7 +57,7 @@ class Solution {
 - 空间复杂度 $O(1)$，不需要额外空间。
 - 时间复杂度的分析方法和快速排序类似。由于快速选择只需要递归一边的数组，时间复杂度小于快速排序，期望时间复杂度为 $O(n)$，最坏情况下的时间复杂度为$(n^2)$。
 
-### 解法一
+### 解法二
 ```java
 class Solution {
     public int[] getLeastNumbers(int[] arr, int k) {
@@ -99,7 +99,7 @@ class Solution {
     }
 }
 ```
-### 解法二:
+### 解法三:
 本题是求前 `K`小，因此用一个容量为 `K` 的大根堆，每次 `poll` 出最大的数，那堆中保留的就是前 `K` 小啦（注意不是小根堆！小根堆的话需要把全部的元素都入堆，那是 $O(NlogN)$，就不是 $O(NlogK)$。
 ```java
 class Solution {

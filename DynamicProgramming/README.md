@@ -16,6 +16,9 @@
 - [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
+- [LintCode92.背包问题](docs/LintCode92.背包问题.md)
+- [LintCode125.01背包问题](docs/LintCode125.01背包问题.md)
+- [完全背包问题](docs/完全背包问题.md)
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [LeetCode322.零钱兑换](docs/LeetCode322.零钱兑换.md)
 - [LeetCode518.零钱兑换II](docs/LeetCode518.零钱兑换II.md)

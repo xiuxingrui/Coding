@@ -30,7 +30,7 @@ coins = [1, 2, 5], amount = 11
 ```
 则，当 `i==0` 时无法用硬币组成，为 0 。当 `i<0` 时，忽略 `F(i)`
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200826183825.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200831224436.png)
 
 ```java
 class Solution {

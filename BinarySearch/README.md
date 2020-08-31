@@ -14,7 +14,7 @@
   - [剑指Offer04.二维数组中的查找](docs/剑指Offer04.二维数组中的查找.md)
 - [LeetCode74.搜索二维矩阵](docs/LeetCode74.搜索二维矩阵.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
-- [LCP12.小张刷题计划](docs.LCP12.小张刷题计划.md)
+- [LCP12.小张刷题计划](docs/LCP12.小张刷题计划.md)
 - [LeetCode33.搜索旋转排序数组](docs/LeetCode33.搜索旋转排序数组.md)
 - [LeetCode81.搜索旋转排序数组II](docs/LeetCode81.搜索旋转排序数组II.md)
 - [LeetCode153.寻找旋转排序数组中的最小值](docs/LeetCode153.寻找旋转排序数组中的最小值.md)

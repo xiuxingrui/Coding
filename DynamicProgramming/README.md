@@ -25,6 +25,7 @@
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [LeetCode322.零钱兑换](docs/LeetCode322.零钱兑换.md)
 - [LeetCode518.零钱兑换II](docs/LeetCode518.零钱兑换II.md)
+- [LeetCode494.目标和](docs/LeetCode494.目标和.md)
 - [LeetCode377.组合总和Ⅳ](docs/LeetCode377.组合总和Ⅳ.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
 ## 困难

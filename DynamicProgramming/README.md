@@ -19,6 +19,7 @@
 - [LintCode92.背包问题](docs/LintCode92.背包问题.md)
 - [LintCode125.01背包问题](docs/LintCode125.01背包问题.md)
 - [完全背包问题](docs/完全背包问题.md)
+- [多重背包问题](docs/多重背包问题.md)
 - [LintCode562.背包问题IV](docs/LintCode562.背包问题IV.md)
 - [LintCode563.背包问题V](docs/LintCode563.背包问题V.md)
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
@@ -29,3 +30,4 @@
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)
+- [LeetCode354.俄罗斯套娃信封问题](docs/LeetCode354.俄罗斯套娃信封问题.md)

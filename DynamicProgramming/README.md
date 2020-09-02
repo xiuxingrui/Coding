@@ -32,6 +32,8 @@
 - [LeetCode62.不同路径](docs/LeetCode62.不同路径.md)
 - [LeetCode63.不同路径II](docs/LeetCode63.不同路径II.md)
 - [LeetCode64.最小路径和](docs/LeetCode64.最小路径和.md)
+- [LeetCode343.整数拆分](docs/LeetCode343.整数拆分.md)
+- [剑指Offer14-I.剪绳子](docs/剑指Offer14-I.剪绳子.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

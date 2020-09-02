@@ -19,6 +19,39 @@
 如果你可以只使用 $O(n)$ 的额外空间（`n` 为三角形的总行数）来解决这个问题，那么你的算法会很加分。
 
 ## 题解
+### 解法一
+```java
+class Solution {
+    public int minimumTotal(List<List<Integer>> triangle) {
+        int size=triangle.size();
+        int[][] dp=new int[size+1][size+1];
+        for(int i=size-1;i>=0;i--){
+            for(int j=0;j<i+1;j++){
+                dp[i][j]=Math.min(dp[i+1][j],dp[i+1][j+1])+triangle.get(i).get(j);
+            }
+        }
+        return dp[0][0];
+    }
+}
+```
+优化空间复杂度:
+```java
+class Solution {
+    public int minimumTotal(List<List<Integer>> triangle) {
+        int n = triangle.size();
+        int[] dp = new int[n + 1];
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 0; j <= i; j++) {
+                dp[j] = Math.min(dp[j], dp[j + 1]) + triangle.get(i).get(j);
+            }
+        }
+        return dp[0];
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度：$O(N^2)$，`N` 为三角形的行数。
+- 空间复杂度：$O(N^2)$，`N` 为三角形的行数。优化后$O(N)$。
 ### 解法二
 若定义 `f(i,j)` 点到底边的最小路径和，则易知递归求解式为:
 

@@ -25,9 +25,13 @@
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [LeetCode322.零钱兑换](docs/LeetCode322.零钱兑换.md)
 - [LeetCode518.零钱兑换II](docs/LeetCode518.零钱兑换II.md)
+- [LeetCode120.三角形最小路径和](docs/LeetCode120.三角形最小路径和.md)
 - [LeetCode494.目标和](docs/LeetCode494.目标和.md)
 - [LeetCode377.组合总和Ⅳ](docs/LeetCode377.组合总和Ⅳ.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
+- [LeetCode62.不同路径](docs/LeetCode62.不同路径.md)
+- [LeetCode63.不同路径II](docs/LeetCode63.不同路径II.md)
+- [LeetCode64.最小路径和](docs/LeetCode64.最小路径和.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

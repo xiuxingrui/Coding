@@ -4,6 +4,7 @@
 - [动态规划常见的面试问题总结](docs/动态规划常见的面试问题总结.pdf)
 - [LeetCode官方:算法萌新如何学好动态规划(1)](https://zhuanlan.zhihu.com/p/150516970)
 - [LeetCode官方:算法萌新如何学好动态规划(2)](https://zhuanlan.zhihu.com/p/180443034)
+- [labuladong:动态规划篇](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lies)
 ## 简单
 - [LeetCode674.最长连续递增序列](docs/LeetCode674.最长连续递增序列.md)
 - [LeetCode53.最大子序和](docs/LeetCode53.最大子序和.md)
@@ -35,7 +36,11 @@
 - [LeetCode198.打家劫舍](docs/LeetCode198.打家劫舍.md)
 - [LeetCode213.打家劫舍II](docs/LeetCode213.打家劫舍II.md)
 - [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
-- [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md)
+- [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md) 
+  - [剑指Offer63.股票的最大利润](docs/剑指Offer63.股票的最大利润.md)
+- [LeetCode122.买卖股票的最佳时机II](docs/LeetCode122.买卖股票的最佳时机II.md)
+- [LeetCode714.买卖股票的最佳时机含手续费](docs/LeetCode714.买卖股票的最佳时机含手续费.md)
+- [LeetCode309.最佳买卖股票时机含冷冻期](docs/LeetCode309.最佳买卖股票时机含冷冻期.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

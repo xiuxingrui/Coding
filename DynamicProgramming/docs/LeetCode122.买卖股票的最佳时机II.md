@@ -72,6 +72,25 @@ class Solution {
     }
 }
 ```
+状态压缩：
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        if(prices==null||prices.length==0){
+            return 0;
+        }
+        int len=prices.length;
+        int[] dp=new int[2];
+        dp[0]=0;
+        dp[1]=-prices[0];
+        for(int i=1;i<len;i++){
+            dp[0]=Math.max(dp[0],dp[1]+prices[i]);
+            dp[1]=Math.max(dp[1],dp[0]-prices[i]);
+        }
+        return dp[0];
+    }
+}
+```
 ### 解法二
 这道题使用贪心算法的流程是这样的：
 

@@ -12,8 +12,6 @@
 - [LeetCode673.最长递增子序列的个数](docs/LeetCode673.最长递增子序列的个数.md)
 - [LeetCode376.摆动序列](docs/LeetCode376.摆动序列.md)
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
-- [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md)
-- [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
 - [LintCode92.背包问题](docs/LintCode92.背包问题.md)
@@ -34,6 +32,10 @@
 - [LeetCode64.最小路径和](docs/LeetCode64.最小路径和.md)
 - [LeetCode343.整数拆分](docs/LeetCode343.整数拆分.md)
 - [剑指Offer14-I.剪绳子](docs/剑指Offer14-I.剪绳子.md)
+- [LeetCode198.打家劫舍](docs/LeetCode198.打家劫舍.md)
+- [LeetCode213.打家劫舍II](docs/LeetCode213.打家劫舍II.md)
+- [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)
+- [LeetCode121.买卖股票的最佳时机](docs/LeetCode121.买卖股票的最佳时机.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

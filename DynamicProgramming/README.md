@@ -29,6 +29,7 @@
 - [LeetCode377.组合总和Ⅳ](docs/LeetCode377.组合总和Ⅳ.md)
 - [LeetCode152.乘积最大子数组](docs/LeetCode152.乘积最大子数组.md)
 - [LeetCode62.不同路径](docs/LeetCode62.不同路径.md)
+- [剑指Offer47.礼物的最大价值](docs/剑指Offer47.礼物的最大价值.md)
 - [LeetCode63.不同路径II](docs/LeetCode63.不同路径II.md)
 - [LeetCode64.最小路径和](docs/LeetCode64.最小路径和.md)
 - [LeetCode343.整数拆分](docs/LeetCode343.整数拆分.md)

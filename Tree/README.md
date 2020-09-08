@@ -11,6 +11,7 @@
 - [LeetCode235.二叉搜索树的最近公共祖先](docs/LeetCode235.二叉搜索树的最近公共祖先.md)
 - [LeetCode701.二叉搜索树中的插入操作](docs/LeetCode701.二叉搜索树中的插入操作.md)
 - [LeetCode669.修剪二叉搜索树](docs/LeetCode669.修剪二叉搜索树.md)
+- [LeetCode543.二叉树的直径](docs/LeetCode543.二叉树的直径.md)
 ## 中等
 - [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
 - [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)

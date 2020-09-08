@@ -15,6 +15,9 @@
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
+- [LeetCode1143.最长公共子序列](docs/LeetCode1143.最长公共子序列.md)
+- [LeetCode1035.不相交的线](docs/LeetCode1035.不相交的线.md)
+- [LeetCode718.最长重复子数组](docs/LeetCode718.最长重复子数组.md)
 - [LintCode92.背包问题](docs/LintCode92.背包问题.md)
 - [LintCode125.01背包问题](docs/LintCode125.01背包问题.md)
 - [完全背包问题](docs/完全背包问题.md)

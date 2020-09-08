@@ -19,6 +19,7 @@
 - [LeetCode81.搜索旋转排序数组II](docs/LeetCode81.搜索旋转排序数组II.md)
 - [LeetCode153.寻找旋转排序数组中的最小值](docs/LeetCode153.寻找旋转排序数组中的最小值.md)
 - [LeetCode154.寻找旋转排序数组中的最小值II](docs/LeetCode154.寻找旋转排序数组中的最小值II.md)
+  - [剑指Offer11.旋转数组的最小数字](docs/剑指Offer11.旋转数组的最小数字.md) 
 - [LeetCode50.Pow(x,n)](docs/LeetCode50.Pow(x,n).md)
   - [剑指Offer16.数值的整数次方](docs/剑指Offer16.数值的整数次方.md) 
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)

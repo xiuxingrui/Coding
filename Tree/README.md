@@ -24,6 +24,8 @@
   - [剑指Offer36.二叉搜索树与双向链表](docs/剑指Offer36.二叉搜索树与双向链表.md)
 - [LeetCode114.二叉树展开为链表](docs/LeetCode114.二叉树展开为链表.md)
 - [剑指Offer26.树的子结构](docs/剑指Offer26.树的子结构.md)
+- [面试题04.10.检查子树](docs/面试题04.10.检查子树.md)
+- [LeetCode1367.二叉树中的列表](docs/LeetCode1367.二叉树中的列表.md)
 - [LeetCode199.二叉树的右视图](docs/LeetCode199.二叉树的右视图.md)
 - [LeetCode285.二叉搜索树中的顺序后继](docs/LeetCode285.二叉搜索树中的顺序后继.md)
 - [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
@@ -38,6 +40,8 @@
 - [LeetCode109.有序链表转换二叉搜索树](docs/LeetCode109.有序链表转换二叉搜索树.md)
 - [LeetCode1214.查找两棵二叉搜索树之和](docs/LeetCode1214.查找两棵二叉搜索树之和.md)
 - [LeetCode1382.将二叉搜索树变平衡](docs/LeetCode1382.将二叉搜索树变平衡.md)
+- [LeetCode1372.二叉树中的最长交错路径](docs/LeetCode1372.二叉树中的最长交错路径.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
 - [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)
+- [LeetCode124.二叉树中的最大路径和](docs/LeetCode124.二叉树中的最大路径和.md)

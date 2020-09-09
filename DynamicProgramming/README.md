@@ -18,6 +18,7 @@
 - [LeetCode1143.最长公共子序列](docs/LeetCode1143.最长公共子序列.md)
 - [LeetCode1035.不相交的线](docs/LeetCode1035.不相交的线.md)
 - [LeetCode718.最长重复子数组](docs/LeetCode718.最长重复子数组.md)
+- [LeetCode5.最长回文子串](docs/LeetCode5.最长回文子串.md)
 - [LintCode92.背包问题](docs/LintCode92.背包问题.md)
 - [LintCode125.01背包问题](docs/LintCode125.01背包问题.md)
 - [完全背包问题](docs/完全背包问题.md)

@@ -52,3 +52,4 @@
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)
 - [LeetCode354.俄罗斯套娃信封问题](docs/LeetCode354.俄罗斯套娃信封问题.md)
+- [LeetCode32.最长有效括号](docs/LeetCode32.最长有效括号.md)

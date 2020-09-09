@@ -57,10 +57,11 @@ class Solution {
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if (pairs.containsKey(ch)) {
-                if (stack.isEmpty() || stack.peek() != pairs.get(ch)) {
+                if (!stack.isEmpty()&&stack.peek()== pairs.get(ch)) {
+                    stack.pop();
+                }else{
                     return false;
                 }
-                stack.pop();
             } else {
                 stack.push(ch);
             }
@@ -68,6 +69,7 @@ class Solution {
         return stack.isEmpty();
     }
 }
+
 ```
 ### 时间复杂度
 - 时间复杂度：$O(n)$，其中 `n` 是字符串 `s` 的长度。

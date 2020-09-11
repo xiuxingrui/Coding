@@ -12,6 +12,7 @@
 - [LeetCode701.二叉搜索树中的插入操作](docs/LeetCode701.二叉搜索树中的插入操作.md)
 - [LeetCode669.修剪二叉搜索树](docs/LeetCode669.修剪二叉搜索树.md)
 - [LeetCode543.二叉树的直径](docs/LeetCode543.二叉树的直径.md)
+- [LeetCode637.二叉树的层平均值](docs/LeetCode637.二叉树的层平均值.md)
 ## 中等
 - [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
 - [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)
@@ -41,6 +42,7 @@
 - [LeetCode1214.查找两棵二叉搜索树之和](docs/LeetCode1214.查找两棵二叉搜索树之和.md)
 - [LeetCode1382.将二叉搜索树变平衡](docs/LeetCode1382.将二叉搜索树变平衡.md)
 - [LeetCode1372.二叉树中的最长交错路径](docs/LeetCode1372.二叉树中的最长交错路径.md)
+- [LeetCode863.二叉树中所有距离为K的结点](docs/LeetCode863.二叉树中所有距离为K的结点.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
 - [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)

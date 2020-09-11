@@ -397,6 +397,7 @@ class Solution {
         return dp[n][amount];
     }
 }
+```
 ```java
 class Solution {
     public int change(int amount, int[] coins) {

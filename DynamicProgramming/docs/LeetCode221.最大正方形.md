@@ -90,13 +90,13 @@ class Solution {
 优化存储空间
 ```java
 class Solution {
-    public int maximalSquare(char[][] matrix) {
+    public int countSquares(int[][] matrix) {
         // base condition
         if (matrix == null || matrix.length < 1 || matrix[0].length < 1) return 0;
 
         int height = matrix.length;
         int width = matrix[0].length;
-        int maxSide = 0;
+        int ans = 0;
 
         // 相当于已经预处理新增第一行、第一列均为0
         int[] dp = new int[width + 1];
@@ -104,21 +104,19 @@ class Solution {
             int lastValue=dp[0];
             for (int col = 1; col <=width; col++) {
                 int temp=dp[col];
-                if (matrix[row-1][col-1] == '1') {
+                if (matrix[row-1][col-1] == 1) {
                     dp[col] = Math.min(Math.min(dp[col], dp[col-1]),lastValue) + 1;
-                    maxSide = Math.max(maxSide,dp[col]);
+                    ans+=dp[col];
                 }else{//优化后必须有的一步
                     dp[col]=0;
                 }
                 lastValue=temp;
             }
         }
-        return maxSide * maxSide;
+        return ans;
     }
 }
 ```
-
-
 自己的写法
 ```java
 class Solution {
@@ -145,7 +143,7 @@ class Solution {
         for(int i=1;i<m;i++){
             for(int j=1;j<n;j++){
                 if(matrix[i][j]=='1'){
-                    if(dp[i-1][j-1]>0&&dp[i][j-1]>0&&dp[i-1][j]>0){
+                    if(matrix[i-1][j-1]=='1'&&matrix[i][j-1]=='1'&&matrix[i-1][j]=='1'){
                         int len=Math.min(dp[i-1][j-1],Math.min(dp[i][j-1],dp[i-1][j]));
                         dp[i][j]=len+1;
                     }else{
@@ -192,6 +190,8 @@ class Solution {
                         dp[j]=1;
                     }
                     ans=ans>dp[j]?ans:dp[j];
+                }else{
+                    dp[j]=0;
                 }
                 lastValue=temp;
             }

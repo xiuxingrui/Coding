@@ -49,8 +49,10 @@
 - [LeetCode188.买卖股票的最佳时机IV](docs/LeetCode188.买卖股票的最佳时机IV.md)
 - [LeetCode714.买卖股票的最佳时机含手续费](docs/LeetCode714.买卖股票的最佳时机含手续费.md)
 - [LeetCode309.最佳买卖股票时机含冷冻期](docs/LeetCode309.最佳买卖股票时机含冷冻期.md)
+- [LCP19.秋叶收藏集](docs/LCP19.秋叶收藏集.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)
 - [LeetCode354.俄罗斯套娃信封问题](docs/LeetCode354.俄罗斯套娃信封问题.md)
 - [LeetCode32.最长有效括号](docs/LeetCode32.最长有效括号.md)
+- [LeetCode72.编辑距离](docs/LeetCode72.编辑距离.mds)

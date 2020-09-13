@@ -30,7 +30,7 @@
 
 ![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200901152122.png)
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200901152132.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200914010636.png)
 
 这个解法的关键在于，对于宽度 `w` 相同的数对，要对其高度 `h` 进行降序排序。因为两个宽度相同的信封不能相互包含的，逆序排序保证在 `w` 相同的数对中最多只选取一个。
 

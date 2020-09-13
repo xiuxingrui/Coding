@@ -52,10 +52,10 @@ class Solution {
         while(!stack.isEmpty()||cur!=null){
             while(cur!=null){
                 ans.add(cur.val);
-                stack.push(cur);
+                stack.offerFirst(cur);
                 cur=cur.left;
             }
-            cur=stack.pop();
+            cur=stack.pullFirst();
             cur=cur.right;
         }
         return ans;

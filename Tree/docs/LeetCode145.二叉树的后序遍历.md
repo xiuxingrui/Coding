@@ -79,7 +79,7 @@ class Solution {
         TreeNode last = null;
         while(!stack.isEmpty()||cur!=null){
             while(cur!=null){
-                stack.push(cur);
+                stack.offerFirst(cur);
                 cur=cur.left;
             }
             TreeNode temp=stack.peek();
@@ -88,7 +88,7 @@ class Solution {
             }else{
                 ans.add(temp.val);
                 last=temp;
-                stack.pop();
+                stack.pollFirst();
             }
         }
         return ans;
@@ -122,11 +122,11 @@ class Solution {
         while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
                 list.add(cur.val);
-                stack.push(cur);
+                stack.offerFirst(cur);
                 cur = cur.right; // 考虑右子树
             } else {
                 // 节点为空，就出栈
-                cur = stack.pop();
+                cur = stack.pullFirst();
                 // 考虑左子树
                 cur = cur.left;
             }
@@ -155,11 +155,11 @@ class Solution {
         while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
                 list.addFirst(cur.val);
-                stack.push(cur);
+                stack.offerFirst(cur);
                 cur = cur.right; // 考虑左子树
             } else {
                 // 节点为空，就出栈
-                cur = stack.pop();
+                cur = stack.pullFirst();
                 // 考虑右子树
                 cur = cur.left;
             }
@@ -193,15 +193,15 @@ class Solution {
     if (root == null) {
       return output;
     }
-    stack.add(root);
+    stack.offerFirst(root);
     while (!stack.isEmpty()) {
-      TreeNode node = stack.pop();
+      TreeNode node = stack.pullFirst();
       output.addFirst(node.val);
       if (node.left != null) {
-        stack.push(node.left);
+        stack.offerFirst(node.left);
       }
       if (node.right != null) {
-        stack.push(node.right);
+        stack.offerFirst(node.right);
       }
     }
     return output;

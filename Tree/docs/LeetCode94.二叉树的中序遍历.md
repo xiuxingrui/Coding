@@ -51,10 +51,10 @@ class Solution {
         TreeNode cur=root;
         while(!stack.isEmpty()||cur!=null){
             while(cur!=null){
-                stack.push(cur);
+                stack.offerFirst(cur);
                 cur=cur.left;
             }
-            cur=stack.pop();
+            cur=stack.pullFirst();
             ans.add(cur.val);
             cur=cur.right;
         }

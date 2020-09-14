@@ -8,6 +8,7 @@
 - [LeetCode976.三角形的最大周长](docs/LeetCode976.三角形的最大周长.md)
 - [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.md)
 ## 中等
+- [LeetCode56.合并区间](docs/LeetCode56.合并区间.md)
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)
 - [LeetCode147.对链表进行插入排序](docs/LeetCode147.对链表进行插入排序.md)

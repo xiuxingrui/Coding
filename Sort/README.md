@@ -9,6 +9,7 @@
 - [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.md)
 - [LeetCode252.会议室](docs/LeetCode252.会议室.md)
 ## 中等
+- [LeetCode253.会议室II](docs/LeetCode253.会议室II.md)
 - [LeetCode56.合并区间](docs/LeetCode56.合并区间.md)
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)

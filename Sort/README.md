@@ -7,6 +7,7 @@
 - [面试题10.01.合并排序的数组](docs/面试题10.01.合并排序的数组.md)
 - [LeetCode976.三角形的最大周长](docs/LeetCode976.三角形的最大周长.md)
 - [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.md)
+- [LeetCode252.会议室](docs/LeetCode252.会议室.md)
 ## 中等
 - [LeetCode56.合并区间](docs/LeetCode56.合并区间.md)
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)

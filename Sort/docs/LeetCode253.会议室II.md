@@ -78,6 +78,37 @@ class Solution {
     }
 }
 ```
+或者直接`return`优先队列的容量即可。
+```java
+class Solution {
+    public int minMeetingRooms(int[][] intervals) {
+        PriorityQueue<Integer> pqueue=new PriorityQueue<>();
+        // PriorityQueue<Integer> pqueue =new PriorityQueue<Integer>(intervals.length,new Comparator<Integer>() {
+        //     public int compare(Integer a, Integer b) {
+        //         return a - b;
+        //     }
+        // });
+        Arrays.sort(intervals,new Comparator<int[]>(){
+            public int compare(int[] a,int[] b){
+                if(a[0]!=b[0]){
+                    return a[0]-b[0];
+                }else{
+                    return a[1]-b[1];
+                }
+            }
+        });
+        for(int i=0;i<intervals.length;i++){
+            if(pqueue.isEmpty()==true||intervals[i][0]<pqueue.peek()){
+                pqueue.offer(intervals[i][1]);
+            }else{
+                pqueue.poll();
+                pqueue.offer(intervals[i][1]);
+            }
+        }
+        return pqueue.size();
+    }
+}
+```
 ### 复杂度分析
 - 时间复杂度：$O(NlogN)$。
   - 时间开销主要有两部分。第一部分是数组的 排序 过程，消耗 $O(NlogN)$ 的时间。数组中有 `N` 个元素。 

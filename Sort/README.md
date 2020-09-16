@@ -12,6 +12,7 @@
 - [LeetCode253.会议室II](docs/LeetCode253.会议室II.md)
 - [时间管理大师罗志祥](docs/时间管理大师罗志祥.md)
 - [LeetCode56.合并区间](docs/LeetCode56.合并区间.md)
+- [LeetCode986.区间列表的交集](docs/LeetCode986.区间列表的交集.md)
 - [LeetCode75.颜色分类](docs/LeetCode75.颜色分类.md)
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)
 - [LeetCode147.对链表进行插入排序](docs/LeetCode147.对链表进行插入排序.md)

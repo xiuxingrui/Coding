@@ -7,6 +7,28 @@
 提示：气温 列表长度的范围是 `[1, 30000]`。每个气温的值的均为华氏度，都是在 `[30, 100]` 范围内的整数。
 
 ## 题解
+### 解法一
+```java
+class Solution {
+    public int[] dailyTemperatures(int[] T) {
+        Deque<Integer> stack=new LinkedList<>();
+        int len=T.length;
+        int[] ans=new int[len];
+        for(int i=len-1;i>=0;i--){
+            while(stack.isEmpty()==false&&T[stack.peek()]<=T[i]){
+                stack.pollFirst();
+            }
+            if(stack.isEmpty()==true){
+                ans[i]=0;
+            }else{
+                ans[i]=stack.peek()-i;
+            }
+            stack.offerFirst(i);
+        }
+        return ans;
+    }
+}
+```
 ### 解法二
 ```java
 class Solution {

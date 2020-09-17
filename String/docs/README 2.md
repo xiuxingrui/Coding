@@ -20,6 +20,9 @@
      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 ```
 ## 题解
+### 解法一
+
+### 解法二
 ```java
 class Solution {
     public int lengthOfLongestSubstring(String s) {

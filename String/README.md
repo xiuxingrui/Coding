@@ -13,6 +13,7 @@
 - [LeetCode58.最后一个单词的长度](docs/LeetCode58.最后一个单词的长度.md)
 - [剑指Offer58-II.左旋转字符串](docs/剑指Offer58-II.左旋转字符串.md)
 ## 中等
+- [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 
   - [剑指Offer48.最长不含重复字符的子字符串](docs/剑指Offer48.最长不含重复字符的子字符串.md) 
 - [剑指Offer20.表示数值的字符串](docs/剑指Offer20.表示数值的字符串.md)

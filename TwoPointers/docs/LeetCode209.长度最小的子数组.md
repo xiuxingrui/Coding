@@ -8,7 +8,89 @@
 解释：子数组 [4,3] 是该条件下的长度最小的子数组。
 ```
 ## 题解
-### 解法一:前缀和+二分搜索
+### 解法一：双指针
+定义两个指针 `start` 和 `end` 分别表示子数组的开始位置和结束位置，维护变量 `sum` 存储子数组中的元素和（即从 `nums[start]` 到 `nums[end]` 的元素和）
+
+初始状态下，`start` 和 `end` 都指向下标 0，`sum` 的值为 `0`。
+
+每一轮迭代，将 `nums[end]` 加到 `sum`，如果`sum≥s`，则更新子数组的最小长度（此时子数组的长度是 `end−start+1`），然后将 `nums[start]`从 `sum` 中减去并将 `start` 右移，直到 `sum<s`，在此过程中同样更新子数组的最小长度。在每一轮迭代的最后，将 `end` 右移。
+
+
+用双指针 `left` 和 `right` 表示一个窗口。
+
+- `right` 向右移增大窗口，直到窗口内的数字和大于等于了 `s`。进行第 2 步。
+- 记录此时的长度，`left` 向右移动，开始减少长度，每减少一次，就更新最小长度。直到当前窗口内的数字和小于了 `s`，回到第 1 步。
+
+```java
+class Solution {
+    public int minSubArrayLen(int s, int[] nums) {
+        int n = nums.length;
+        if (n == 0) {
+            return 0;
+        }
+        int ans = Integer.MAX_VALUE;
+        int start = 0, end = 0;
+        int sum = 0;
+        while (end < n) {
+            sum += nums[end];
+            while (sum >= s) {
+                ans = Math.min(ans, end - start + 1);
+                sum -= nums[start];
+                start++;
+            }
+            end++;
+        }
+        return ans == Integer.MAX_VALUE ? 0 : ans;
+    }
+}
+```
+或者：
+
+滑动窗口式写法
+
+定义两个指针 `start` 和 `end`分别表示子数组的开始位置和结束位置，维护变量 `sum` 存储子数组中的元素和（即从 `nums[start]` 到 `nums[end]` 的元素和）。
+
+初始状态下，`start`和 `end` 都指向下标 0，`sum` 的值为 0。
+
+每一轮迭代，将 `nums[end]` 加到 `sum`，如果 `sum≥s`，则更新子数组的最小长度（此时子数组的长度是 `end−start+1`，然后将 `nums[start]` 从 `sum`中减去并将 `start` 右移，直到 `sum<s`，在此过程中同样更新子数组的最小长度。在每一轮迭代的最后，将 `end` 右移。
+
+```java
+class Solution {
+    public int minSubArrayLen(int s, int[] nums) {
+        if(nums==null||nums.length==0){
+            return 0;
+        }
+        int len=nums.length;
+        int left=0,right=0;
+        int minLen=len+1,sum=0;
+        while(right<len){
+            sum+=nums[right];
+            right++;
+            if(sum>=s){
+                while(sum-nums[left]>=s){
+                    sum-=nums[left];
+                    left++;
+                }
+                minLen=Math.min(minLen,right-left);
+            }
+        }
+        if(minLen==len+1){
+            return 0;
+        }else{
+            return minLen;
+        }
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度：$O(n)$，其中 `n` 是数组的长度。指针 `start` 和 `end` 最多各移动 `n` 次。
+
+- 空间复杂度：$O(1)$。
+### 解法三:前缀和+二分搜索
+为了使用二分查找，需要额外创建一个数组 `sums` 用于存储数组 `nums` 的前缀和，其中 `sums[i]` 表示从 `nums[0]`到 `nums[i−1]` 的元素和。得到前缀和之后，对于每个开始下标 `i`，可通过二分查找得到大于或等于 `i` 的最小下标 `bound`，使得 `sums[bound]−sums[i−1]≥s`，并更新子数组的最小长度（此时子数组的长度是 `bound−(i−1)`。
+
+因为这道题保证了数组中每个元素都为正，所以前缀和一定是递增的，这一点保证了二分的正确性。如果题目没有说明数组中每个元素都为正，这里就不能使用二分来查找这个位置了。
+
 自己解法:
 ```java
 class Solution {
@@ -85,43 +167,3 @@ class Solution {
 - 时间复杂度：$O(nlogn)$，其中 `n` 是数组的长度。需要遍历每个下标作为子数组的开始下标，遍历的时间复杂度是 $O(n)$，对于每个开始下标，需要通过二分查找得到长度最小的子数组，二分查找得时间复杂度是 $O(logn)$，因此总时间复杂度是 $O(nlogn)$。
 
 - 空间复杂度：$O(n)$，其中 `n` 是数组的长度。额外创建数组 `sums` 存储前缀和。
-### 解法二：双指针
-定义两个指针 `start` 和 `end` 分别表示子数组的开始位置和结束位置，维护变量 `sum` 存储子数组中的元素和（即从 `nums[start]` 到 `nums[end]` 的元素和）
-
-初始状态下，`start` 和 `end` 都指向下标 0，`sum` 的值为 `0`。
-
-每一轮迭代，将 `nums[end]` 加到 `sum`，如果`sum≥s`，则更新子数组的最小长度（此时子数组的长度是 `end−start+1`），然后将 `nums[start]`从 `sum` 中减去并将 `start` 右移，直到 `sum<s`，在此过程中同样更新子数组的最小长度。在每一轮迭代的最后，将 `end` 右移。
-
-
-用双指针 `left` 和 `right` 表示一个窗口。
-
-- `right` 向右移增大窗口，直到窗口内的数字和大于等于了 `s`。进行第 2 步。
-- 记录此时的长度，`left` 向右移动，开始减少长度，每减少一次，就更新最小长度。直到当前窗口内的数字和小于了 `s`，回到第 1 步。
-
-```java
-class Solution {
-    public int minSubArrayLen(int s, int[] nums) {
-        int n = nums.length;
-        if (n == 0) {
-            return 0;
-        }
-        int ans = Integer.MAX_VALUE;
-        int start = 0, end = 0;
-        int sum = 0;
-        while (end < n) {
-            sum += nums[end];
-            while (sum >= s) {
-                ans = Math.min(ans, end - start + 1);
-                sum -= nums[start];
-                start++;
-            }
-            end++;
-        }
-        return ans == Integer.MAX_VALUE ? 0 : ans;
-    }
-}
-```
-#### 复杂度分析
-- 时间复杂度：$O(n)$，其中 `n` 是数组的长度。指针 `start` 和 `end` 最多各移动 `n` 次。
-
-- 空间复杂度：$O(1)$。

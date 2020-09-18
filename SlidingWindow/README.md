@@ -1,5 +1,9 @@
 # 滑动窗口
 ## 简单
 ## 中等
+- [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 
+  - [剑指Offer48.最长不含重复字符的子字符串](docs/剑指Offer48.最长不含重复字符的子字符串.md) 
+- [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
+- [LeetCode567.字符串的排列](docs/LeetCode567.字符串的排列.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)

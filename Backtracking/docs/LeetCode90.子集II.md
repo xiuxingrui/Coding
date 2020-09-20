@@ -71,6 +71,31 @@ public class Solution {
 在一个`for`循环中，所有被遍历到的数都是属于一个层级的。我们要让一个层级中，
 必须出现且只出现一个2，那么就放过第一个出现重复的2，但不放过后面出现的2。
 第一个出现的2的特点就是 `cur == begin`. 第二个出现的2 特点是`cur > begin`.
+`HashSet`去重：
+```java
+class Solution {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> ans=new ArrayList<>();
+        //没有这一步将错误：如:[4,4,4,1,4]:错误输出为：[[],[4],[4,4],[4,4,4],[4,4,4,1],[4,4,4,1,4],[4,4,4,4],[4,4,1],[4,4,1,4],[4,1],[4,1,4],[1],[1,4]]
+        Arrays.sort(nums);
+        backtrack(nums,0,new ArrayList<Integer>(),ans);
+        return ans;
+    }
+    public void backtrack(int[] nums,int start,List<Integer> path,List<List<Integer>> ans){
+        ans.add(new ArrayList<>(path));
+        HashSet<Integer> set=new HashSet<>();
+        for(int i=start;i<nums.length;i++){
+            if(set.contains(nums[i])){
+                continue;
+            }
+            set.add(nums[i]);
+            path.add(nums[i]);
+            backtrack(nums,i+1,path,ans);
+            path.remove(path.size()-1);
+        }
+    }
+}
+```
 ### 解法二
 ```java
 public class Solution {

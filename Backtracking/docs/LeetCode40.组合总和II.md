@@ -28,7 +28,7 @@
 ```
 ## 题解
 ![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200822175730.png)
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200822175851.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200920185132.png)
 ![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200822175952.png)
 ```
 这个避免重复的思想是在是太重要了。

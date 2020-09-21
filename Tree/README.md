@@ -13,6 +13,8 @@
 - [LeetCode669.修剪二叉搜索树](docs/LeetCode669.修剪二叉搜索树.md)
 - [LeetCode543.二叉树的直径](docs/LeetCode543.二叉树的直径.md)
 - [LeetCode637.二叉树的层平均值](docs/LeetCode637.二叉树的层平均值.md)
+- [LeetCode538.把二叉搜索树转换为累加树](docs/LeetCode538.把二叉搜索树转换为累加树.md)
+- [LeetCode1038.从二叉搜索树到更大和树](docs/LeetCode1038.从二叉搜索树到更大和树.md)
 ## 中等
 - [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
 - [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)

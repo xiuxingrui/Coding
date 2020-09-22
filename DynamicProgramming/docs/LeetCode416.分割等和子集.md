@@ -49,11 +49,11 @@ class Solution {
             return false;
         }
         boolean[][] dp=new boolean[nums.length+1][sum/2+1];
-        for(int i=0;i<nums.length;i++){
+        for(int i=0;i<=nums.length;i++){
             dp[i][0]=true;
         }
         for(int i=1;i<nums.length+1;i++){
-            for(int j=0;j<=sum/2;j++){
+            for(int j=1;j<=sum/2;j++){
                 if(j<nums[i-1]){
                     dp[i][j]=dp[i-1][j];
                 }else{
@@ -62,6 +62,37 @@ class Solution {
             }
         }
         return dp[nums.length][sum/2];
+    }
+}
+```
+或
+```java
+class Solution {
+    public boolean canPartition(int[] nums) {
+        if(nums==null||nums.length==0){
+            return false;
+        }
+        int len=nums.length;
+        int sum=0;
+        for(int num:nums){
+            sum+=num;
+        }
+        if(sum%2==1){
+            return false;
+        }
+        int[][] dp=new int[len+1][sum/2+1];
+        for(int i=0;i<=len;i++){
+            dp[i][0]=1;
+        }
+        for(int i=1;i<=len;i++){
+            for(int j=1;j<=sum/2;j++){
+                dp[i][j]=dp[i-1][j];
+                if(j>=nums[i-1]){
+                    dp[i][j]+=dp[i-1][j-nums[i-1]];
+                }
+            }
+        }
+        return dp[len][sum/2]!=0;//不能写>0,因为100个100的时候dp已经越界成负数
     }
 }
 ```
@@ -87,6 +118,31 @@ class Solution {
             }
         }
         return dp[sum/2];
+    }
+}
+```
+或
+```java
+class Solution {
+    public boolean canPartition(int[] nums) {
+        if(nums==null||nums.length==0){
+            return false;
+        }
+        int sum=0;
+        for(int num:nums){
+            sum+=num;
+        }
+        if(sum%2==1){
+            return false;
+        }
+        int[] dp=new int[sum/2+1];
+        dp[0]=1;
+        for(int i=0;i<nums.length;i++){
+            for(int j=sum/2;j>=nums[i];j--){
+                dp[j]+=dp[j-nums[i]];
+            }
+        }
+        return dp[sum/2]!=0;//不能写>0,因为100个100的时候dp已经越界成负数
     }
 }
 ```

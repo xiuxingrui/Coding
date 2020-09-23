@@ -74,11 +74,11 @@ for (int i = 0; i < n; i++) {
 
 如果它俩相等，那么它俩加上 `s[i+1..j-1]` 中的最长回文子序列就是 `s[i..j]` 的最长回文子序列：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924005943.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013311.png)
 
 如果它俩不相等，说明它俩不可能同时出现在 `s[i..j]` 的最长回文子序列中，那么把它俩分别加入 `s[i+1..j-1]` 中，看看哪个子串产生的回文子序列更长即可：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924010013.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013348.png)
 
 以上两种情况写成代码就是这样：
 
@@ -97,7 +97,7 @@ else
 
 另外，看看刚才写的状态转移方程，想求 `dp[i][j]` 需要知道 `dp[i+1][j-1]`，`dp[i+1][j]`，`dp[i][j-1]` 这三个位置；再看看我们确定的 `base case`，填入 `dp` 数组之后是这样：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924010429.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013408.png)
 
 为了保证每次计算 `dp[i][j]`，左下右方向的位置已经被计算出来，只能斜着遍历或者反着遍历：
 

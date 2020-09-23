@@ -74,11 +74,13 @@ for (int i = 0; i < n; i++) {
 
 如果它俩相等，那么它俩加上 `s[i+1..j-1]` 中的最长回文子序列就是 `s[i..j]` 的最长回文子序列：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013311.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013527.jpg)
+
 
 如果它俩不相等，说明它俩不可能同时出现在 `s[i..j]` 的最长回文子序列中，那么把它俩分别加入 `s[i+1..j-1]` 中，看看哪个子串产生的回文子序列更长即可：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013348.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013558.jpeg)
+
 
 以上两种情况写成代码就是这样：
 

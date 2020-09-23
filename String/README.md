@@ -12,6 +12,7 @@
 - [LeetCode680.验证回文字符串Ⅱ](docs/LeetCode680.验证回文字符串Ⅱ.md)
 - [LeetCode58.最后一个单词的长度](docs/LeetCode58.最后一个单词的长度.md)
 - [剑指Offer58-II.左旋转字符串](docs/剑指Offer58-II.左旋转字符串.md)
+- [LeetCode14.最长公共前缀](docs/LeetCode14.最长公共前缀.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

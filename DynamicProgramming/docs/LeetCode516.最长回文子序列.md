@@ -146,8 +146,7 @@ class Solution {
 表明这时的`dp[i][j]`只需取两者之间的最大值即可。即`dp[i][j]=max(dp[i][j−1],dp[i+1][j])`。
 
 由于我们的一个字符就能构成一个回文子序列，且长度为1，故`dp[i][j] = 1`，此时`i`一直是小于`j`的，不存在`i`大于`j`的情况。故我们的`dp`表为：
-
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924012055.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924013133.png)
 
 由于这种初试值的方式，决定了我们遍历的顺序，我们需要需要从下向上的遍历，如图所示
 

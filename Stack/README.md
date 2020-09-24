@@ -8,5 +8,6 @@
 ## 中等
 - [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md)
   - [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md) 
+- [LeetCode739.每日温度](docs/LeetCode739.每日温度.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

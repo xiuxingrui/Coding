@@ -37,6 +37,37 @@
 
 根据这个思路，我们就可以完成动态规划了，最终的答案即为所有 `P(i,j)=true` 中子串长度的最大值。注意：在状态转移方程中，我们是从长度较短的字符串向长度较长的字符串进行转移的，因此一定要注意动态规划的循环顺序。
 
+```java
+class Solution {
+    public String longestPalindrome(String s) {
+        if(s.length()==0){
+            return "";
+        }
+        int n = s.length();
+        char[] chs=s.toCharArray();
+        boolean[][] dp = new boolean[n][n];
+        int maxLen=1;
+        int begin=0;
+        for (int l = 1; l <=n; l++) {
+            for (int i = 0; i + l-1< n; i++) {
+                int j = i + l-1;
+                if (l == 1) {
+                    dp[i][j] = true;
+                } else if (l == 2) {
+                    dp[i][j] = (chs[i] == chs[j]);
+                } else {
+                    dp[i][j] = (chs[i] == chs[j] && dp[i + 1][j - 1]);
+                }
+                if (dp[i][j] && l > maxLen) {
+                    maxLen=l;
+                    begin=i;
+                }
+            }
+        }
+        return s.substring(begin,begin+maxLen);
+    }
+}
+```
 自己的写法：
 ```java
 class Solution {

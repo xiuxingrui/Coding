@@ -17,6 +17,41 @@
 解释：6个回文子串: "a", "a", "a", "aa", "aa", "aaa"
 ```
 ## 题解
+
+```java
+class Solution {
+    public int countSubstrings(String s) {
+        int len=s.length();
+        if(len==0){
+            return 0;
+        }
+        boolean[][] dp=new boolean[len][len];
+        char[] charArray=s.toCharArray();
+        int cnt=0;
+        for(int l=1;l<=len;l++){
+            for(int i=0;i+l-1<len;i++){
+                int j=i+l-1;
+                if(l==1){
+                    dp[i][j]=true;
+                    cnt++;
+                }else if(l==2){
+                    if(charArray[i]==charArray[j]){
+                        dp[i][j]=true;
+                        cnt++;
+                    }
+                }else{
+                    if(charArray[i]==charArray[j]&&dp[i+1][j-1]){
+                        dp[i][j]=true;
+                        cnt++;
+                    }
+                }
+            }
+        }
+        return cnt;
+    }
+}
+```
+或
 ```java
 class Solution {
     public int countSubstrings(String s) {

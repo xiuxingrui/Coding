@@ -191,6 +191,41 @@ class Solution {
 自己的解法：
 ```java
 class Solution {
+    int longestPalindromeSubseq(String s) {
+        if(s.length()==0){
+            return 0;
+        }
+        int n = s.length();
+        char[] chs=s.toCharArray();
+        int[][] dp = new int[n][n];
+        int maxLen=1;
+        for (int l = 1; l <=n; l++) {
+            for (int i = 0; i + l-1< n; i++) {
+                int j = i + l-1;
+                if (l == 1) {
+                    dp[i][j] = 1;
+                } else if (l == 2) {
+                    if(chs[i]==chs[j]){
+                        dp[i][j]=2;
+                    }else{
+                        dp[i][j]=1;
+                    }
+                } else {
+                    if(chs[i]==chs[j]){
+                        dp[i][j]=dp[i+1][j-1]+2;
+                    }else{
+                        dp[i][j]=Math.max(dp[i+1][j],dp[i][j-1]);
+                    }
+                }
+            }
+        }
+        return dp[0][n-1];
+    }
+}
+```
+或
+```java
+class Solution {
     public int longestPalindromeSubseq(String s) {
         int len=s.length();
         if(len==0||len==1){
@@ -226,5 +261,6 @@ class Solution {
     }
 }
 ```
+
 
 

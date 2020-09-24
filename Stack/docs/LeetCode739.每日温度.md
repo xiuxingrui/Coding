@@ -36,7 +36,7 @@ class Solution {
 ### 解法二
 单调栈第二种写法
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924164147.gif)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924165248.gif)
 
 可以维护一个存储下标的单调栈，从栈底到栈顶的下标对应的温度列表中的温度依次递减。如果一个下标在单调栈里，则表示尚未找到下一次温度更高的下标。
 

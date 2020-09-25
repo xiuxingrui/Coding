@@ -23,8 +23,76 @@
     对于 num1 中的数字 4 ，第二个数组中没有下一个更大的数字，因此输出 -1 。
 ```
 ## 题解
-### 解法二
+### 解法一
+```java
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        if(nums1==null||nums1.length==0){
+            return new int[0];
+        }
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums2.length;i++){
+            map.put(nums2[i],i);
+        }
+        int[] ans=new int[nums1.length];
+        int[] temp=new int[nums2.length];
+        Deque<Integer> stack=new LinkedList<>();
+        for(int i=nums2.length-1;i>=0;i--){
+            while(!stack.isEmpty()&&nums2[i]>nums2[stack.peek()]){
+                stack.pop();
+            }
+            if(!stack.isEmpty()){
+                temp[i]=stack.peek();
+            }
+            stack.push(i);
+        }
+        for(int i=0;i<nums1.length;i++){
+            int idx=temp[map.get(nums1[i])];
+            if(idx==0){
+                ans[i]=-1;
+            }else{
+                ans[i]=nums2[idx];
+            }
+        }
+        return ans;
+    }
+}
 ```
+### 解法二
+```java
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        if(nums1==null||nums1.length==0){
+            return new int[0];
+        }
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums2.length;i++){
+            map.put(nums2[i],i);
+        }
+        int[] ans=new int[nums1.length];
+        int[] temp=new int[nums2.length];
+        Deque<Integer> stack=new LinkedList<>();
+        for(int i=0;i<nums2.length;i++){
+            while(!stack.isEmpty()&&nums2[i]>nums2[stack.peek()]){
+                int preIndex=stack.pop();
+                temp[preIndex]=i;
+            }
+            stack.push(i);
+        }
+        for(int i=0;i<nums1.length;i++){
+            int idx=temp[map.get(nums1[i])];
+            if(idx==0){
+                ans[i]=-1;
+            }else{
+                ans[i]=nums2[idx];
+            }
+        }
+        return ans;
+    }
+}
+```
+### 解法三
+```java
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         int[] ans=new int[nums1.length];

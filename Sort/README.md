@@ -17,6 +17,8 @@
 - [LeetCode215.数组中的第K个最大元素](docs/LeetCode215.数组中的第K个最大元素.md)
 - [LeetCode147.对链表进行插入排序](docs/LeetCode147.对链表进行插入排序.md)
 - [LeetCode148.排序链表](docs/LeetCode148.排序链表.md)
+- [剑指Offer45.把数组排成最小的数](docs/剑指Offer45.把数组排成最小的数.md)
 ## 困难
 - [剑指Offer51.数组中的逆序对](docs/剑指Offer51.数组中的逆序对.md)
 - [LeetCode315.计算右侧小于当前元素的个数](docs/LeetCode315.计算右侧小于当前元素的个数.md)
+- [LeetCode57.插入区间](docs/LeetCode57.插入区间.md)

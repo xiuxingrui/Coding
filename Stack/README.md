@@ -7,6 +7,7 @@
 - [LeetCode20.有效的括号](docs/LeetCode20.有效的括号.md)
 - [剑指Offer30.包含min函数的栈](docs/剑指Offer30.包含min函数的栈.md)
   - [LeetCode155.最小栈](docs/LeetCode155.最小栈.md) 
+- [LeetCode716.最大栈](docs/LeetCode716.最大栈.md)
 ## 中等
 - [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md)
   - [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md) 

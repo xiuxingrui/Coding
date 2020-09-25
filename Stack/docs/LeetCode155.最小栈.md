@@ -28,6 +28,56 @@ minStack.top();      --> 返回 0.
 minStack.getMin();   --> 返回 -2.
 ```
 ## 题解
+### 解法一
+对于栈来说，如果一个元素 `a` 在入栈时，栈里有其它的元素 `b`, `c`, `d`，那么无论这个栈在之后经历了什么操作，只要 `a` 在栈中，`b`, `c`, `d` 就一定在栈中，因为在 `a` 被弹出之前，`b`, `c`, `d` 不会被弹出。
+
+因此，在操作过程中的任意一个时刻，只要栈顶的元素是 `a`，那么我们就可以确定栈里面现在的元素一定是 `a`, `b`, `c`, `d`。
+
+那么，我们可以在每个元素 `a` 入栈时把当前栈的最小值 `m` 存储起来。在这之后无论何时，如果栈顶元素是 `a`，我们就可以直接返回存储的最小值 `m`。
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200924210605.gif)
+
+按照上面的思路，我们只需要设计一个数据结构，使得每个元素 `a` 与其相应的最小值 `m` 时刻保持一一对应。因此我们可以使用一个辅助栈，与元素栈同步插入与删除，用于存储与每个元素对应的最小值。
+
+1. 当一个元素要入栈时，我们取当前辅助栈的栈顶存储的最小值，与当前元素比较得出最小值，将这个最小值插入辅助栈中；
+2. 当一个元素要出栈时，我们把辅助栈的栈顶元素也一并弹出；
+3. 在任意一个时刻，栈内元素的最小值就存储在辅助栈的栈顶元素中。
+
+```java
+class MinStack {
+    Deque<Integer> xStack;
+    Deque<Integer> minStack;
+
+    public MinStack() {
+        xStack = new LinkedList<Integer>();
+        minStack = new LinkedList<Integer>();
+        minStack.push(Integer.MAX_VALUE);
+    }
+    
+    public void push(int x) {
+        xStack.push(x);
+        minStack.push(Math.min(minStack.peek(), x));
+    }
+    
+    public void pop() {
+        xStack.pop();
+        minStack.pop();
+    }
+    
+    public int top() {
+        return xStack.peek();
+    }
+    
+    public int getMin() {
+        return minStack.peek();
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度：对于题目中的所有操作，时间复杂度均为 $O(1)$。因为栈的插入、删除与读取操作都是 $O(1)$，我们定义的每个操作最多调用栈操作两次。
+- 空间复杂度：$O(n)$，其中 `n` 为总操作数。最坏情况下，我们会连续插入 `n` 个元素，此时两个栈占用的空间为 $O(n)$。
+
+### 解法二
 本题难点： 将 `min()` 函数复杂度降为 $O(1)$ ，可通过建立辅助栈实现；
 - 数据栈 `A` ： 栈 `A` 用于存储所有元素，保证入栈 $push()$ 函数、出栈 $pop()$ 函数、获取栈顶 $top()$ 函数的正常逻辑。
 - 辅助栈 `B` ： 栈 `B` 中存储栈 `A` 中所有 非严格降序 的元素，则栈 `A` 中的最小元素始终对应栈 `B` 的栈顶元素，即 $min()$ 函数只需返回栈 `B` 的栈顶元素即可。

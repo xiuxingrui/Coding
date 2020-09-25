@@ -31,6 +31,52 @@
 
 我们用两个指针 `i` 与 `j` 来模拟完成删除 `A[0]` 或 `B[0]` 的操作。
 
+首先，对于两个区间，我们用`[a1,a2]`和`[b1,b2]`表示在`A`和`B`中的两个区间，那么什么情况下这两个区间没有交集呢：
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200925144849.png)
+
+只有这两种情况，写成代码的条件判断就是这样：
+```
+if b2 < a1 or a2 < b1:
+    [a1,a2] 和 [b1,b2] 无交集
+```
+那么，什么情况下，两个区间存在交集呢？根据命题的否定，上面逻辑的否命题就是存在交集的条件：
+
+```
+# 不等号取反，or 也要变成 and
+if b2 >= a1 and a2 >= b1:
+    [a1,a2] 和 [b1,b2] 存在交集
+```
+接下来，两个区间存在交集的情况有哪些呢？穷举出来：
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200925144934.png)
+
+这很简单吧，就这四种情况而已。那么接下来思考，这几种情况下，交集是否有什么共同点呢？
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200925144950.png)
+
+我们惊奇地发现，交集区间是有规律的！如果交集区间是`[c1,c2]`，那么`c1=max(a1,b1)，c2=min(a2,b2)`！这一点就是寻找交集的核心，我们把代码更进一步：
+```java
+while i < len(A) and j < len(B):
+    a1, a2 = A[i][0], A[i][1]
+    b1, b2 = B[j][0], B[j][1]
+    if b2 >= a1 and a2 >= b1:
+        res.append([max(a1, b1), min(a2, b2)])
+    # ...
+```
+最后一步，我们的指针`i`和`j`肯定要前进（递增）的，什么时候应该前进呢？
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200925145128.gif)
+
+结合动画示例就很好理解了，是否前进，只取决于`a2`和`b2`的大小关系：
+```java
+while i < len(A) and j < len(B):
+    # ...
+    if b2 < a2:
+        j += 1
+    else:
+        i += 1
+```
 ```java
 class Solution {
   public int[][] intervalIntersection(int[][] A, int[][] B) {

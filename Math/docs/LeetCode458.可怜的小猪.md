@@ -51,7 +51,7 @@ class Solution {
         // base ^ ans >= buckets 
         // ans >= log(buckets) / log(base)
         double temp = Math.log(buckets) / Math.log(base);
-        int ans = (int)Math.ceil(temp)
+        int ans = (int)Math.ceil(temp);
         return ans;
     }
 }

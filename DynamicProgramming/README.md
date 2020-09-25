@@ -15,6 +15,8 @@
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 ## 中等
+- [剑指Offer46.把数字翻译成字符串](docs/剑指Offer46.把数字翻译成字符串.md)
+- [LeetCode91.解码方法](docs/LeetCode91.解码方法.md)
 - [LeetCode1143.最长公共子序列](docs/LeetCode1143.最长公共子序列.md)
 - [LeetCode1035.不相交的线](docs/LeetCode1035.不相交的线.md)
 - [LeetCode718.最长重复子数组](docs/LeetCode718.最长重复子数组.md)

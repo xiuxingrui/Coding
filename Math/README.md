@@ -2,6 +2,7 @@
 ## 资料
 - [labuladong:如何高效寻找素数](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/da-yin-su-shu)
 ## 简单
+- [LeetCode7.整数反转](docs/LeetCode7.整数反转.md)
 - [LeetCode172.阶乘后的零](docs/LeetCode172.阶乘后的零.md)
 - [LeetCode268.缺失数字](docs/LeetCode268.缺失数字.md)
 - [LeetCode204.计数质数](docs/LeetCode204.计数质数.md)

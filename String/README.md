@@ -8,6 +8,11 @@
 <!-- /TOC -->
 # 字符串
 ## 简单
+- [LeetCode344.反转字符串](docs/LeetCode344.反转字符串.md)
+- [LeetCode541.反转字符串II](docs/LeetCode541.反转字符串II.md)
+- [LeetCode557.反转字符串中的单词III](docs/LeetCode557.反转字符串中的单词III.md)
+- [面试题01.01.判定字符是否唯一](docs/面试题01.01.判定字符是否唯一.md)
+- [LeetCode38.外观数列](docs/LeetCode38.外观数列.md)
 - [LeetCode125.验证回文串](docs/LeetCode125.验证回文串.md)
 - [LeetCode680.验证回文字符串Ⅱ](docs/LeetCode680.验证回文字符串Ⅱ.md)
 - [LeetCode409.最长回文串](docs/LeetCode409.最长回文串.md)

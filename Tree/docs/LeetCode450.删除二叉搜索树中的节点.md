@@ -39,6 +39,46 @@ key = 3
     4   7
 ```
 ## 题解
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if(root==null){
+            return null;
+        }
+        if(root.val==key){
+            if(root.left==null){
+                return root.right;
+            }else if(root.right==null){
+                return root.left;
+            }else{
+                TreeNode temp=root.left;
+                while(temp.right!=null){
+                    temp=temp.right;
+                }
+                temp.right=root.right;
+                return root.left;
+            }
+        }
+        if(key<root.val){
+            root.left=deleteNode(root.left,key);
+        }else{
+            root.right=deleteNode(root.right,key);
+        }
+        return root;
+    }
+}
+```
+自己的写法：
 ```java
 /**
  * Definition for a binary tree node.

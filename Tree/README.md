@@ -16,6 +16,7 @@
 - [LeetCode538.把二叉搜索树转换为累加树](docs/LeetCode538.把二叉搜索树转换为累加树.md)
 - [LeetCode1038.从二叉搜索树到更大和树](docs/LeetCode1038.从二叉搜索树到更大和树.md)
 - [LeetCode617.合并二叉树](docs/LeetCode617.合并二叉树.md)
+- [LeetCode700.二叉搜索树中的搜索](docs/LeetCode700.二叉搜索树中的搜索.md)
 ## 中等
 - [LeetCode144.二叉树的前序遍历](docs/LeetCode144.二叉树的前序遍历.md)
 - [LeetCode94.二叉树的中序遍历](docs/LeetCode94.二叉树的中序遍历.md)

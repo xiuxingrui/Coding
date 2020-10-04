@@ -16,7 +16,6 @@
 - [LeetCode125.验证回文串](docs/LeetCode125.验证回文串.md)
 - [LeetCode680.验证回文字符串Ⅱ](docs/LeetCode680.验证回文字符串Ⅱ.md)
 - [LeetCode409.最长回文串](docs/LeetCode409.最长回文串.md)
-- [LeetCode131.分割回文串](docs/LeetCode131.分割回文串.md)
 - [LeetCode58.最后一个单词的长度](docs/LeetCode58.最后一个单词的长度.md)
 - [剑指Offer58-II.左旋转字符串](docs/剑指Offer58-II.左旋转字符串.md)
 - [LeetCode14.最长公共前缀](docs/LeetCode14.最长公共前缀.md)

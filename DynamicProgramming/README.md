@@ -42,6 +42,7 @@
 - [LeetCode64.最小路径和](docs/LeetCode64.最小路径和.md)
 - [LeetCode343.整数拆分](docs/LeetCode343.整数拆分.md)
 - [剑指Offer14-I.剪绳子](docs/剑指Offer14-I.剪绳子.md)
+- [LeetCode132.分割回文串II](docs/LeetCode132.分割回文串II.md)
 - [LeetCode198.打家劫舍](docs/LeetCode198.打家劫舍.md)
 - [LeetCode213.打家劫舍II](docs/LeetCode213.打家劫舍II.md)
 - [LeetCode337.打家劫舍III](docs/LeetCode337.打家劫舍III.md)

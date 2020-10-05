@@ -25,6 +25,7 @@
 - [LeetCode459.重复的子字符串](docs/LeetCode459.重复的子字符串.md)
 - [LeetCode392.判断子序列](docs/LeetCode392.判断子序列.md)
 - [LeetCode13.罗马数字转整数](docs/LeetCode13.罗马数字转整数.md)
+- [LeetCode242.有效的字母异位词](docs/LeetCode242.有效的字母异位词.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 
@@ -35,5 +36,6 @@
 - [LeetCode438.找到字符串中所有字母异位词](docs/LeetCode438.找到字符串中所有字母异位词.md)
 - [LeetCode12.整数转罗马数字](docs/LeetCode12.整数转罗马数字.md)
 - [LeetCode89.格雷编码](docs/LeetCode89.格雷编码.md)
+- [LeetCode49.字母异位词分组](docs/LeetCode49.字母异位词分组.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)

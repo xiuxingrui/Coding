@@ -33,5 +33,7 @@
 - [LeetCode6.Z字形变换](docs/LeetCode6.Z字形变换.md)
 - [LeetCode567.字符串的排列](docs/LeetCode567.字符串的排列.md)
 - [LeetCode438.找到字符串中所有字母异位词](docs/LeetCode438.找到字符串中所有字母异位词.md)
+- [LeetCode12.整数转罗马数字](docs/LeetCode12.整数转罗马数字.md)
+- [LeetCode89.格雷编码](docs/LeetCode89.格雷编码.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)

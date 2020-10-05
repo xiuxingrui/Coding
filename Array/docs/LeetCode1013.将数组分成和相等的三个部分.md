@@ -58,6 +58,35 @@ class Solution {
 解答：
 
 其实不是这样的，因为找到了两个子数组后可能恰好到达了数组末尾，此时就不符合要求了，例如: `[1, -1, 1, -1]` .
+
+自己的解法：
+```java
+class Solution {
+    public boolean canThreePartsEqualSum(int[] A) {
+        int sum=0;
+        for(int num:A){
+            sum+=num;
+        }
+        if(sum%3!=0){
+            return false;
+        }
+        int tempSum=0;
+        for(int i=0;i<A.length;i++){
+            tempSum+=A[i];
+            if(tempSum==sum/3){
+                int temp=0;
+                for(int j=i+1;j<A.length-1;j++){
+                    temp+=A[j];
+                    if(temp==sum/3){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+}
+```
 ### 复杂度分析
 - 时间复杂度：$O(N)$，其中 `N` 是数组 `A` 的长度。我们最多只需要遍历一遍数组就可以得到答案。
 - 空间复杂度：$O(1)$。我们只需要使用额外的索引变量 `i`，`j` 以及一些存储数组信息的变量。

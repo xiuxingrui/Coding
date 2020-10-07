@@ -8,6 +8,8 @@
 - [LeetCode976.三角形的最大周长](docs/LeetCode976.三角形的最大周长.md)
 - [剑指Offer40.最小的k个数](docs/剑指Offer40.最小的k个数.md)
 - [LeetCode252.会议室](docs/LeetCode252.会议室.md)
+- [LeetCode1365.有多少小于当前数字的数字](docs/LeetCode1365.有多少小于当前数字的数字.md)
+- [LeetCode1512.好数对的数目](docs/LeetCode1512.好数对的数目.md)
 ## 中等
 - [LeetCode253.会议室II](docs/LeetCode253.会议室II.md)
 - [时间管理大师罗志祥](docs/时间管理大师罗志祥.md)

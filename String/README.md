@@ -26,6 +26,9 @@
 - [LeetCode392.判断子序列](docs/LeetCode392.判断子序列.md)
 - [LeetCode13.罗马数字转整数](docs/LeetCode13.罗马数字转整数.md)
 - [LeetCode242.有效的字母异位词](docs/LeetCode242.有效的字母异位词.md)
+- [面试题01.06.字符串压缩](docs/面试题01.06.字符串压缩.md)
+- [LeetCode387.字符串中的第一个唯一字符](docs/LeetCode387.字符串中的第一个唯一字符.md)
+- [LeetCode1160.拼写单词](docs/LeetCode1160.拼写单词.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

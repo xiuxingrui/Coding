@@ -12,8 +12,12 @@
 - [剑指Offer62.圆圈中最后剩下的数字(约瑟夫环)](docs/剑指Offer62.圆圈中最后剩下的数字(约瑟夫环).md)
 - [LeetCode1118.一月有多少天](docs/LeetCode1118.一月有多少天.md)
 - [LeetCodes836.矩形重叠](dpcs/LeetCodes836.矩形重叠.md)
+- [LeetCode258.各位相加](docs/LeetCode258.各位相加.md)
+- [LeetCode914.卡牌分组](docs/LeetCode914.卡牌分组.md)
 ## 中等
 - [LeetCode1344.时钟指针的夹角](docs/LeetCode1344.时钟指针的夹角.md)
 - [LeetCode470.用Rand7()实现Rand10()](docs/LeetCode470.用Rand7()实现Rand10().md)
+- [剑指Offer44.数字序列中某一位的数字](docs/剑指Offer44.数字序列中某一位的数字.md)
+  - [LeetCode400.第N个数字](docs/LeetCode400.第N个数字.md)
 ## 困难
 - [LeetCode458.可怜的小猪](docs/LeetCode458.可怜的小猪.md)

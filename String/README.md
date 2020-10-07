@@ -29,6 +29,8 @@
 - [面试题01.06.字符串压缩](docs/面试题01.06.字符串压缩.md)
 - [LeetCode387.字符串中的第一个唯一字符](docs/LeetCode387.字符串中的第一个唯一字符.md)
 - [LeetCode1160.拼写单词](docs/LeetCode1160.拼写单词.md)
+- [LeetCode415.字符串相加](docs/LeetCode415.字符串相加.md)
+- [LeetCode67.二进制求和](docs/LeetCode67.二进制求和.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

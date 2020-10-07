@@ -19,5 +19,7 @@
 - [LeetCode470.用Rand7()实现Rand10()](docs/LeetCode470.用Rand7()实现Rand10().md)
 - [剑指Offer44.数字序列中某一位的数字](docs/剑指Offer44.数字序列中某一位的数字.md)
   - [LeetCode400.第N个数字](docs/LeetCode400.第N个数字.md)
+- [剑指Offer49.丑数](docs/剑指Offer49.丑数.md)
+  - [LeetCode264.丑数II](docs/LeetCode264.丑数II.md) 
 ## 困难
 - [LeetCode458.可怜的小猪](docs/LeetCode458.可怜的小猪.md)

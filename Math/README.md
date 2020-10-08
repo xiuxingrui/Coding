@@ -14,6 +14,7 @@
 - [LeetCodes836.矩形重叠](dpcs/LeetCodes836.矩形重叠.md)
 - [LeetCode258.各位相加](docs/LeetCode258.各位相加.md)
 - [LeetCode914.卡牌分组](docs/LeetCode914.卡牌分组.md)
+- [剑指Offer61.扑克牌中的顺子](docs/剑指Offer61.扑克牌中的顺子.md)
 ## 中等
 - [LeetCode1344.时钟指针的夹角](docs/LeetCode1344.时钟指针的夹角.md)
 - [LeetCode470.用Rand7()实现Rand10()](docs/LeetCode470.用Rand7()实现Rand10().md)

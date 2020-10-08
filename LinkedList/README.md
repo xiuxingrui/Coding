@@ -45,6 +45,8 @@
 - [LeetCode328.奇偶链表](docs/LeetCode328.奇偶链表.md)
 - [LeetCode86.分隔链表](docs/LeetCode86.分隔链表.md)
 - [LeetCode148.排序链表](docs/LeetCode148.排序链表.md)
+- [剑指Offer35.复杂链表的复制](docs/剑指Offer35.复杂链表的复制.md)
+  - [LeetCode138.复制带随机指针的链表](docs/LeetCode138.复制带随机指针的链表.md) 
 ## 困难
 - [LeetCode25.K个一组翻转链表](docs/LeetCode25.K个一组翻转链表.md)
 - [LeetCode23.合并K个排序链表](docs/LeetCode23.合并K个排序链表.md)

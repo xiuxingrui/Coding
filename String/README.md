@@ -27,10 +27,12 @@
 - [LeetCode13.罗马数字转整数](docs/LeetCode13.罗马数字转整数.md)
 - [LeetCode242.有效的字母异位词](docs/LeetCode242.有效的字母异位词.md)
 - [面试题01.06.字符串压缩](docs/面试题01.06.字符串压缩.md)
+- [剑指Offer50.第一个只出现一次的字符](docs/剑指Offer50.第一个只出现一次的字符.md)
 - [LeetCode387.字符串中的第一个唯一字符](docs/LeetCode387.字符串中的第一个唯一字符.md)
 - [LeetCode1160.拼写单词](docs/LeetCode1160.拼写单词.md)
 - [LeetCode415.字符串相加](docs/LeetCode415.字符串相加.md)
 - [LeetCode67.二进制求和](docs/LeetCode67.二进制求和.md)
+- [剑指Offer05.替换空格](docs/剑指Offer05.替换空格.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 
@@ -42,5 +44,6 @@
 - [LeetCode12.整数转罗马数字](docs/LeetCode12.整数转罗马数字.md)
 - [LeetCode89.格雷编码](docs/LeetCode89.格雷编码.md)
 - [LeetCode49.字母异位词分组](docs/LeetCode49.字母异位词分组.md)
+- [LeetCode43.字符串相乘](docs/LeetCode43.字符串相乘.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)

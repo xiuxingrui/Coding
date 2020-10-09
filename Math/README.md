@@ -24,3 +24,5 @@
   - [LeetCode264.丑数II](docs/LeetCode264.丑数II.md) 
 ## 困难
 - [LeetCode458.可怜的小猪](docs/LeetCode458.可怜的小猪.md)
+- [剑指Offer43.1～n整数中1出现的次数](docs/剑指Offer43.1～n整数中1出现的次数.md)
+  - [LeetCode233.数字1的个数](docs/LeetCode233.数字1的个数.md) 

@@ -79,7 +79,7 @@
 - [极客时间-算法进阶自练题](docs/算法进阶自练题.pdf)
 - [LeetCode分类顺序表](https://cspiration.com/leetcodeClassification#10311)
 - [探索编程面试:分类](https://www.educative.io/courses/grokking-the-coding-interview?aff=K7qB)
-- [程序员内功修炼-V1.0](docs/程序员内功修炼-V1.0.pdf)
+- [程序员内功修炼-V2.0](docs/程序员内功修炼-V2.0.pdf)
 - [公子龙-刷题指南](docs/公子龙-刷题指南.pdf)
 - [leetcode1~400知识点&题型总结&leetcode对应题表](https://github.com/huxiaoman7/leetcodebook)
 - [LeetCode101-ALeetCodeGrindingGuide(C++Version)](docs/LeetCode101-ALeetCodeGrindingGuide(C++Version).pdf)

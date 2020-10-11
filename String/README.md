@@ -45,5 +45,7 @@
 - [LeetCode89.格雷编码](docs/LeetCode89.格雷编码.md)
 - [LeetCode49.字母异位词分组](docs/LeetCode49.字母异位词分组.md)
 - [LeetCode43.字符串相乘](docs/LeetCode43.字符串相乘.md)
+- [剑指Offer67.把字符串转换成整数](docs/剑指Offer67.把字符串转换成整数.md)
+  - [LeetCode8.字符串转换整数(atoi)](docs/LeetCode8.字符串转换整数(atoi).md) 
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)

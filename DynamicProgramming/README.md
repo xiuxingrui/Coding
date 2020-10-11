@@ -15,6 +15,7 @@
 - [LeetCode1025.除数博弈](docs/LeetCode1025.除数博弈.md)
 - [LeetCode491.递增子序列](docs/LeetCode491.递增子序列.md)
 - [剑指Offer60.n个骰子的点数](docs/剑指Offer60.n个骰子的点数.md)
+- [LeetCode292.Nim游戏](docs/LeetCode292.Nim游戏.md)
 ## 中等
 - [剑指Offer46.把数字翻译成字符串](docs/剑指Offer46.把数字翻译成字符串.md)
 - [LeetCode91.解码方法](docs/LeetCode91.解码方法.md)

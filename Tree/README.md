@@ -50,7 +50,7 @@
 - [LeetCode863.二叉树中所有距离为K的结点](docs/LeetCode863.二叉树中所有距离为K的结点.md)
 - [LeetCode116.填充每个节点的下一个右侧节点指针](docs/LeetCode116.填充每个节点的下一个右侧节点指针.md)
 - [LeetCode117.填充每个节点的下一个右侧节点指针II](docs/LeetCode117.填充每个节点的下一个右侧节点指针II.md)
-- 
+- [LeetCode95.不同的二叉搜索树II](docs/LeetCode95.不同的二叉搜索树II.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
 - [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)

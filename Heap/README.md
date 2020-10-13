@@ -6,3 +6,4 @@
 - [LeetCode1046.最后一块石头的重量](docs/LeetCode1046.最后一块石头的重量.md)
 - [LeetCode347.前K个高频元素](docs/LeetCode347.前K个高频元素.md)
 ## 困难
+- [LeetCode23.合并K个排序链表](docs/LeetCode23.合并K个排序链表.md)

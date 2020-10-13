@@ -33,6 +33,7 @@
 - [LeetCode415.字符串相加](docs/LeetCode415.字符串相加.md)
 - [LeetCode67.二进制求和](docs/LeetCode67.二进制求和.md)
 - [剑指Offer05.替换空格](docs/剑指Offer05.替换空格.md)
+- [LeetCode1002.查找常用字符](docs/LeetCode1002.查找常用字符.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

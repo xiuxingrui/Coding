@@ -7,4 +7,5 @@
 - [LeetCode200.岛屿数量](docs/LeetCode200.岛屿数量.md)
 - [LeetCode695.岛屿的最大面积](docs/LeetCode695.岛屿的最大面积.md)
 - [LeetCode547.朋友圈](docs/LeetCode547.朋友圈.md)
+- [LeetCode130.被围绕的区域](docs/LeetCode130.被围绕的区域.md)
 ## 困难

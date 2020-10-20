@@ -3,3 +3,8 @@
 ## 中等
 - [LeetCode279.完全平方数](docs/LeetCode279.完全平方数.md)
 - [剑指Offer13.机器人的运动范围](docs/剑指Offer13.机器人的运动范围.md)
+- [LeetCode200.岛屿数量](docs/LeetCode200.岛屿数量.md)
+- [LeetCode695.岛屿的最大面积](docs/LeetCode695.岛屿的最大面积.md)
+- [LeetCode547.朋友圈](docs/LeetCode547.朋友圈.md)
+## 困难
+- [LeetCode329.矩阵中的最长递增路径](docs/LeetCode329.矩阵中的最长递增路径.md)

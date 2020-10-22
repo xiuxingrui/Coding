@@ -36,6 +36,7 @@
 - [LeetCode1002.查找常用字符](docs/LeetCode1002.查找常用字符.md)
 - [LeetCode844.比较含退格的字符串](docs/LeetCode844.比较含退格的字符串.md)
 - [LeetCode925.长按键入](docs/LeetCode925.长按键入.md)
+- [LeetCode28.实现strStr()](docs/LeetCode28.实现strStr().md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

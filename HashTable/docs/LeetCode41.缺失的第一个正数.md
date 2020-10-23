@@ -126,7 +126,7 @@ public class Solution {
 ### 字节面试题解答
 ```java
 class Solution {
-    public int firstMissingNumber(int[] nums,int k) {
+    public int getMinimum(int[] nums,int k) {
         int n=nums.length;
         for(int i=0;i<n;i++){
             while(nums[i]>k&&nums[i]<k+n+1&&nums[nums[i]-k-1]!=nums[i]){

@@ -12,6 +12,7 @@
 - [LeetCode1013.将数组分成和相等的三个部分](docs/LeetCode1013.将数组分成和相等的三个部分.md)
 - [LeetCode118.杨辉三角](docs/LeetCode118.杨辉三角.md)
 - [LeetCode119.杨辉三角II](docs/LeetCode119.杨辉三角II.md)
+- [LeetCode941.有效的山脉数组](docs/LeetCode941.有效的山脉数组.md)
 ## 中等
 - [LeetCode48.旋转图像](docs/LeetCode48.旋转图像.md)
 - [LeetCode31.下一个排列](docs/LeetCode31.下一个排列.md)

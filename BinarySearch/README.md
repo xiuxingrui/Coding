@@ -6,6 +6,7 @@
 - [LeetCode35.搜索插入位置](docs/LeetCode35.搜索插入位置.md)
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
 - [面试题08.03.魔术索引](docs/面试题08.03.魔术索引.md)
+- [LeetCode852.山脉数组的峰顶索引](docs/LeetCode852.山脉数组的峰顶索引.md)
 ## 中等
 - [LeetCode875.爱吃香蕉的珂珂](docs/LeetCode875.爱吃香蕉的珂珂.md)
 - [LeetCode1011.在D天内送达包裹的能力](docs/LeetCode1011.在D天内送达包裹的能力.md)
@@ -23,6 +24,7 @@
 - [LeetCode50.Pow(x,n)](docs/LeetCode50.Pow(x,n).md)
   - [剑指Offer16.数值的整数次方](docs/剑指Offer16.数值的整数次方.md) 
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
+- [LeetCode162.寻找峰值](docs/LeetCode162.寻找峰值.md)
 ## 困难
 - [LeetCode410.分割数组的最大值](docs/LeetCode410.分割数组的最大值.md)
 - [LeetCode4.寻找两个正序数组的中位数](docs/LeetCode4.寻找两个正序数组的中位数.md)

@@ -9,5 +9,6 @@
 - [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 - [LeetCode16.最接近的三数之和](docs/LeetCode16.最接近的三数之和.md)
+- [LeetCode845.数组中的最长山脉](docs/LeetCode845.数组中的最长山脉.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

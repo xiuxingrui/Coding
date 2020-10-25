@@ -28,3 +28,4 @@
 ## 困难
 - [LeetCode410.分割数组的最大值](docs/LeetCode410.分割数组的最大值.md)
 - [LeetCode4.寻找两个正序数组的中位数](docs/LeetCode4.寻找两个正序数组的中位数.md)
+- [LeetCode1095.山脉数组中查找目标值](docs/LeetCode1095.山脉数组中查找目标值.md)

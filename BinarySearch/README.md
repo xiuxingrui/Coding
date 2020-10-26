@@ -25,6 +25,7 @@
   - [剑指Offer16.数值的整数次方](docs/剑指Offer16.数值的整数次方.md) 
 - [LeetCode287.寻找重复数](docs/LeetCode287.寻找重复数.md)
 - [LeetCode162.寻找峰值](docs/LeetCode162.寻找峰值.md)
+- [LeetCode378.有序矩阵中第K小的元素](docs/LeetCode378.有序矩阵中第K小的元素.md)
 ## 困难
 - [LeetCode410.分割数组的最大值](docs/LeetCode410.分割数组的最大值.md)
 - [LeetCode4.寻找两个正序数组的中位数](docs/LeetCode4.寻找两个正序数组的中位数.md)

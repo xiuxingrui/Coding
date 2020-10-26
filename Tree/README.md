@@ -52,6 +52,7 @@
 - [LeetCode117.填充每个节点的下一个右侧节点指针II](docs/LeetCode117.填充每个节点的下一个右侧节点指针II.md)
 - [LeetCode95.不同的二叉搜索树II](docs/LeetCode95.不同的二叉搜索树II.md)
 - [LeetCode222.完全二叉树的节点个数](docs/LeetCode222.完全二叉树的节点个数.md)
+- [LeetCode1302.层数最深叶子节点的和](docs/LeetCode1302.层数最深叶子节点的和.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
 - [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)

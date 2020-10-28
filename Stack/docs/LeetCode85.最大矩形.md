@@ -14,7 +14,61 @@
 输出: 6
 ```
 ## 题解
-### 解法
+### 解法一
+单调栈：
+
+借鉴柱状图中的最大矩形：
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20201028183427.png)
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20201028183414.png)
+
+```java
+class Solution {
+    public int maximalRectangle(char[][] matrix) {
+        if(matrix==null||matrix.length==0||matrix[0].length==0){
+            return 0;
+        }
+        int m=matrix.length,n=matrix[0].length;
+        int[] heights=new int[n];
+        int ans=0;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                heights[j]=matrix[i][j]=='1'?heights[j]+1:0;
+            }
+            ans=Math.max(ans,getMaxArea(heights));
+        }
+        return ans;
+    }
+    public int getMaxArea(int[] heights){
+        int len=heights.length;
+        int[] left=new int[len];
+        int[] right=new int[len];
+        Arrays.fill(right,len);
+        Deque<Integer> stack=new LinkedList<>();
+        for(int i=0;i<len;i++){
+            while(!stack.isEmpty()&&heights[stack.peek()]>=heights[i]){
+                right[stack.pop()]=i;
+            }
+            if(stack.isEmpty()){
+                left[i]=-1;
+            }else{
+                left[i]=stack.peek();
+            }
+            stack.push(i);
+        }
+        int ans=0;
+        for(int i=0;i<len;i++){
+            ans=Math.max(ans,(right[i]-left[i]-1)*heights[i]);
+        }
+        return ans;
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度 : $O(NM)$。对每一行运行 力扣 84 需要 `M` (每行长度) 时间，运行了 `N` 次，共计 $O(NM)$。
+- 空间复杂度 : $O(M)$。我们声明了长度等于列数的数组，用于存储每一行的宽度。
+
+### 解法二
 遍历每个点，求以这个点为矩阵右下角的所有矩阵面积。如下图的两个例子，橙色是当前遍历的点，然后虚线框圈出的矩阵是其中一个矩阵。
 
 ![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20201028155608.png)
@@ -84,5 +138,3 @@ class Solution {
 #### 复杂度分析
 - 时间复杂度：$O(m^2*n)$。
 - 空间复杂度：$O(m^2*n)$。
-### 解法
-

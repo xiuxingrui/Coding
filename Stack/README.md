@@ -16,3 +16,4 @@
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
+- [LeetCode84.柱状图中最大的矩形](docs/LeetCode84.柱状图中最大的矩形.md)

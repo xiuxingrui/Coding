@@ -3,5 +3,6 @@
 ## 中等
 - [LeetCode55.跳跃游戏](docs/LeetCode55.跳跃游戏.md)
 - [LeetCode1024.视频拼接](docs/LeetCode1024.视频拼接.md)
+- [LeetCode406.根据身高重建队列](docs/LeetCode406.根据身高重建队列.md)
 ## 困难
 - [LeetCode45.跳跃游戏II](docs/LeetCode45.跳跃游戏II.md)

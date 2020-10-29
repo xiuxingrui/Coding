@@ -56,6 +56,63 @@
 解释: 最大值出现在树的第 4 层，宽度为 8 (6,null,null,null,null,null,null,7)。
 ```
 ## 题解
+想象一下用数组存储树中结点。将二叉树的下标存储到数组中，根节点下标为 0，左子树结点为 `2*i+1`，右子树下标为 `2*i+2`。然后我们层次遍历，每次比较最大宽度值。
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public int widthOfBinaryTree(TreeNode root) {
+        Queue<TreeNode> queue=new LinkedList<>();
+        Queue<Integer> index=new LinkedList<>();
+        int max=0;
+        if(root==null){
+            return 0;
+        }
+        queue.offer(root);
+        index.offer(0);
+        while(!queue.isEmpty()){
+            int size=queue.size();
+            int start=0,end=0;
+            for(int i=0;i<size;i++){
+                TreeNode temp=queue.poll();
+                int curIndex=index.poll();
+                if(i==0){
+                    start=curIndex;
+                }
+                if(i==size-1){
+                    end=curIndex;
+                }
+                if(temp.left!=null){
+                    queue.offer(temp.left);
+                    index.offer(curIndex*2+1);
+                }
+                if(temp.right!=null){
+                    queue.offer(temp.right);
+                    index.offer(curIndex*2+2);
+                }
+            }
+            max=Math.max(max,end-start+1);
+        }
+        return max;
+    }
+}
+```
+### 复杂度分析
+- 时间复杂度： $O(N)$，其中 `N` 是输入树的节点数目，我们遍历每个节点一遍。
+- 空间复杂度： $O(N)$，这是 `queue` 的大小。
 
 自己的写法:超时
 ```java

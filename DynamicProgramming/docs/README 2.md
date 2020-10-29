@@ -1,38 +1,19 @@
-# [LeetCode55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+# [LeetCode312.戳气球](https://leetcode-cn.com/problems/burst-balloons/)
 ## 题目描述
-给定一个非负整数数组，你最初位于数组的第一个位置。
+有 `n` 个气球，编号为0 到 `n-1`，每个气球上都标有一个数字，这些数字存在数组 `nums` 中。
 
-数组中的每个元素代表你在该位置可以跳跃的最大长度。
+现在要求你戳破所有的气球。如果你戳破气球 `i` ，就可以获得 `nums[left] * nums[i] * nums[right]` 个硬币。 这里的 `left` 和 `right` 代表和 `i` 相邻的两个气球的序号。注意当你戳破了气球 `i` 后，气球 `left` 和气球 `right` 就变成了相邻的气球。
 
-判断你是否能够到达最后一个位置。
+求所能获得硬币的最大数量。
+
+- 你可以假设 `nums[-1] = nums[n] = 1`，但注意它们不是真实存在的所以并不能被戳破。
+- `0 ≤ n ≤ 500`, `0 ≤ nums[i] ≤ 100`
+
 ### 示例
 ```
-输入: [2,3,1,1,4]
-输出: true
-解释: 我们可以先跳 1 步，从位置 0 到达 位置 1, 然后再从位置 1 跳 3 步到达最后一个位置。
-```
-```
-输入: [3,2,1,0,4]
-输出: false
-解释: 无论怎样，你总会到达索引为 3 的位置。但该位置的最大跳跃长度是 0 ， 所以你永远不可能到达最后一个位置。
+输入: [3,1,5,8]
+输出: 167 
+解释: nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
+     coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 ```
 ## 题解
-### 解法二:DP
-```java
-class Solution {
-    public boolean canJump(int[] nums) {
-        int len=nums.length;
-        boolean[] dp=new boolean[len];
-        dp[0]=true;
-        for(int i=1;i<len;i++){
-            for(int j=0;j<i;j++){
-                if(dp[j]==true&&j+nums[j]>=i){
-                    dp[i]=true;
-                    break;
-                }
-            }
-        }
-        return dp[len-1];
-    }
-}
-```

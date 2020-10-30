@@ -60,6 +60,7 @@
 - [LCP19.秋叶收藏集](docs/LCP19.秋叶收藏集.md)
 - [LeetCode96.不同的二叉搜索树](docs/LeetCode96.不同的二叉搜索树.md)
 - [LeetCode1024.视频拼接](docs/LeetCode1024.视频拼接.md)
+- [LeetCode583.两个字符串的删除操作](docs/LeetCode583.两个字符串的删除操作.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

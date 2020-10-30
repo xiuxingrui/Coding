@@ -133,11 +133,15 @@ class Solution {
             return -1;
         }
         int cnt=1;
-        int max=clips[0][1];
+        int i=0;
+        int max=-1;
+        while(i<len&&clips[i][0]==0){
+            max=Math.max(max,clips[i][1]);
+            i++;
+        }
         if(max>=T){
             return cnt;
         }
-        int i=1;
         while(i<len){
             if(clips[i][0]>max){
                 return -1;
@@ -163,7 +167,7 @@ class Solution {
 
 - 空间复杂度：$O(T)$，其中 `T` 是区间的长度。对于每一个位置，我们需要记录以其为左端点的子区间的最右端点。
 
-### 
+### 解法二
 `DP`:
 我们令 `dp[i]` 表示将区间 `[0,i)` 覆盖所需的最少子区间的数量。由于我们希望子区间的数目尽可能少，因此可以将所有 `dp[i]` 的初始值设为一个大整数，并将 `dp[0]`（即空区间）的初始值设为 0。
 

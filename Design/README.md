@@ -1,5 +1,6 @@
 # 设计
 ## 简单
+- [LeetCode703.数据流中的第K大元素](docs/LeetCode703.数据流中的第K大元素.md)
 ## 中等
 - [LeetCode208.实现Trie(前缀树)](docs/LeetCode208.实现Trie(前缀树).md)
 ## 困难

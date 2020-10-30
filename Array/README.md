@@ -15,6 +15,7 @@
 - [LeetCode941.有效的山脉数组](docs/LeetCode941.有效的山脉数组.md)
 - [LeetCode73.矩阵置零](docs/LeetCode73.矩阵置零.md)
 - [LeetCode289.生命游戏](docs/.LeetCode289.生命游戏.md)
+- [LeetCode999.可以被一步捕获的棋子数](docs/LeetCode999.可以被一步捕获的棋子数.md)
 ## 中等
 - [LeetCode48.旋转图像](docs/LeetCode48.旋转图像.md)
 - [LeetCode31.下一个排列](docs/LeetCode31.下一个排列.md)

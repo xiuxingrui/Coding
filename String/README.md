@@ -40,6 +40,7 @@
 - [LeetCode205.同构字符串](docs/LeetCode205.同构字符串.md)
 - [LeetCode389.找不同](docs/LeetCode389.找不同.md)
 - [eetCode290.单词规律](docs/eetCode290.单词规律.md)
+- [LeetCode345.反转字符串中的元音字母](docs/LeetCode345.反转字符串中的元音字母.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

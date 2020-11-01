@@ -4,6 +4,7 @@
 ## 简单
 - [LeetCode7.整数反转](docs/LeetCode7.整数反转.md)
 - [LeetCode172.阶乘后的零](docs/LeetCode172.阶乘后的零.md)
+  - [面试题16.05.阶乘尾数](docs/面试题16.05.阶乘尾数.md) 
 - [LeetCode268.缺失数字](docs/LeetCode268.缺失数字.md)
 - [LeetCode204.计数质数](docs/LeetCode204.计数质数.md)
 - [LintCode235.分解质因数](docs/LintCode235.分解质因数.md)

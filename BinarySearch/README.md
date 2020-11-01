@@ -13,6 +13,7 @@
 - [LeetCode34.在排序数组中查找元素的第一个和最后一个位置](docs/LeetCode34.在排序数组中查找元素的第一个和最后一个位置.md)
 - [LeetCode240.搜索二维矩阵II](docs/LeetCode240.搜索二维矩阵II.md)
   - [剑指Offer04.二维数组中的查找](docs/剑指Offer04.二维数组中的查找.md)
+  - [面试题10.09.排序矩阵查找](docs/面试题10.09.排序矩阵查找.md)
 - [LeetCode74.搜索二维矩阵](docs/LeetCode74.搜索二维矩阵.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 - [LCP12.小张刷题计划](docs/LCP12.小张刷题计划.md)

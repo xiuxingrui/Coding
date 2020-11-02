@@ -6,6 +6,9 @@
 - [LeetCode219.存在重复元素II](docs/LeetCode219.存在重复元素II.md)
 - [LeetCode575.分糖果](docs/LeetCode575.分糖果.md)
 - [面试题17.04.消失的数字](docs/面试题17.04.消失的数字.md)
+- [LeetCode349.两个数组的交集](docs/LeetCode349.两个数组的交集.md)
+- [LeetCode350.两个数组的交集II](docs/LeetCode350.两个数组的交集II.md)
+- [LeetCode1213.三个有序数组的交集](docs/LeetCode1213.三个有序数组的交集.md)
 ## 中等
 - [LeetCode442.数组中重复的数据](docs/LeetCode442.数组中重复的数据.md)
 - [LeetCode560.和为K的子数组](docs/LeetCode560.和为K的子数组.md)

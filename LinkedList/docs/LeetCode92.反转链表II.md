@@ -15,31 +15,38 @@
 
 版本1：
 ```java
-public ListNode reverseBetween(ListNode head, int m, int n) {
-        ListNode res = new ListNode(0);
-        res.next = head;
-        ListNode node = res;
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        ListNode res=new ListNode(0);
+        res.next=head;
+        ListNode node=res;
         //找到需要反转的那一段的上一个节点。
-        for (int i = 1; i < m; i++) {
-            node = node.next;
+        for(int i=1;i<m;i++){
+            node=node.next;
         }
         //node.next就是需要反转的这段的起点。
-        ListNode nextHead = node.next;
-        ListNode next = null;
-        ListNode pre = null;
-        //反转m到n这一段
-        for (int i = m; i <= n; i++) {
-            next = nextHead.next;
-            nextHead.next = pre;
-            pre = nextHead;
-            nextHead = next;
+        ListNode pre=null,cur=node.next;
+        for(int i=m;i<=n;i++){
+            ListNode temp=cur.next;
+            cur.next=pre;
+            pre=cur;
+            cur=temp;
         }
-        //将反转的起点的next指向next。
-        node.next.next = next;
+        //将反转的起点的next指向cur。
+        node.next.next=cur;
         //需要反转的那一段的上一个节点的next节点指向反转后链表的头结点
-        node.next = pre;
+        node.next=pre;
         return res.next;
     }
+}
 ```
 版本2：
 ```java

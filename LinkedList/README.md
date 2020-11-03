@@ -17,7 +17,7 @@
 - [LeetCode24.两两交换链表中的节点](docs/LeetCode24.两两交换链表中的节点.md)
 - [LeetCode160.相交链表](docs/LeetCode160.相交链表.md)
   - [剑指Offer52.两个链表的第一个公共节点](docs/剑指Offer52.两个链表的第一个公共节点.md)
-  - [程序员面试金典面试题02.07.链表相交](docs/程序员面试金典面试题02.07.链表相交.md)
+  - [面试题02.07.链表相交](docs/程序员面试金典面试题02.07.链表相交.md)
 - [LeetCode141.环形链表](docs/LeetCode141.环形链表.md)
 - [剑指Offer18.删除链表的节点](docs/剑指Offer18.删除链表的节点.md)
 - [LeetCode876.链表的中间结点](docs/LeetCode876.链表的中间结点.md)

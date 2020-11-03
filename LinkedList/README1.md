@@ -19,7 +19,6 @@
 - [labuladong:递归反转链表的一部分](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/di-gui-fan-zhuan-lian-biao-de-yi-bu-fen)
 ## 单一
 ### 简单
-- [LeetCode206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [面试题02.01.移除重复节点](https://leetcode-cn.com/problems/remove-duplicate-node-lcci/)
 - [LeetCode83.删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 ### 中等

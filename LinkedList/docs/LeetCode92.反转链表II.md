@@ -1,6 +1,4 @@
 # [LeetCode92.反转链表II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-## 参考
-- [labuladong:递归反转链表的一部分](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/di-gui-fan-zhuan-lian-biao-de-yi-bu-fen)
 ## 题目描述
 反转从位置 `m` 到 `n` 的链表。请使用一趟扫描完成反转。
 
@@ -12,44 +10,9 @@
 输出: 1->4->3->2->5->NULL
 ```
 ## 题解
-### 解法一:递归
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-    ListNode successor = null; // 后驱节点
-    public ListNode reverseBetween(ListNode head, int m, int n) {
-    // base case
-    if (m == 1) {
-        return reverseN(head, n);
-    }
-    // 前进到反转的起点触发 base case
-    head.next = reverseBetween(head.next, m - 1, n - 1);
-    return head;
-    }
-    public ListNode reverseN(ListNode head, int n) {
-    if (n == 1) { 
-        // 记录第 n + 1 个节点
-        successor = head.next;
-        return head;
-    }
-    // 以 head.next 为起点，需要反转前 n - 1 个节点
-    ListNode last = reverseN(head.next, n - 1);
+### 解法二
+迭代：
 
-    head.next.next = head;
-    // 让反转之后的 head 节点和后面的节点连起来
-    head.next = successor;
-    return last;
-    }
-}
-```
-### 解法二:迭代
 版本1：
 ```java
 class Solution {
@@ -124,6 +87,43 @@ public ListNode reverseBetween(ListNode head, int m, int n) {
     }
 ```
 #### 复杂度分析
+- 时间复杂度: $O(N)$。
+- 空间复杂度: $O(1)$。我们仅仅在原有链表的基础上调整了一些指针，只使用了 $O(1)$ 的额外存储空间来获得结果。
+### 解法二
+递归：
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    ListNode successor = null; // 后驱节点
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+    // base case
+    if (m == 1) {
+        return reverseN(head, n);
+    }
+    // 前进到反转的起点触发 base case
+    head.next = reverseBetween(head.next, m - 1, n - 1);
+    return head;
+    }
+    public ListNode reverseN(ListNode head, int n) {
+    if (n == 1) { 
+        // 记录第 n + 1 个节点
+        successor = head.next;
+        return head;
+    }
+    // 以 head.next 为起点，需要反转前 n - 1 个节点
+    ListNode last = reverseN(head.next, n - 1);
 
-1. 时间复杂度: $O(N)$。
-2. 空间复杂度: $O(1)$。我们仅仅在原有链表的基础上调整了一些指针，只使用了 $O(1)$ 的额外存储空间来获得结果。
+    head.next.next = head;
+    // 让反转之后的 head 节点和后面的节点连起来
+    head.next = successor;
+    return last;
+    }
+}
+```

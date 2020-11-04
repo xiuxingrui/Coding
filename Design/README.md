@@ -2,6 +2,8 @@
 ## 简单
 - [LeetCode703.数据流中的第K大元素](docs/LeetCode703.数据流中的第K大元素.md)
 ## 中等
+- [LeetCode146.LRU缓存机制](docs/LeetCode146.LRU缓存机制.md) 
+  - [面试题16.25.LRU缓存](docs/面试题16.25.LRU缓存.md) 
 - [LeetCode208.实现Trie(前缀树)](docs/LeetCode208.实现Trie(前缀树).md)
 ## 困难
 - [LeetCode381.O(1)时间插入、删除和获取随机元素-允许重复](docs/LeetCode381.O(1)时间插入、删除和获取随机元素-允许重复.md)

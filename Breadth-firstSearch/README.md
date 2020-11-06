@@ -8,4 +8,6 @@
 - [LeetCode695.岛屿的最大面积](docs/LeetCode695.岛屿的最大面积.md)
 - [LeetCode547.朋友圈](docs/LeetCode547.朋友圈.md)
 - [LeetCode130.被围绕的区域](docs/LeetCode130.被围绕的区域.md)
+- [LeetCode127.单词接龙](docs/LeetCode127.单词接龙.md)
 ## 困难
+- [LeetCode126.单词接龙II](docs/LeetCode126.单词接龙II.md)

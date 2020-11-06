@@ -6,4 +6,5 @@
   - [面试题16.25.LRU缓存](docs/面试题16.25.LRU缓存.md) 
 - [LeetCode208.实现Trie(前缀树)](docs/LeetCode208.实现Trie(前缀树).md)
 ## 困难
+- [LeetCode460.LFU缓存](docs/LeetCode460.LFU缓存.md)
 - [LeetCode381.O(1)时间插入、删除和获取随机元素-允许重复](docs/LeetCode381.O(1)时间插入、删除和获取随机元素-允许重复.md)

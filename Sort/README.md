@@ -10,6 +10,7 @@
 - [LeetCode252.会议室](docs/LeetCode252.会议室.md)
 - [LeetCode1365.有多少小于当前数字的数字](docs/LeetCode1365.有多少小于当前数字的数字.md)
 - [LeetCode1512.好数对的数目](docs/LeetCode1512.好数对的数目.md)
+- [LeetCode1356.根据数字二进制下1的数目排序](docs/LeetCode1356.根据数字二进制下1的数目排序.md)
 ## 中等
 - [LeetCode253.会议室II](docs/LeetCode253.会议室II.md)
 - [时间管理大师罗志祥](docs/时间管理大师罗志祥.md)

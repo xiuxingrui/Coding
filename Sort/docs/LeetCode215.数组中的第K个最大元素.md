@@ -130,6 +130,41 @@ class Solution {
     }
 }
 ```
+自己的实现：
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        heapify(nums,k);
+        for(int i=k;i<nums.length;i++){
+            if(nums[i]>nums[0]){
+                nums[0]=nums[i];
+                siftDown(nums,0,k-1);
+            }
+        }
+        return nums[0];
+    }
+    public void heapify(int[] nums,int k){
+        for(int i=(k-1)/2;i>=0;i--){
+            siftDown(nums,i,k-1);
+        }
+    }
+    public void siftDown(int[] nums,int start,int end){
+        int i=start,j=i*2+1;
+        while(j<=end){
+            if(j+1<=end&&nums[j+1]<nums[j]){
+                j=j+1;
+            }
+            if(nums[j]<nums[i]){
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+            }
+            i=j;
+            j=i*2+1;
+        }
+    }
+}
+```
 大顶堆写法:
 ```java
 public class Solution {

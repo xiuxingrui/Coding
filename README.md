@@ -41,6 +41,7 @@
 - [LeetCode](https://leetcode-cn.com/problemset/all/)
 - [牛客](https://www.nowcoder.com/activity/oj)
 ## 基础知识
+- [Tips](docs/Tips.md)
 - [集合](docs/集合.md)
 - [核心类](docs/核心类.md)
 ## LeetCode

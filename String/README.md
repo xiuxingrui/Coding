@@ -57,6 +57,7 @@
   - [LeetCode8.字符串转换整数(atoi)](docs/LeetCode8.字符串转换整数(atoi).md)
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)
 - [LeetCode763.划分字母区间](docs/LeetCode763.划分字母区间.md)
+- [LeetCode468.验证IP地址](docs/LeetCode468.验证IP地址.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)
 - [LeetCode65.有效数字](docs/LeetCode65.有效数字.md)

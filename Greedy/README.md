@@ -5,5 +5,6 @@
 - [LeetCode1024.视频拼接](docs/LeetCode1024.视频拼接.md)
 - [LeetCode406.根据身高重建队列](docs/LeetCode406.根据身高重建队列.md)
 - [LeetCode134.加油站](docs/LeetCode134.加油站.md)
+- [LeetCode402.移掉K位数字](docs/LeetCode402.移掉K位数字.md)
 ## 困难
 - [LeetCode45.跳跃游戏II](docs/LeetCode45.跳跃游戏II.md)

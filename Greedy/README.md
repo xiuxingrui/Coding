@@ -6,5 +6,7 @@
 - [LeetCode406.根据身高重建队列](docs/LeetCode406.根据身高重建队列.md)
 - [LeetCode134.加油站](docs/LeetCode134.加油站.md)
 - [LeetCode402.移掉K位数字](docs/LeetCode402.移掉K位数字.md)
+- [LeetCode316.去除重复字母](docs/LeetCode316.去除重复字母.md)
+- [LeetCode1081.不同字符的最小子序列](docs/LeetCode1081.不同字符的最小子序列.md)
 ## 困难
 - [LeetCode45.跳跃游戏II](docs/LeetCode45.跳跃游戏II.md)

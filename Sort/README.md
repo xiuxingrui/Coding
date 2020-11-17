@@ -26,6 +26,7 @@
 - [LeetCode179.最大数](docs/LeetCode179.最大数.md)
 - [LeetCode378.有序矩阵中第K小的元素](docs/LeetCode378.有序矩阵中第K小的元素.md)
 - [LeetCode973.最接近原点的K个点](docs/LeetCode973.最接近原点的K个点.md)
+- [LeetCode1030.距离顺序排列矩阵单元格](docs/LeetCode1030.距离顺序排列矩阵单元格.md)
 ## 困难
 - [剑指Offer51.数组中的逆序对](docs/剑指Offer51.数组中的逆序对.md)
 - [LeetCode315.计算右侧小于当前元素的个数](docs/LeetCode315.计算右侧小于当前元素的个数.md)

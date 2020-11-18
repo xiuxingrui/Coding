@@ -14,6 +14,7 @@
 - [LeetCode150.逆波兰表达式求值](docs/LeetCode150.逆波兰表达式求值.md)
 - [LeetCode739.每日温度](docs/LeetCode739.每日温度.md)
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)
+- [LeetCode71.简化路径](docs/LeetCode71.简化路径.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode84.柱状图中最大的矩形](docs/LeetCode84.柱状图中最大的矩形.md)

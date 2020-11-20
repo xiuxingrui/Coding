@@ -40,9 +40,9 @@
    1. 若 `tail.val <= cur.val`，说明 `cur` 应该位于 `tail` 之后，将 `tail` 后移一位，`cur` 变成新的 `tail`。
    2. 否则，从链表的头节点开始往后遍历链表中的节点，寻找插入 `cur` 的位置。令 `pre` 为插入 `cur` 的位置的前一个节点，进行如下操作，完成对 `cur` 的插入：
    ```java
-   lastSorted.next = curr.next
-   curr.next = prev.next 
-   prev.next = curr
+   tail.next = cur.next
+   cur.next = pre.next 
+   pre.next = cur
    ```
 6. 令 `cur = tail.next`，此时 `cur` 为下一个待插入的元素。
 7. 重复第 5 步和第 6 步，直到 `cur` 变成空，排序结束。

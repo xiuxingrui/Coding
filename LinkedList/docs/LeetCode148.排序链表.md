@@ -57,7 +57,7 @@ class Solution {
         ListNode l2=sortList(temp);
         return merge(l1,l2);
     }
-    public ListNode getMid(ListNode head){
+    public ListNode getMid(ListNode head){//偶数个节点必须找到靠左边的中间节点，否则会陷入死循环，比如长度为2时
         ListNode slow=head,fast=head;
         while(fast.next!=null&&fast.next.next!=null){
             slow=slow.next;

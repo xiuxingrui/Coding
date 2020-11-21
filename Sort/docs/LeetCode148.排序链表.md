@@ -176,7 +176,9 @@ class Solution {
 }
 ```
 ### 解法三:插入排序
-见`LeetCode147.对链表进行插入排序`
+见`LeetCode147.对链表进行插入排序`：
+
+利用尾结点提速(3ms):
 ```java
 /**
  * Definition for singly-linked list.
@@ -187,27 +189,103 @@ class Solution {
  * }
  */
 class Solution {
-    public ListNode sortList(ListNode head) {
-        ListNode dummy = new ListNode(Integer.MIN_VALUE);
+    public ListNode insertionSortList(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode dummyHead=new ListNode(0);
+        dummyHead.next=head;
+        ListNode tail=head;
+        ListNode cur=head.next;
+        while(cur!=null){
+            if(cur.val>=tail.val){
+                //tail.next=cur;不写也行
+                tail=tail.next;
+                cur=cur.next;
+            }else{
+                ListNode pre=dummyHead;
+                while(pre.next.val<cur.val){
+                    pre=pre.next;
+                }
+                tail.next=cur.next;
+                cur.next=pre.next;
+                pre.next=cur;
+                cur=tail.next;
+            }
+        }
+        return dummyHead.next;
+    }
+}
+```
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode insertionSortList(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode dummy = new ListNode(0);
+        dummy.next=head;
         ListNode pre = dummy;
-        ListNode tail = dummy;
-        ListNode cur = head;
+        ListNode tail = head;
+        ListNode cur = head.next;
         while (cur != null) {
-            if (tail.val < cur.val) {
+            if (tail.val <=cur.val) {
                 tail.next = cur;
                 tail = cur;
                 cur = cur.next;
             } else {
+                pre = dummy;
                 ListNode tmp = cur.next;
                 tail.next = tmp;
+                //while (pre.next.val < cur.val) pre = pre.next;无需判断是否为空也行
                 while (pre.next != null && pre.next.val < cur.val) pre = pre.next;
                 cur.next = pre.next;
                 pre.next = cur;
-                pre = dummy;
                 cur = tmp;
             }
         }
         return dummy.next;
+    }
+}
+```
+自己的解法：(28ms)
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode insertionSortList(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode dummyHead=new ListNode(0);
+        dummyHead.next=head;
+        ListNode cur=head.next;
+        head.next=null;
+        while(cur!=null){
+            ListNode temp=cur.next;
+            ListNode pre=dummyHead;
+            while(pre.next!=null&&pre.next.val<cur.val){
+                pre=pre.next;
+            }
+            cur.next=pre.next;
+            pre.next=cur;
+            cur=temp;
+        }
+        return dummyHead.next;
     }
 }
 ```

@@ -19,6 +19,15 @@
 ## 题解
 ### 解法一
 此题目为2019年计算机统考408真题，题目要求空间复杂度为$O(1)$，不能借助栈
+
+通过观察，可以将重排链表分解为以下三个步骤：
+
+1. 首先重新排列后，链表的中心节点会变为最后一个节点。所以需要先找到链表的中心节点：`876. 链表的中间结点`
+2. 可以按照中心节点将原始链表划分为左右两个链表。
+   - 2.1. 按照中心节点将原始链表划分为左右两个链表，左链表：1->2->3 右链表：4->5。
+   - 2.2. 将右链表反转，就正好是重排链表交换的顺序，右链表反转：5->4。反转链表：`206. 反转链表`
+3. 合并两个链表，将右链表插入到左链表，即可重新排列成：1->5->2->4->3.
+
 ```java
 /**
  * Definition for singly-linked list.
@@ -68,6 +77,61 @@ class Solution {
             head = temp;
         }
         return prev;
+    }
+}
+```
+自己的写法：
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public void reorderList(ListNode head) {
+        if(head==null||head.next==null){
+            return;
+        }
+        ListNode mid=getMid(head);
+        ListNode nxt=mid.next;
+        mid.next=null;
+        ListNode dummyHead=new ListNode(0);
+        ListNode cur=dummyHead;
+        nxt=reverse(nxt);
+        while(head!=null){
+            cur.next=head;
+            head=head.next;
+            cur=cur.next;
+            cur.next=nxt;
+            if(nxt!=null){
+                nxt=nxt.next;
+            }
+            cur=cur.next;
+        }
+        head=dummyHead.next;
+    }
+    public ListNode getMid(ListNode head){
+        ListNode slow=head,fast=head;
+        while(fast.next!=null&&fast.next.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+    public ListNode reverse(ListNode head){
+        ListNode pre=null,cur=head;
+        while(cur!=null){
+            ListNode temp=cur.next;
+            cur.next=pre;
+            pre=cur;
+            cur=temp;
+        }
+        return pre;
     }
 }
 ```

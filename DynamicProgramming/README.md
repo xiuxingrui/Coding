@@ -63,6 +63,7 @@
 - [LeetCode1024.视频拼接](docs/LeetCode1024.视频拼接.md)
 - [LeetCode583.两个字符串的删除操作](docs/LeetCode583.两个字符串的删除操作.md)
 - [LeetCode139.单词拆分](docs/LeetCode139.单词拆分.md)
+- [LeetCode576.出界的路径数](docs/LeetCode576.出界的路径数.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode128.最长连续序列](docs/LeetCode128.最长连续序列.md)

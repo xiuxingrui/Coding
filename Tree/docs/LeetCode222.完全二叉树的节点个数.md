@@ -81,7 +81,7 @@ class Solution {
         int left = countLevel(root.left);
         int right = countLevel(root.right);
         if(left == right){
-            return countNodes(root.right) + (1<<left);
+            return countNodes(root.right) + (1<<left);//return countNodes(root.right) + (int)Math.pow(2,left);
         }else{
             return countNodes(root.left) + (1<<right);
         }

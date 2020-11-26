@@ -15,6 +15,7 @@
 - [LeetCode119.杨辉三角II](docs/LeetCode119.杨辉三角II.md)
 - [LeetCode941.有效的山脉数组](docs/LeetCode941.有效的山脉数组.md)
 - [LeetCode73.矩阵置零](docs/LeetCode73.矩阵置零.md)
+- [面试题01.08.零矩阵](docs/面试题01.08.零矩阵.md)
 - [LeetCode289.生命游戏](docs/.LeetCode289.生命游戏.md)
 - [LeetCode999.可以被一步捕获的棋子数](docs/LeetCode999.可以被一步捕获的棋子数.md)
 ## 中等

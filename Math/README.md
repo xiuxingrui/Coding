@@ -19,6 +19,7 @@
 - [LeetCode892.三维形体的表面积](docs/LeetCode892.三维形体的表面积.md)
 - [LeetCode171.Excel表列序号](docs/LeetCode171.Excel表列序号.md)
 - [LeetCode1103.分糖果II](docs/LeetCode1103.分糖果II.md)
+- [LeetCode9.回文数](docs/LeetCode9.回文数.md)
 ## 中等
 - [LeetCode1344.时钟指针的夹角](docs/LeetCode1344.时钟指针的夹角.md)
 - [LeetCode470.用Rand7()实现Rand10()](docs/LeetCode470.用Rand7()实现Rand10().md)

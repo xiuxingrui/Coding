@@ -7,6 +7,8 @@
 - [LeetCode182.查找重复的电子邮箱](docs/LeetCode182.查找重复的电子邮箱.md)
 - [LeetCode196.删除重复的电子邮箱](docs/LeetCode196.删除重复的电子邮箱.md)
 - [LeetCode183.从不订购的客户](docs/LeetCode183.从不订购的客户.md)
+- [LeetCode197.上升的温度](docs/LeetCode197.上升的温度.md)
+- [LeetCode596.超过5名学生的课](docs/LeetCode596.超过5名学生的课.md)
 ## 中等
 - [LeetCode178.分数排名](docs/LeetCode178.分数排名.md)
 - [LeetCode184.部门工资最高的员工](docs/LeetCode184.部门工资最高的员工.md)

@@ -6,10 +6,12 @@
 - [LeetCode27.移除元素](docs/LeetCode27.移除元素.md)
 - [剑指Offer21.调整数组顺序使奇数位于偶数前面](docs/剑指Offer21.调整数组顺序使奇数位于偶数前面.md)
 - [LeetCode283.移动零](docs/LeetCode283.移动零.md)
+- [LeetCode167.两数之和II-输入有序数组](docs/LeetCode167.两数之和II-输入有序数组.md)
 ## 中等
 - [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 - [LeetCode16.最接近的三数之和](docs/LeetCode16.最接近的三数之和.md)
 - [LeetCode845.数组中的最长山脉](docs/LeetCode845.数组中的最长山脉.md)
+- [LeetCode18.四数之和](docs/LeetCode18.四数之和.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)

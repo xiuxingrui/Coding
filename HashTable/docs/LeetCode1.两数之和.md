@@ -14,7 +14,7 @@
 ```
 ## 题解
 ### 解法一
-```
+```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();

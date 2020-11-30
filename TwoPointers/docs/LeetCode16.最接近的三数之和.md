@@ -44,6 +44,38 @@ class Solution {
     }
 }
 ```
+自己的写法:
+```java
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int min=Integer.MAX_VALUE;
+        int ans=0;
+        for(int i=0;i<nums.length-2;i++){
+            int left=i+1,right=nums.length-1;
+            while(left<right){
+                int sum=nums[i]+nums[left]+nums[right];
+                if(sum==target){
+                    return sum;
+                }else if(sum<target){
+                    if(target-sum<min){
+                        min=target-sum;
+                        ans=sum;
+                    }
+                    left++;
+                }else{
+                    if(sum-target<min){
+                        min=sum-target;
+                        ans=sum;
+                    }
+                    right--;
+                }
+            }
+        }
+        return ans;
+    }
+}
+```
 #### 复杂度分析
 - 时间复杂度：$O(N^2)$，其中 `N` 是数组 `nums` 的长度。我们首先需要 $O(NlogN)$ 的时间对数组进行排序，随后在枚举的过程中，使用一重循环 $O(N)$枚举 `a`，双指针 $O(N)$ 枚举 `b` 和 `c`，故一共是 $O(N^2)$。
 - 空间复杂度：$O(logN)$。排序需要使用 $O(logN)$ 的空间。然而我们修改了输入的数组 `nums`，在实际情况下不一定允许，因此也可以看成使用了一个额外的数组存储了 `nums` 的副本并进行排序，此时空间复杂度为 $O(N)$。

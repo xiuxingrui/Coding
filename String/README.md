@@ -62,6 +62,7 @@
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)
 - [LeetCode763.划分字母区间](docs/LeetCode763.划分字母区间.md)
 - [LeetCode468.验证IP地址](docs/LeetCode468.验证IP地址.md)
+- [LeetCode767.重构字符串](docs/LeetCode767.重构字符串.md)
 ## 困难
 - [LeetCode76.最小覆盖子串](docs/LeetCode76.最小覆盖子串.md)
 - [LeetCode65.有效数字](docs/LeetCode65.有效数字.md)

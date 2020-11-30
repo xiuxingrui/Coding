@@ -8,6 +8,8 @@
 - [LeetCode283.移动零](docs/LeetCode283.移动零.md)
 - [LeetCode167.两数之和II-输入有序数组](docs/LeetCode167.两数之和II-输入有序数组.md)
 ## 中等
+- [LeetCode15.三数之和](docs/LeetCode15.三数之和.md)
+- [LeetCode259.较小的三数之和](docs/LeetCode259.较小的三数之和.md)
 - [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
 - [LeetCode209.长度最小的子数组](docs/LeetCode209.长度最小的子数组.md)
 - [LeetCode16.最接近的三数之和](docs/LeetCode16.最接近的三数之和.md)

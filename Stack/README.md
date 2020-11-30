@@ -1,6 +1,5 @@
 # 栈
 ## 资料
-- [labuladong:特殊数据结构：单调栈](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/dan-tiao-zhan)
 ## 简单
 - [剑指Offer09.用两个栈实现队列](docs/剑指Offer09.用两个栈实现队列.md)
 - [LeetCode225.用队列实现栈](docs/LeetCode225.用队列实现栈.md)
@@ -16,7 +15,10 @@
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)
 - [LeetCode71.简化路径](docs/LeetCode71.简化路径.md)
 - [LeetCode856.括号的分数](docs/LeetCode856.括号的分数.md)
+- [LeetCode227.基本计算器II](docs/LeetCode227.基本计算器II.md)
 ## 困难
 - [LeetCode42.接雨水](docs/LeetCode42.接雨水.md)
 - [LeetCode84.柱状图中最大的矩形](docs/LeetCode84.柱状图中最大的矩形.md)
 - [LeetCode85.最大矩形](docs/LeetCode85.最大矩形.md)
+- [LeetCode224.基本计算器](docs/LeetCode224.基本计算器.md)
+- [LeetCode772.基本计算器III](docs/LeetCode772.基本计算器III.md)

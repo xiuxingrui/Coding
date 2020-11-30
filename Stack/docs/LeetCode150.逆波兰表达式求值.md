@@ -62,7 +62,7 @@ class Solution {
                 int op1=stack.pop();
                 stack.push(op1/op2);
             } else {
-                stack.push(Integer.valueOf(s));
+                stack.push(Integer.parseInt(s));
             }
         }
         return stack.pop();

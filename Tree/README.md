@@ -38,6 +38,7 @@
 - [LeetCode285.二叉搜索树中的顺序后继](docs/LeetCode285.二叉搜索树中的顺序后继.md)
 - [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
   - [剑指Offer68-II.二叉树的最近公共祖先](docs/剑指Offer68-II.二叉树的最近公共祖先.md) 
+  - [面试题04.08.首个共同祖先](docs/面试题04.08.首个共同祖先.md)
 - [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)
 - [LeetCode113.路径总和II](docs/LeetCode113.路径总和II.md)
 - [LeetCode437.路径总和III](docs/LeetCode437.路径总和III.md)
@@ -57,6 +58,7 @@
 - [LeetCode222.完全二叉树的节点个数](docs/LeetCode222.完全二叉树的节点个数.md)
 - [LeetCode1302.层数最深叶子节点的和](docs/LeetCode1302.层数最深叶子节点的和.md)
 - [LeetCode662.二叉树最大宽度](docs/LeetCode662.二叉树最大宽度.md)
+- [LeetCode1026.节点与其祖先之间的最大差值](docs/LeetCode1026.节点与其祖先之间的最大差值.md)
 ## 困难
 - [LeetCode99.恢复二叉搜索树](docs/LeetCode99.恢复二叉搜索树.md)
 - [LeetCode1373.二叉搜索子树的最大键值和](docs/LeetCode1373.二叉搜索子树的最大键值和.md)

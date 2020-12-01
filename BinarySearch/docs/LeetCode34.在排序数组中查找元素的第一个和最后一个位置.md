@@ -15,7 +15,7 @@
 输出: [-1,-1]
 ```
 ## 题解
-```
+```java
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] res = {-1, -1};

@@ -96,7 +96,8 @@ class Solution {
 
 定义$f_{x}$表示 `x` 节点的子树中是否包含 `p` 节点或 `q` 节点，如果包含为 `true`，否则为 `false`。那么符合条件的最近公共祖先 `x` 一定满足如下条件：
 
-![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20200721141406.png)
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20201201142640.png)
+
 
 其中 `lson` 和 `rson` 分别代表 `x` 节点的左孩子和右孩子。
 

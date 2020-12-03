@@ -13,6 +13,7 @@
 - [LeetCode1356.根据数字二进制下1的数目排序](docs/LeetCode1356.根据数字二进制下1的数目排序.md)
 - [LeetCode1122.数组的相对排序](docs/LeetCode1122.数组的相对排序.md)
 ## 中等
+- [LeetCode912.排序数组](docs/LeetCode912.排序数组.md)
 - [LeetCode253.会议室II](docs/LeetCode253.会议室II.md)
 - [时间管理大师罗志祥](docs/时间管理大师罗志祥.md)
 - [LeetCode56.合并区间](docs/LeetCode56.合并区间.md)

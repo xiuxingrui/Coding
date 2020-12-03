@@ -39,6 +39,8 @@
 - [LeetCode236.二叉树的最近公共祖先](docs/LeetCode236.二叉树的最近公共祖先.md)
   - [剑指Offer68-II.二叉树的最近公共祖先](docs/剑指Offer68-II.二叉树的最近公共祖先.md) 
   - [面试题04.08.首个共同祖先](docs/面试题04.08.首个共同祖先.md)
+- [LeetCode1123.最深叶节点的最近公共祖先](docs/LeetCode1123.最深叶节点的最近公共祖先.md)
+  - [LeetCode865.具有所有最深节点的最小子树](docs/LeetCode865.具有所有最深节点的最小子树.md) 
 - [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)
 - [LeetCode113.路径总和II](docs/LeetCode113.路径总和II.md)
 - [LeetCode437.路径总和III](docs/LeetCode437.路径总和III.md)

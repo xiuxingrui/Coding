@@ -42,36 +42,46 @@ class Solution {
     }
 }
 ```
+或
+```java
+class Solution {
+    public int[] plusOne(int[] digits) {
+        int notNine=-1;
+        for(int i=0;i<digits.length;i++){
+            if(digits[i]!=9){
+                notNine=i;
+            }
+        }
+        if(notNine!=-1){
+            digits[notNine]+=1;
+            for(int i=notNine+1;i<digits.length;i++){
+                digits[i]=0;
+            }
+            return digits;
+        }else{
+            int[] ans=new int[digits.length+1];
+            ans[0]=1;
+            return ans;
+        }
+    }
+}
+```
 ### 解法二
 ```java
 class Solution {
     public int[] plusOne(int[] digits) {
-        int flag=0;
-        for(int i=digits.length-1;i>=0;--i){
-            if(i==digits.length-1){
-                digits[i]+=1+flag;
-            }
-            else{
-                digits[i]+=flag;
-            }
-            if(digits[i]>9){
-                digits[i]-=10;
-                flag=1;
-            }else{
-                flag=0;
-            }
+        int flag=1;
+        for(int i=digits.length-1;i>=0;i--){
+            int num=flag+digits[i];
+            digits[i]=num%10;
+            flag=num/10;
         }
         if(flag==0){
             return digits;
-        }
-        else{
-            int[] res=new int[digits.length+1];
-            res[0]=1;
-            res[1]=digits[0];
-            for(int i=2;i<digits.length;++i){
-                res[i]=digits[i];
-            }
-            return res;
+        }else{
+            int[] ans=new int[digits.length+1];
+            ans[0]=1;
+            return ans;
         }
     }
 }

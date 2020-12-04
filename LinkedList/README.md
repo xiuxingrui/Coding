@@ -25,6 +25,7 @@
 - [LeetCode203.移除链表元素](docs/LeetCode203.移除链表元素.md)
 - [LeetCode1474.删除链表M个节点之后的N个节点](docs/LeetCode1474.删除链表M个节点之后的N个节点.mds)
 ## 中等
+- [LeetCode19.删除链表的倒数第N个节点](docs/LeetCode19.删除链表的倒数第N个节点.md)
 - [LeetCode82.删除排序链表中的重复元素II](docs/LeetCode82.删除排序链表中的重复元素II.md)
 - [LeetCode92.反转链表II](docs/LeetCode92.反转链表II.md)
 - [LeetCode2.两数相加](docs/LeetCode2.两数相加.md)

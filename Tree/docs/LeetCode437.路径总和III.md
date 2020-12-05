@@ -29,7 +29,6 @@ root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
 ## 题解
 ### 解法一
 ```java
-// 九章算法
 class Solution {
 //pathSum: 返回以root为根的树中，所有路径和为sum的路径个数（以root开头，不以root开头）
     public int pathSum(TreeNode root, int sum) {

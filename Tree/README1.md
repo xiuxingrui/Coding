@@ -8,8 +8,6 @@
   - [BFS](#bfs)
     - [简单](#简单-1)
     - [中等](#中等-1)
-  - [回溯](#回溯)
-    - [中等](#中等-2)
 
 <!-- /TOC -->
 # 树
@@ -20,14 +18,11 @@
 - [LeetCode111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [剑指offer27.二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 - [LeetCode101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
-- [LeetCode112.路径总和](https://leetcode-cn.com/problems/path-sum/)
-- [LeetCode437.路径总和III](https://leetcode-cn.com/problems/path-sum-iii/)
 - [LeetCode543.二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 ### 中等
 - [LeetCode98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 - [LeetCode426.将二叉搜索树转化为排序的双向链表/剑指offer36.二叉搜索树与双向链表](https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)
 ### 困难
-- [LeetCode124.二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 ## BFS
 ### 简单
 - [LeetCode111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
@@ -36,6 +31,3 @@
 ### 中等
 - [LeetCode102.二叉树的层序遍历/剑指offer32-II.从上到下打印二叉树II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [LeetCode103.二叉树的锯齿形层次遍历/剑指offer32-III.从上到下打印二叉树III](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
-## 回溯
-### 中等
-- [LeetCode113.路径总和II/剑指offer34.二叉树中和为某一值的路径](https://leetcode-cn.com/problems/path-sum-ii/)

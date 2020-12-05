@@ -43,6 +43,7 @@
   - [LeetCode865.具有所有最深节点的最小子树](docs/LeetCode865.具有所有最深节点的最小子树.md) 
 - [LeetCode450.删除二叉搜索树中的节点](docs/LeetCode450.删除二叉搜索树中的节点.md)
 - [LeetCode113.路径总和II](docs/LeetCode113.路径总和II.md)
+  - [剑指Offer34.二叉树中和为某一值的路径](docs/剑指Offer34.二叉树中和为某一值的路径.md)
 - [LeetCode437.路径总和III](docs/LeetCode437.路径总和III.md)
 - [LeetCode129.求根到叶子节点数字之和](docs/LeetCode129.求根到叶子节点数字之和.md)
 - [LeetCode513.找树左下角的值](docs/LeetCode513.找树左下角的值.md)

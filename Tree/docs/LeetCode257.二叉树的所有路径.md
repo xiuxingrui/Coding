@@ -50,33 +50,42 @@ class Solution {
 ```
 写法2：
 ```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 class Solution {
-    private List<String> ans = new ArrayList<>();
-    private List<Integer> path = new ArrayList<>();
-
     public List<String> binaryTreePaths(TreeNode root) {
-        dfs(root);
+        List<String> ans=new ArrayList<>();
+        backtracking(root,new ArrayList<Integer>(),ans);
         return ans;
     }
-
-    private void dfs(TreeNode root) {
-        if(root == null) {
+    public void backtracking(TreeNode root,List<Integer> path,List<String> ans){
+        if(root==null){
+            return;
+        }
+        if(root.left==null&&root.right==null){
+            path.add(root.val);
+            StringBuilder sb=new StringBuilder();
+            for(int i=0;i<path.size();i++){
+                sb.append(path.get(i));
+                if(i<path.size()-1){
+                    sb.append("->");
+                }
+            }
+            ans.add(sb.toString());
+            path.remove(path.size()-1);
             return;
         }
         path.add(root.val);
-        if(root.left == null && root.right == null) {
-            StringBuilder temp = new StringBuilder();
-            for(int i = 0; i < path.size(); i++) {
-                temp.append(path.get(i));
-                if(i != path.size() - 1) {
-                    temp.append("->");
-                }
-            }
-            ans.add(temp.toString());
-        }
-        dfs(root.left);
-        dfs(root.right);
-        path.remove(path.size() - 1);
+        backtracking(root.left,path,ans);
+        backtracking(root.right,path,ans);
+        path.remove(path.size()-1);
     }
 }
 ```

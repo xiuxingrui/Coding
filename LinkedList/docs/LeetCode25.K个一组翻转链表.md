@@ -62,6 +62,86 @@ class Solution {
     }
 }
 ```
+自己的解法：
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if(head==null){
+            return null;
+        }
+        ListNode cur=head;
+        int cnt=0;
+        while(cur!=null&&cnt<k){
+            cnt++;
+            cur=cur.next;
+        }
+        if(cnt<k){
+            return head;
+        }
+        ListNode pre=null,now=head;
+        cnt=0;
+        while(cnt<k){
+            ListNode temp=now.next;
+            now.next=pre;
+            pre=now;
+            now=temp;
+            cnt++;
+        }
+        ListNode next=reverseKGroup(cur,k);
+        head.next=next;
+        return pre;
+    }
+}
+```
+或
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if(head==null){
+            return null;
+        }
+        ListNode cur=head;
+        int cnt=0;
+        while(cur!=null&&cnt<k){
+            cnt++;
+            cur=cur.next;
+        }
+        if(cnt<k){
+            return head;
+        }
+        ListNode pre=null,now=head;
+        while(now!=cur){
+            ListNode temp=now.next;
+            now.next=pre;
+            pre=now;
+            now=temp;
+        }
+        ListNode next=reverseKGroup(cur,k);
+        head.next=next;
+        return pre;
+    }
+}
+```
 ### 解法二:迭代
 1. 链表分区为已翻转部分+待翻转部分+未翻转部分
 2. 每次翻转前，要确定翻转链表的范围，这个必须通过 `k` 此循环来确定
@@ -70,6 +150,10 @@ class Solution {
 5. 经过`k`次循环，`end` 到达末尾，记录待翻转链表的后继 `next = end.next`
 6. 翻转链表，然后将三部分链表连接起来，然后重置 `pre` 和 `end` 指针，然后进入下一次循环
 7. 特殊情况，当翻转部分长度不足 `k` 时，在定位 `end` 完成后，`end==null`，已经到达末尾，说明题目已完成，直接返回即可
+8. 时间复杂度为 O(n*K)，最好的情况为 O(n) 最差的情况为 O(n^2)
+9. 空间复杂度为 O(1) 除了几个必须的节点指针外，我们并没有占用其他空间
+
+![](https://picgp.oss-cn-beijing.aliyuncs.com/img/20201218154721.png)
 
 ```java
 public ListNode reverseKGroup(ListNode head, int k) {

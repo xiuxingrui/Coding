@@ -39,9 +39,9 @@ class Solution {
                 tail.next=cur;
                 tail=cur;
                 cur=cur.next;
-                tail.next=null;
             }
         }
+        tail.next=null;
         return dummyHead.next;
     }
 }
@@ -67,8 +67,8 @@ class Solution {
             while(cur.next!=null&&cur.next.val==temp.val){
                 cur=cur.next;
             }
-            temp.next=cur.next;
             cur=cur.next;
+            temp.next=cur;
         }
         return head;
     }

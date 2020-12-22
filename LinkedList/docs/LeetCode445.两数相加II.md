@@ -32,7 +32,7 @@ class Solution {
         int flag=0;
         ListNode dummyHead=new ListNode(0);
         ListNode cur=dummyHead;
-        while(!s1.isEmpty()||!s2.isEmpty()){
+        while(!s1.isEmpty()||!s2.isEmpty()||flag!=0){
             int val1=s1.isEmpty()?0:s1.pop().val;
             int val2=s2.isEmpty()?0:s2.pop().val;
             int sum=flag+val1+val2;
@@ -41,10 +41,47 @@ class Solution {
             temp.next=dummyHead.next;
             dummyHead.next=temp;
         }
-        if(flag==1){
-            ListNode temp=new ListNode(1);
-            temp.next=dummyHead.next;
-            dummyHead.next=temp;
+        return dummyHead.next;
+    }
+}
+```
+或
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead=new ListNode(0);
+        ListNode cur=dummyHead;
+        Deque<ListNode> stack1=new LinkedList<>();
+        Deque<ListNode> stack2=new LinkedList<>();
+        Deque<ListNode> ans=new LinkedList<>(); 
+        while(l1!=null){
+            stack1.push(l1);
+            l1=l1.next;
+        }
+        while(l2!=null){
+            stack2.push(l2);
+            l2=l2.next;
+        }
+        int flag=0;
+        while(!stack1.isEmpty()||!stack2.isEmpty()||flag!=0){
+            int n1=stack1.isEmpty()?0:stack1.pop().val;
+            int n2=stack2.isEmpty()?0:stack2.pop().val;
+            int sum=n1+n2+flag;
+            ListNode temp=new ListNode(sum%10);
+            flag=sum/10;
+            ans.push(temp);
+        }
+        while(!ans.isEmpty()){
+            cur.next=ans.pop();
+            cur=cur.next;
         }
         return dummyHead.next;
     }

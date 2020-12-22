@@ -16,7 +16,6 @@
 
 ```
 ## 题解
-### 解法一
 ```java
 /**
  * Definition for singly-linked list.
@@ -31,8 +30,8 @@ class Solution {
         ListNode dummyHead=new ListNode(0);
         dummyHead.next=head;
         ListNode cur=dummyHead;
-        while(cur!=null&&cur.next!=null){
-            if(cur.next.val==val){
+        while(cur!=null){
+            while(cur.next!=null&&cur.next.val==val){
                 cur.next=cur.next.next;
             }
             cur=cur.next;
@@ -41,24 +40,34 @@ class Solution {
     }
 }
 ```
-#### 复杂度分析
-时间复杂度：$O(N)$。`N` 为链表的长度，最坏情况下，要删除的结点位于链表末尾，这时我们需要遍历整个链表。
-空间复杂度：$O(1)$。仅使用了额外的 `dummyHead`。
-
-### 解法二
-双指针
+或
 ```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
 class Solution {
     public ListNode deleteNode(ListNode head, int val) {
-        if(head==null) return head;
-        if(head.val == val) return head.next;
-        ListNode pre = head, cur = head.next;
-        while(cur != null && cur.val != val) {
-            pre = cur;
-            cur = cur.next;
+        ListNode dummyHead=new ListNode(0);
+        ListNode tail=dummyHead;
+        while(head!=null){
+            if(head.val!=val){
+                tail.next=head;
+                tail=tail.next;
+            }
+            head=head.next;
         }
-        if(cur != null) pre.next = cur.next;
-        return head;
+        tail.next=null;
+        return dummyHead.next;
     }
 }
 ```
+### 复杂度分析
+时间复杂度：$O(N)$。`N` 为链表的长度，最坏情况下，要删除的结点位于链表末尾，这时我们需要遍历整个链表。
+空间复杂度：$O(1)$。仅使用了额外的 `dummyHead`。
+
+

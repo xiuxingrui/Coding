@@ -115,18 +115,18 @@ class Solution {
 ```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        PriorityQueue<Integer> queue=new PriorityQueue<>();
+        PriorityQueue<Integer> pqueue=new PriorityQueue<>();
         for(int i=0;i<k;i++){
-            queue.offer(nums[i]);
+            pqueue.offer(nums[i]);
         }
         for(int i=k;i<nums.length;i++){
-            int top=queue.peek();
+            int top=pqueue.peek();
             if(nums[i]>top){
-                queue.poll();
-                queue.offer(nums[i]);
+                pqueue.poll();
+                pqueue.offer(nums[i]);
             }
         }
-        return queue.peek();
+        return pqueue.peek();
     }
 }
 ```

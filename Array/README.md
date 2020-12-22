@@ -1,5 +1,7 @@
 # 数组
 ## 简单
+- [LeetCode27.移除元素](docs/LeetCode27.移除元素.md)
+- [LeetCode26.删除排序数组中的重复项](docs/LeetCode26.删除排序数组中的重复项.md)
 - [LeetCode169.多数元素](docs/LeetCode169.多数元素.md)
   - [面试题17.10.主要元素](docs/面试题17.10.主要元素.md) 
 - [剑指Offer39.数组中出现次数超过一半的数字](docs/剑指Offer39.数组中出现次数超过一半的数字.md)
@@ -19,5 +21,6 @@
 - [LeetCode289.生命游戏](docs/.LeetCode289.生命游戏.md)
 - [LeetCode999.可以被一步捕获的棋子数](docs/LeetCode999.可以被一步捕获的棋子数.md)
 ## 中等
+- [LeetCode80.删除排序数组中的重复项II](docs/LeetCode80.删除排序数组中的重复项II.md)
 - [LeetCode48.旋转图像](docs/LeetCode48.旋转图像.md)
 - [LeetCode31.下一个排列](docs/LeetCode31.下一个排列.md)

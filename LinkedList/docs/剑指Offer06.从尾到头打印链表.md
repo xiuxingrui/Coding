@@ -60,13 +60,13 @@ class Solution {
     public int[] reversePrint(ListNode head) {
         Deque<Integer> stack=new LinkedList<>();
         while(head!=null){
-            stack.offerLast(head.val);
+            stack.push(head.val);
             head=head.next;
         }
         int[] res=new int[stack.size()];
         int cnt=0;
         while(!stack.isEmpty()){
-            res[cnt++]=stack.pollLast();
+            res[cnt++]=stack.pop();
         }
         return res;
     }

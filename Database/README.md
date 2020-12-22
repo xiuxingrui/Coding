@@ -9,6 +9,10 @@
 - [LeetCode183.从不订购的客户](docs/LeetCode183.从不订购的客户.md)
 - [LeetCode197.上升的温度](docs/LeetCode197.上升的温度.md)
 - [LeetCode596.超过5名学生的课](docs/LeetCode596.超过5名学生的课.md)
+- [LeetCode620.有趣的电影](docs/LeetCode620.有趣的电影.md)
+- [LeetCode627.变更性别](docs/LeetCode627.变更性别.md)
+- [LeetCode595.大的国家](docs/LeetCode595.大的国家.md)
+- [LeetCode1179.重新格式化部门表](docs/LeetCode1179.重新格式化部门表.md)
 ## 中等
 - [LeetCode178.分数排名](docs/LeetCode178.分数排名.md)
 - [LeetCode184.部门工资最高的员工](docs/LeetCode184.部门工资最高的员工.md)

@@ -15,6 +15,40 @@
 输出：[[1,2,3,4,5],[4,5,6],[7,8]]
 ```
 ## 题解
+### 解法一
+```java
+class Solution {
+    public int[][] findContinuousSequence(int target) {
+        List<int[]> list=new ArrayList<>();
+        int maxRight=target/2+1;//右区间的最大值
+        int maxLen=(int)Math.sqrt(target*2);//长度最大值
+        for(int i=1;i<=maxRight;i++){
+            for(int j=2;j<=maxLen;j++){
+                int right=i+j-1;
+                int sum=(i+right)*j/2;
+                if(sum>target){
+                    break;
+                }
+                if(sum==target){
+                    int[] temp=new int[j];
+                    int idx=0;
+                    for(int k=i;k<=right;k++){
+                        temp[idx++]=k;
+                    }
+                    list.add(temp);
+                }
+            }
+        }
+        int[][] ans=new int[list.size()][];
+        int i=0;
+        for(int[] temp:list){
+            ans[i++]=temp;
+        }
+        return ans;
+    }
+}
+```
+### 解法二
 设滑动窗口的左边界为 `i`，右边界为 `j`，则滑动窗口框起来的是一个左闭右开区间 `[i,j)`。注意，为了编程的方便，滑动窗口一般表示成一个左闭右开区间。在一开始，`i=1`,`j=1`滑动窗口位于序列的最左侧，窗口大小为零。
 
 滑动窗口的重要性质是：窗口的左边界和右边界永远只能向右移动，而不能向左移动。这是为了保证滑动窗口的时间复杂度是 $O(n)$。

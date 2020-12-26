@@ -45,6 +45,7 @@
 - [LeetCode1370.上升下降字符串](docs/LeetCode1370.上升下降字符串.md)
 - [LeetCode151.翻转字符串里的单词](docs/LeetCode151.翻转字符串里的单词.md)
   - [剑指Offer58-I.翻转单词顺序](docs/剑指Offer58-I.翻转单词顺序.md)
+- [LeetCode796.旋转字符串](docs/LeetCode796.旋转字符串.md)
 ## 中等
 - [剑指Offer38.字符串的排列](docs/剑指Offer38.字符串的排列.md)
 - [LeetCode3.无重复字符的最长子串](docs/LeetCode3.无重复字符的最长子串.md) 

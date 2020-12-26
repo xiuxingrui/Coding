@@ -94,3 +94,30 @@ class Solution {
     }
 }
 ```
+或：
+```java
+class Solution {
+    public int[][] findContinuousSequence(int target) {
+        List<int[]> vec = new ArrayList<int[]>();
+        for (int l = 1, r = 2; l < r;) {
+            int sum = (l + r) * (r - l + 1) / 2;
+            if (sum == target) {
+                int[] res = new int[r - l + 1];
+                for (int i = l; i <= r; ++i) {
+                    res[i - l] = i;
+                }
+                vec.add(res);
+                l++;
+            } else if (sum < target) {
+                r++;
+            } else {
+                l++;
+            }
+        }
+        return vec.toArray(new int[vec.size()][]);
+    }
+}
+```
+#### 复杂度分析
+- 时间复杂度：由于两个指针移动均单调不减，且最多移动 `⌊target/2⌋`次，即方法一提到的枚举的上界，所以时间复杂度为 $O(target)$。
+- 空间复杂度：$O(1)$，除了答案数组只需要常数的空间存放若干变量。

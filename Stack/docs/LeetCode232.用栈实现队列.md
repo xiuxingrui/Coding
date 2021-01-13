@@ -42,13 +42,13 @@ myQueue.empty(); // return false
 - 最多调用 100 次 `push`、`pop`、`peek` 和 `empty`
 - 假设所有操作都是有效的 （例如，一个空的队列不会调用 `pop` 或者 `peek` 操作）
 ## 题解
-维护两个栈，第一个栈支持插入操作，第二个栈支持删除操作。
+维护两个栈，第一个栈支持删除操作，第二个栈支持插入操作。
 
-根据栈先进后出的特性，我们每次往第一个栈里插入元素后，第一个栈的底部元素是最后插入的元素，第一个栈的顶部元素是下一个待删除的元素。为了维护队列先进先出的特性，我们引入第二个栈，用第二个栈维护待删除的元素，在执行删除操作的时候我们首先看下第二个栈是否为空。如果为空，我们将第一个栈里的元素一个个弹出插入到第二个栈里，这样第二个栈里元素的顺序就是待删除的元素的顺序，要执行删除操作的时候我们直接弹出第二个栈的元素返回即可。
+根据栈先进后出的特性，我们每次往第二个栈里插入元素后，第二个栈的底部元素是最后插入的元素，第二个栈的顶部元素是下一个待删除的元素。为了维护队列先进先出的特性，我们引入第一个栈，用第一个栈维护待删除的元素，在执行删除操作的时候我们首先看下第一个栈是否为空。如果为空，我们将第二个栈里的元素一个个弹出插入到第一个栈里，这样第一个栈里元素的顺序就是待删除的元素的顺序，要执行删除操作的时候我们直接弹出第一个栈的元素返回即可。
 
 成员变量:
 
-维护两个栈 `stack1` 和 `stack2`，其中 `stack1` 支持插入操作，`stack2` 支持删除操作
+维护两个栈 `stack1` 和 `stack2`，其中 `stack1` 支持删除操作，`stack2` 支持插入操作
 
 构造方法:
 
@@ -56,52 +56,65 @@ myQueue.empty(); // return false
 
 插入元素:
 
-插入元素对应方法 `appendTail`:
-
-- `stack1` 直接插入元素
+- `stack2` 直接插入元素
 
 删除元素:
 
-删除元素对应方法 `deleteHead`
-
-- 如果 `stack2` 为空，则将 `stack1` 里的所有元素弹出插入到 `stack2` 里
-- 如果 `stack2` 仍为空，则返回 -1，否则从 `stack2` 弹出一个元素并返回
+- 如果 `stack1` 为空，则将 `stack2` 里的所有元素弹出插入到 `stack1` 里
+- 从 `stack2` 弹出一个元素并返回
 
 ```java
-class CQueue {
-    Deque<Integer> stack1;
-    Deque<Integer> stack2;
-    
-    public CQueue() {
-        stack1 = new LinkedList<Integer>();
-        stack2 = new LinkedList<Integer>();
+class MyQueue {
+    Deque<Integer> stack1,stack2;
+
+    /** Initialize your data structure here. */
+    public MyQueue() {
+        stack1=new LinkedList<>();
+        stack2=new LinkedList<>();
     }
     
-    public void appendTail(int value) {
-        stack1.push(value);
+    /** Push element x to the back of queue. */
+    public void push(int x) {
+        stack2.push(x);
     }
     
-    public int deleteHead() {
-        // 如果第二个栈为空
-        if (stack2.isEmpty()) {
-            while (!stack1.isEmpty()) {
-                stack2.push(stack1.pop());
+    /** Removes the element from in front of queue and returns that element. */
+    public int pop() {
+        if(!stack1.isEmpty()){
+            return stack1.pop();
+        }else{
+            while(!stack2.isEmpty()){
+                stack1.push(stack2.pop());
             }
-        } 
-        if (stack2.isEmpty()) {
-            return -1;
-        } else {
-            int deleteItem = stack2.pop();
-            return deleteItem;
+            return stack1.pop();
         }
+    }
+    
+    /** Get the front element. */
+    public int peek() {
+        if(!stack1.isEmpty()){
+            return stack1.peek();
+        }else{
+            while(!stack2.isEmpty()){
+                stack1.push(stack2.pop());
+            }
+            return stack1.peek();
+        }
+    }
+    
+    /** Returns whether the queue is empty. */
+    public boolean empty() {
+        return stack1.isEmpty()&&stack2.isEmpty();
     }
 }
 
 /**
- * Your CQueue object will be instantiated and called as such:
- * CQueue obj = new CQueue();
- * obj.appendTail(value);
- * int param_2 = obj.deleteHead();
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
  */
 ```
 ### 复杂度分析

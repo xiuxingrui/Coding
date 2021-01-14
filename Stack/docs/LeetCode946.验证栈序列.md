@@ -22,16 +22,15 @@ push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 3. `pushed` 是 `popped` 的排列。
 
 ## 题解
-### 解法一
-```
+```java
 class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         Deque<Integer> stack = new LinkedList<>();
         int i = 0;
         for(int num : pushed) {
-            stack.offerLast(num); // num 入栈
-            while(!stack.isEmpty() && stack.peekLast() == popped[i]) { // 循环判断与出栈
-                stack.pollLast();
+            stack.push(num); // num 入栈
+            while(!stack.isEmpty() && stack.peek() == popped[i]) { // 循环判断与出栈
+                stack.pop();
                 i++;
             }
         }
@@ -39,7 +38,7 @@ class Solution {
     }
 }
 ```
-#### 复杂度分析
+### 复杂度分析
 时间复杂度：$O(N)$，其中 $N$ 是 `pushed` 序列和 `popped` 序列的长度。
 
 空间复杂度：$O(N)$。

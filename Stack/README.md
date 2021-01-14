@@ -9,8 +9,8 @@
   - [LeetCode155.最小栈](docs/LeetCode155.最小栈.md) 
 - [LeetCode716.最大栈](docs/LeetCode716.最大栈.md)
 ## 中等
-- [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md)
-  - [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md) 
+- [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md)
+  - [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md) 
 - [LeetCode150.逆波兰表达式求值](docs/LeetCode150.逆波兰表达式求值.md)
 - [LeetCode739.每日温度](docs/LeetCode739.每日温度.md)
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)

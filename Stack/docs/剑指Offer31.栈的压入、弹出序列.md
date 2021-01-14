@@ -29,9 +29,9 @@ class Solution {
         Deque<Integer> stack = new LinkedList<>();
         int i = 0;
         for(int num : pushed) {
-            stack.offerLast(num); // num 入栈
-            while(!stack.isEmpty() && stack.peekLast() == popped[i]) { // 循环判断与出栈
-                stack.pollLast();
+            stack.push(num); // num 入栈
+            while(!stack.isEmpty() && stack.peek() == popped[i]) { // 循环判断与出栈
+                stack.pop();
                 i++;
             }
         }

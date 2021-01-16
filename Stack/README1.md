@@ -11,8 +11,6 @@
 # 栈
 ## 单一
 ### 简单
-- [剑指offer09.用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
-- [LeetCode232.用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/)
 ## 树
 ### 简单
 - [LeetCode104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)

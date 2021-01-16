@@ -2,14 +2,15 @@
 ## 资料
 ## 简单
 - [剑指Offer09.用两个栈实现队列](docs/剑指Offer09.用两个栈实现队列.md)
+  - [LeetCode232.用栈实现队列](docs/LeetCode232.用栈实现队列.md)
 - [LeetCode225.用队列实现栈](docs/LeetCode225.用队列实现栈.md)
 - [LeetCode20.有效的括号](docs/LeetCode20.有效的括号.md)
 - [剑指Offer30.包含min函数的栈](docs/剑指Offer30.包含min函数的栈.md)
   - [LeetCode155.最小栈](docs/LeetCode155.最小栈.md) 
 - [LeetCode716.最大栈](docs/LeetCode716.最大栈.md)
 ## 中等
-- [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md)
-  - [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md) 
+- [剑指Offer31.栈的压入、弹出序列](docs/剑指Offer31.栈的压入、弹出序列.md)
+  - [LeetCode946.验证栈序列](docs/LeetCode946.验证栈序列.md) 
 - [LeetCode150.逆波兰表达式求值](docs/LeetCode150.逆波兰表达式求值.md)
 - [LeetCode739.每日温度](docs/LeetCode739.每日温度.md)
 - [LeetCode394.字符串解码](docs/LeetCode394.字符串解码.md)

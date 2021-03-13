@@ -84,7 +84,7 @@
 - [拿到FLAGoffer的大佬的刷题日记](https://mnmunknown.gitbooks.io/algorithm-notes/content/)
 ## 参考文章
 - [九章算法:算法小白如何高效、快速刷leetcode？](https://www.zhihu.com/question/321738058/answer/1252502958)
-- [码农找工作之：秒杀算法面试必须掌握的14种模式](https://zhuanlan.zhihu.com/p/90664857)
+- [码农找工作之：秒杀算法面试必须掌握的14种模式](https://zhuanlan.zhihu.com/p/247579215)
 - [如何系统地学习算法？](https://www.zhihu.com/question/20588261/answer/967014951)
 ## 导图
 - [夕小瑶的卖萌屋算法工程师思维导图](docs/夕小瑶的卖萌屋算法工程师思维导图.pdf)
